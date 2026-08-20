@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b1f2a">
+  <meta name="description" content="스마트건설·건설 AI·AX·DX 핵심 뉴스를 한눈에 보는 데일리 인텔리전스 브리핑">
+  <meta property="og:title" content="Construction Intelligence Brief">
+  <meta property="og:description" content="스마트건설·건설 AI·AX·DX 핵심 뉴스를 한눈에">
+  <meta property="og:type" content="website">
+  <title>Construction Intelligence Brief</title>
+  <style>
+    :root {
+      --ink: #10242e;
+      --ink-soft: #445a64;
+      --navy: #0b1f2a;
+      --navy-2: #133541;
+      --paper: #f4f1ea;
+      --surface: #fffdf8;
+      --line: #d9d6ce;
+      --lime: #c6f251;
+      --teal: #00a88f;
+      --orange: #ff8a4c;
+      --blue: #4b7bec;
+      --shadow: 0 18px 55px rgba(11, 31, 42, .08);
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Pretendard, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, -apple-system, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    button, select { font: inherit; }
+    button { color: inherit; }
+    a { color: inherit; }
+    ::selection { background: var(--lime); color: var(--navy); }
+    .skip-link {
+      position: fixed; left: 16px; top: -80px; z-index: 100;
+      background: var(--lime); color: var(--navy); padding: 10px 16px; font-weight: 800;
+    }
+    .skip-link:focus { top: 12px; }
+
+    .topbar {
+      position: sticky; top: 0; z-index: 30;
+      background: rgba(11, 31, 42, .96);
+      color: white; border-bottom: 1px solid rgba(255,255,255,.12);
+      backdrop-filter: blur(16px);
+    }
+    .topbar-inner {
+      max-width: var(--max); margin: auto; min-height: 70px; padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between; gap: 24px;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
+    .brand-mark {
+      width: 34px; height: 34px; display: grid; place-items: center;
+      background: var(--lime); color: var(--navy); font-weight: 950; letter-spacing: -1px;
+      box-shadow: 4px 4px 0 rgba(198,242,81,.22);
+    }
+    .brand-title { font-weight: 800; letter-spacing: -.02em; white-space: nowrap; }
+    .brand-title small { display: block; color: #9fb0b7; font-size: 10px; letter-spacing: .18em; font-weight: 700; }
+    .top-actions { display: flex; align-items: center; gap: 8px; }
+    .action-btn, .archive-select {
+      min-height: 38px; border: 1px solid rgba(255,255,255,.23); background: transparent;
+      color: white; padding: 0 13px; cursor: pointer; border-radius: 2px;
+    }
+    .archive-select { color-scheme: dark; max-width: 152px; }
+    .action-btn:hover, .action-btn:focus-visible, .archive-select:focus-visible { border-color: var(--lime); outline: none; }
+    .action-btn.primary { background: var(--lime); color: var(--navy); border-color: var(--lime); font-weight: 800; }
+
+    .hero { background: var(--navy); color: white; overflow: hidden; position: relative; }
+    .hero::before {
+      content: ""; position: absolute; width: 620px; height: 620px; border: 1px solid rgba(198,242,81,.16);
+      border-radius: 50%; right: -250px; top: -320px; box-shadow: 0 0 0 90px rgba(198,242,81,.025), 0 0 0 180px rgba(198,242,81,.018);
+    }
+    .hero-inner {
+      max-width: var(--max); margin: auto; padding: 78px 24px 66px;
+      display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(260px, .7fr); gap: 64px; align-items: end;
+      position: relative;
+    }
+    .eyebrow { color: var(--lime); font-size: 12px; font-weight: 900; letter-spacing: .18em; text-transform: uppercase; }
+    .date-line { margin-top: 14px; color: #aebcc2; font-size: 15px; }
+    h1 { font-size: clamp(38px, 6vw, 72px); line-height: 1.03; letter-spacing: -.055em; margin: 22px 0; max-width: 840px; }
+    .keyline { font-size: clamp(18px, 2.15vw, 25px); line-height: 1.55; max-width: 760px; color: #d7e1e4; margin: 0; }
+    .keyline strong { color: white; box-shadow: inset 0 -.32em 0 rgba(198,242,81,.18); }
+    .hero-stats { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid rgba(255,255,255,.2); border-left: 1px solid rgba(255,255,255,.2); }
+    .stat { min-height: 112px; padding: 19px; border-right: 1px solid rgba(255,255,255,.2); border-bottom: 1px solid rgba(255,255,255,.2); }
+    .stat strong { display: block; font-size: 34px; line-height: 1; letter-spacing: -.04em; color: var(--lime); }
+    .stat span { display: block; margin-top: 10px; font-size: 12px; color: #9fb0b7; }
+
+    .main { max-width: var(--max); margin: auto; padding: 0 24px 96px; }
+    .signal-strip {
+      margin: -22px 0 44px; position: relative; z-index: 5; background: var(--surface);
+      box-shadow: var(--shadow); display: grid; grid-template-columns: 1.3fr repeat(3, 1fr); border: 1px solid var(--line);
+    }
+    .signal-item { padding: 22px 24px; border-right: 1px solid var(--line); min-width: 0; }
+    .signal-item:last-child { border-right: 0; }
+    .signal-label { display: block; color: #718088; font-size: 11px; font-weight: 800; letter-spacing: .09em; margin-bottom: 6px; }
+    .signal-value { font-weight: 800; font-size: 15px; line-height: 1.45; }
+    .signal-item.focus { background: var(--lime); }
+    .signal-item.focus .signal-label { color: #43571b; }
+
+    .toolbar { display: flex; align-items: end; justify-content: space-between; gap: 28px; margin-bottom: 24px; }
+    .section-kicker { font-size: 11px; letter-spacing: .16em; font-weight: 900; color: var(--teal); text-transform: uppercase; }
+    h2 { font-size: clamp(28px, 4vw, 42px); letter-spacing: -.045em; line-height: 1.12; margin: 8px 0 0; }
+    .result-count { color: #65757c; font-size: 14px; white-space: nowrap; }
+    .filters {
+      display: flex; gap: 6px; overflow-x: auto; padding: 0 0 18px; margin-bottom: 18px;
+      border-bottom: 1px solid var(--line); scrollbar-width: thin;
+    }
+    .filter-btn {
+      flex: 0 0 auto; border: 1px solid var(--line); background: transparent; padding: 10px 15px;
+      cursor: pointer; font-size: 14px; font-weight: 750; border-radius: 2px;
+    }
+    .filter-btn:hover, .filter-btn:focus-visible { border-color: var(--teal); outline: none; }
+    .filter-btn[aria-pressed="true"] { background: var(--navy); border-color: var(--navy); color: white; }
+    .filter-btn .count { opacity: .6; margin-left: 5px; font-variant-numeric: tabular-nums; }
+
+    .news-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .news-card {
+      background: var(--surface); border: 1px solid var(--line); padding: 29px;
+      display: flex; flex-direction: column; min-height: 430px; position: relative;
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+    .news-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: #b9b7b0; }
+    .news-card.featured { grid-column: 1 / -1; display: grid; grid-template-columns: .9fr 1.1fr; gap: 44px; min-height: 0; background: #e9f8f4; border-color: #afd9ce; }
+    .card-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 21px; }
+    .category { color: var(--teal); font-size: 12px; font-weight: 900; letter-spacing: .08em; }
+    .importance { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 850; white-space: nowrap; }
+    .importance::before { content: ""; width: 8px; height: 8px; background: var(--orange); box-shadow: 4px 4px 0 rgba(255,138,76,.23); }
+    .news-card h3 { font-size: clamp(21px, 2.3vw, 30px); line-height: 1.35; letter-spacing: -.03em; margin: 0 0 20px; }
+    .summary { color: var(--ink-soft); margin: 0; font-size: 15px; }
+    .insight {
+      border-left: 3px solid var(--teal); padding: 15px 0 15px 18px; margin: 24px 0;
+      color: #243d47; background: linear-gradient(90deg, rgba(0,168,143,.07), transparent);
+    }
+    .insight-label { display: block; color: var(--teal); font-size: 11px; font-weight: 900; letter-spacing: .08em; margin-bottom: 6px; }
+    .insight p { margin: 0; font-size: 14px; }
+    .source { margin-top: auto; padding-top: 18px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 16px; color: #66757c; font-size: 12px; }
+    .empty-state { grid-column: 1 / -1; padding: 52px 28px; border: 1px dashed #b9b5ac; text-align: center; color: #65757c; background: rgba(255,255,255,.35); }
+
+    .implications { margin-top: 88px; background: var(--navy); color: white; padding: clamp(30px, 5vw, 58px); position: relative; overflow: hidden; }
+    .implications::after { content: "03"; position: absolute; right: 28px; top: -35px; font-size: 170px; font-weight: 950; line-height: 1; color: rgba(255,255,255,.035); }
+    .implications .section-kicker { color: var(--lime); }
+    .implication-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin-top: 38px; border-top: 1px solid rgba(255,255,255,.18); }
+    .implication { padding: 28px 28px 8px 0; margin-right: 28px; border-right: 1px solid rgba(255,255,255,.18); position: relative; }
+    .implication:last-child { border-right: 0; margin-right: 0; }
+    .implication-num { font-size: 13px; color: var(--lime); font-weight: 900; }
+    .implication h3 { font-size: 20px; line-height: 1.45; margin: 13px 0 12px; letter-spacing: -.02em; }
+    .implication p { color: #b8c6cb; font-size: 14px; margin: 0; }
+    .closing-line { margin-top: 45px; padding-top: 29px; border-top: 1px solid rgba(255,255,255,.18); font-size: clamp(20px, 3vw, 29px); line-height: 1.5; letter-spacing: -.025em; max-width: 970px; }
+    .closing-line span { color: var(--lime); }
+
+    .footer { max-width: var(--max); margin: auto; padding: 28px 24px 42px; display: flex; justify-content: space-between; gap: 24px; color: #65757c; font-size: 12px; }
+    .footer strong { color: var(--ink); }
+    .footer-actions { display: flex; gap: 16px; }
+    .text-btn { border: 0; padding: 0; background: transparent; color: inherit; text-decoration: underline; cursor: pointer; }
+
+    .toast {
+      position: fixed; z-index: 60; left: 50%; bottom: 24px; transform: translate(-50%, 120px);
+      background: var(--navy); color: white; padding: 12px 18px; box-shadow: var(--shadow); opacity: 0;
+      transition: .25s ease; font-size: 14px; text-align: center;
+    }
+    .toast.show { transform: translate(-50%, 0); opacity: 1; }
+    dialog { max-width: 720px; width: calc(100% - 32px); border: 0; padding: 0; box-shadow: 0 30px 100px rgba(0,0,0,.3); background: var(--surface); }
+    dialog::backdrop { background: rgba(11,31,42,.72); backdrop-filter: blur(4px); }
+    .dialog-head { background: var(--navy); color: white; padding: 24px 28px; display: flex; justify-content: space-between; align-items: center; }
+    .dialog-head h2 { font-size: 22px; margin: 0; }
+    .dialog-close { background: transparent; border: 1px solid rgba(255,255,255,.3); color: white; width: 36px; height: 36px; cursor: pointer; }
+    .dialog-body { padding: 28px; color: var(--ink-soft); }
+    .dialog-body ol { padding-left: 22px; }
+    .dialog-body code { background: #ebe8e0; padding: 2px 6px; color: var(--ink); }
+
+    @media (max-width: 840px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 38px; padding-top: 56px; }
+      .hero-stats { max-width: 520px; }
+      .signal-strip { grid-template-columns: 1fr 1fr; }
+      .signal-item:nth-child(2) { border-right: 0; }
+      .signal-item:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+      .news-card.featured { grid-template-columns: 1fr; gap: 0; }
+      .implication-grid { grid-template-columns: 1fr; }
+      .implication { border-right: 0; margin-right: 0; padding-right: 0; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,.18); }
+      .implication:last-child { border-bottom: 0; }
+    }
+    @media (max-width: 660px) {
+      .topbar-inner { min-height: 62px; padding: 0 16px; }
+      .brand-title { font-size: 14px; }
+      .brand-title small, .archive-select, .action-btn .wide-label { display: none; }
+      .action-btn { padding: 0 10px; }
+      .hero-inner { padding: 42px 18px 52px; }
+      h1 { font-size: 42px; }
+      .main { padding: 0 16px 68px; }
+      .signal-strip { margin-top: -18px; margin-bottom: 38px; }
+      .signal-item { padding: 17px; }
+      .signal-value { font-size: 13px; }
+      .toolbar { align-items: start; flex-direction: column; gap: 10px; }
+      .news-grid { grid-template-columns: 1fr; }
+      .news-card, .news-card.featured { grid-column: auto; padding: 23px; min-height: 0; }
+      .source { flex-direction: column; gap: 4px; }
+      .implications { margin: 64px -16px 0; }
+      .footer { flex-direction: column; padding: 26px 16px 34px; }
+    }
+    @media print {
+      .topbar, .filters, .footer-actions, .toast, dialog { display: none !important; }
+      body { background: white; font-size: 12px; }
+      .hero { background: white; color: var(--ink); }
+      .hero-inner { padding: 30px 0; grid-template-columns: 1fr; }
+      .hero-stats { display: none; }
+      .keyline, .date-line { color: var(--ink-soft); }
+      .main { padding: 0; }
+      .signal-strip { box-shadow: none; margin: 0 0 24px; }
+      .news-grid { grid-template-columns: 1fr 1fr; }
+      .news-card { break-inside: avoid; min-height: 0; padding: 18px; }
+      .news-card.featured { grid-column: 1 / -1; }
+      .implications { break-inside: avoid; margin-top: 34px; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#news" class="skip-link">뉴스 목록으로 이동</a>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand" aria-label="Construction Intelligence Brief">
+        <div class="brand-mark" aria-hidden="true">CI</div>
+        <div class="brand-title">Construction Intelligence<small>DAILY BRIEF</small></div>
+      </div>
+      <div class="top-actions">
+        <label for="archiveSelect" class="skip-link">브리핑 날짜</label>
+        <select id="archiveSelect" class="archive-select" aria-label="과거 브리핑 선택"></select>
+        <button class="action-btn" id="printBtn" type="button" aria-label="인쇄 또는 PDF 저장">⌁ <span class="wide-label">PDF</span></button>
+        <button class="action-btn primary" id="shareBtn" type="button">↗ <span class="wide-label">공유</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="pageTitle">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">Daily intelligence for decision makers</div>
+          <div class="date-line" id="displayDate"></div>
+          <h1 id="pageTitle">건설의 다음을<br>먼저 읽습니다.</h1>
+          <p class="keyline" id="headline"></p>
+        </div>
+        <div class="hero-stats" id="heroStats" aria-label="오늘의 브리핑 통계"></div>
+      </div>
+    </section>
+
+    <div class="main">
+      <section class="signal-strip" id="signalStrip" aria-label="오늘의 주요 신호"></section>
+
+      <section id="news" aria-labelledby="newsTitle">
+        <div class="toolbar">
+          <div>
+            <div class="section-kicker">Selected News</div>
+            <h2 id="newsTitle">오늘의 주요 뉴스</h2>
+          </div>
+          <div class="result-count" id="resultCount" aria-live="polite"></div>
+        </div>
+        <div class="filters" id="filters" role="toolbar" aria-label="뉴스 분야 필터"></div>
+        <div class="news-grid" id="newsGrid"></div>
+      </section>
+
+      <section class="implications" aria-labelledby="implicationTitle">
+        <div class="section-kicker">Executive Implications</div>
+        <h2 id="implicationTitle">오늘의 종합 시사점</h2>
+        <div class="implication-grid" id="implicationGrid"></div>
+        <div class="closing-line" id="closingLine"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div><strong>Construction Intelligence Brief</strong><br>스마트건설·AI·AX·DX 의사결정 브리핑</div>
+    <div class="footer-actions">
+      <button class="text-btn" id="guideBtn" type="button">업데이트 방법</button>
+      <button class="text-btn" id="dataBtn" type="button">현재 JSON 저장</button>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <dialog id="guideDialog">
+    <div class="dialog-head">
+      <h2>매일 브리핑 업데이트</h2>
+      <button class="dialog-close" id="dialogClose" type="button" aria-label="닫기">×</button>
+    </div>
+    <div class="dialog-body">
+      <p>새 브리핑은 화면 코드와 분리된 JSON 파일에 날짜별로 누적합니다.</p>
+      <ol>
+        <li><code>data/briefings.json</code>을 엽니다.</li>
+        <li>JSON 배열 맨 앞에 새 날짜 객체를 추가합니다.</li>
+        <li>GitHub에 반영하면 Vercel이 같은 주소로 자동 재배포합니다.</li>
+      </ol>
+      <p>날짜별 객체가 자동으로 상단 아카이브 선택기에 표시되며, 모든 필터와 통계도 뉴스 배열을 기준으로 자동 계산됩니다.</p>
+    </div>
+  </dialog>
+
+  <!-- 매일 업데이트할 때는 아래 JSON 데이터만 교체하거나 배열 맨 앞에 새 날짜 객체를 추가하세요. -->
+  <script id="briefing-data" type="application/json">
+  [
+    {
+      "date": "2026-08-21",
+      "displayDate": "2026년 8월 21일 · 금요일 · 06:00 KST",
+      "headline": "건설 자동화의 경쟁 단위가 개별 장비에서 <strong>자율 Fleet + 통합 관제 + Lifecycle O&M</strong>으로 확장되고 있습니다.",
+      "signals": [
+        {"label": "TODAY'S FOCUS", "value": "Autonomous Fleet", "focus": true},
+        {"label": "AI SIGNAL", "value": "AI, flagship의 기본값으로"},
+        {"label": "DATA LAYER", "value": "Connected Digital Foundation"},
+        {"label": "MARKET MOVE", "value": "Pilot → Baseline"}
+      ],
+      "news": [
+        {
+          "id": "20260821-sany-autonomous-mining-fleet",
+          "category": "Smart Construction",
+          "importance": 5,
+          "featured": true,
+          "title": "SANY, 남미에 완전 전기 자율 광산트럭 첫 공급…Fleet 단위 상용화",
+          "summary": "SANY Group은 완전 전기 자율 광산트럭 SKT110Ei의 첫 물량을 남미에 공급했다고 8월 20일 발표했습니다. 회사의 남미 첫 자율 광산트럭 프로젝트로, 자율주행 트럭 Fleet뿐 아니라 지능형 배차, 도로 인프라, 클라우드 관제와 현지 맞춤형 운영·유지관리 서비스를 함께 제공합니다. SANY는 2026년 7월 기준 300대 이상의 자율 광산트럭이 1,300만 km 이상을 주행하고 4,100만㎥ 이상의 토석을 운반했다고 밝혔습니다.",
+          "insight": "Physical AI의 상용화 단위가 ‘자율 장비 한 대’에서 Vehicle + Road + Cloud Dispatch + Lifecycle O&M을 묶은 운영체계로 이동하고 있습니다. 통제된 광산·대규모 토공에서 검증된 Fleet 운영모델은 향후 댐·도로·터널 포털 등 반복 운반이 많은 건설현장으로 확산될 가능성이 큽니다.",
+          "source": "SANY Group / PR Newswire",
+          "published": "2026-08-20",
+          "region": "해외 · 오늘의 Physical AI 핵심"
+        },
+        {
+          "id": "20260821-bentley-yii-ai-data",
+          "category": "건설DX",
+          "importance": 4,
+          "featured": false,
+          "title": "Bentley YII 2026 결선작 3분의 2가 AI 활용…연결 데이터가 새 기준",
+          "summary": "Highways Today가 8월 20일 공개한 Bentley Year in Infrastructure 2026 결선작 분석에 따르면, 36개 프로젝트 중 24개가 AI를 활용했고 22개는 연결된 디지털 기반을 갖춘 것으로 나타났습니다. 53개국 300여 개 출품작에서 선정된 사례에는 HS2 런던 터널의 4D 시공 리허설, Hinkley Point C의 대규모 4D 시공, 1만4,000km 상수도망의 운영형 Digital Twin 등이 포함됐습니다.",
+          "insight": "선도 인프라 프로젝트에서 AI는 차별화 기능보다 기본 역량에 가까워지고 있습니다. 다만 AI 성능을 만드는 핵심 자산은 단발성 BIM 파일이 아니라 설계·시공·운영 정보를 계속 연결하는 Persistent Data Estate입니다. 터널사업도 CDE와 4D 모델을 준공 이후 계측·점검·보수 데이터까지 이어야 AI 활용가치가 누적됩니다.",
+          "source": "Highways Today / Bentley YII 2026",
+          "published": "2026-08-20",
+          "region": "해외 · 인프라 DX 분석"
+        }
+      ],
+      "emptyCategories": {
+        "스마트건설": "최근 24시간 내 국내 스마트건설 정책·현장 실증 중 최초 공개일과 산업 중요도를 모두 충족하는 별도 신규 이슈는 확인되지 않았습니다.",
+        "건설AI": "AI 활용은 Bentley YII 결선 프로젝트 분석에서 중요한 신호로 확인됐지만, 연결 데이터와 Digital Twin 관점의 중복을 피하기 위해 건설DX 분야에 배치했습니다.",
+        "건설AX": "최근 24시간 내 건설기업이 조직·업무·데이터를 AI 중심으로 재설계한다고 공식 발표한 독립적인 신규 이슈는 확인되지 않았습니다."
+      },
+      "implications": [
+        {
+          "title": "Physical AI의 제품은 로봇이 아니라 ‘운영체계’가 되고 있습니다.",
+          "body": "SANY 사례의 핵심은 전기 자율트럭 자체보다 Fleet, 도로, 클라우드 배차와 O&M을 하나로 제공한다는 점입니다. 장비 성능보다 전체 Cycle Time과 가동률을 최적화하는 역량이 경쟁력이 됩니다."
+        },
+        {
+          "title": "AI 도입 여부보다 ‘연결 데이터 보유 여부’가 격차를 만듭니다.",
+          "body": "선도 인프라 프로젝트 다수가 이미 AI를 활용하고 있습니다. 다음 경쟁은 AI 기능 개수보다 모델·공정·현장·운영 데이터를 지속적으로 연결해 AI가 읽을 수 있게 만드는 능력입니다."
+        },
+        {
+          "title": "Closed-loop Construction의 두 축이 동시에 구체화되고 있습니다.",
+          "body": "Digital Twin과 CDE가 판단에 필요한 맥락을 만들고, 자율 Fleet과 통합 관제가 현장에서 행동합니다. 데이터 백본과 Physical AI 운영체계를 함께 설계해야 자동화의 ROI가 프로젝트 전체로 확장됩니다."
+        }
+      ],
+      "closing": "AI가 프로젝트 데이터를 이해하는 단계와 자율장비가 현장을 움직이는 단계가 연결되며, 경쟁은 개별 솔루션에서 <span>Closed-loop Construction 운영능력</span>으로 이동하고 있습니다."
+    },
+    {
+      "date": "2026-08-19",
+      "displayDate": "2026년 8월 19일 · 수요일 · 20:00 KST",
+      "headline": "건설 AI의 경쟁은 범용 지능을 넘어, 공학적 근거와 현장 데이터를 이해하는 <strong>Engineering AI</strong>로 이동하고 있습니다.",
+      "signals": [
+        {"label": "TODAY'S FOCUS", "value": "Physics + AI", "focus": true},
+        {"label": "AX SIGNAL", "value": "공공 발주자의 전사 AX"},
+        {"label": "TRUST LAYER", "value": "Evidence-based AI"},
+        {"label": "NEXT STACK", "value": "Twin → Agent → Physical AI"}
+      ],
+      "news": [
+        {
+          "id": "20260819-kict-etri-flood-ai",
+          "category": "건설AI",
+          "importance": 5,
+          "featured": true,
+          "title": "KICT·ETRI, 부산에서 ‘Physics + AI’ 도시침수 예측 실증",
+          "summary": "ETRI와 한국건설기술연구원(KICT) 등 정부출연연구기관이 부산시와 함께 물리 시뮬레이션과 AI를 결합한 하이브리드 도시침수 예측 모델의 현장 실증에 나섰습니다. 도시 배수 흐름과 침수 현상을 디지털 환경에서 재현하고, AI가 이를 학습해 위험을 조기에 탐지·예측합니다. 향후 Digital Twin 기반 재난안전 플랫폼과 지능형 경보·대응 체계로 확대할 계획입니다.",
+          "insight": "범용 LLM보다 Engineering Physics + Sensor Data + Digital Twin + AI를 결합한 Hybrid Engineering AI가 인프라 예측의 신뢰도를 높일 수 있습니다. 터널 분야에서는 지반·지하수·굴착·지보 모델과 계측 실측값을 연결해 상태 추정, 위험 예측, 대응 추천으로 확장할 수 있습니다.",
+          "source": "전자신문",
+          "published": "2026-08-19",
+          "region": "국내 · 오늘의 기술 핵심"
+        },
+        {
+          "id": "20260819-evidence-ai",
+          "category": "건설AI",
+          "importance": 3,
+          "featured": false,
+          "title": "“건설 AI는 답보다 근거를 관리해야”…Human-in-the-loop 재강조",
+          "summary": "건설·EPC AI는 단순한 답변 시스템이 아니라 판단의 근거, 출처, 변경 이력과 검증 과정을 운영하는 체계여야 한다는 분석이 제시됐습니다. 성공적인 AI 도입은 기존 업무에 도구를 덧붙이는 것이 아니라 업무 흐름을 재설계하고 사람이 검증할 지점을 명확히 하는 데서 출발합니다.",
+          "insight": "계약·설계·품질·안전처럼 책임 소재가 중요한 건설에서는 AI의 결론을 도면, 시방서, 계약서, 계측값까지 역추적할 수 있어야 합니다. 설명 가능성과 Human-in-the-loop가 실제 업무 도입의 전제입니다.",
+          "source": "전자신문 · 혁신플랫폼톡",
+          "published": "2026-08-19",
+          "region": "국내 · 전문가 기고"
+        },
+        {
+          "id": "20260819-gw-ax",
+          "category": "건설AX",
+          "importance": 5,
+          "featured": false,
+          "title": "강원개발공사, AX 비전 선포…건설현장·시설관리까지 적용",
+          "summary": "강원개발공사가 ‘AX 비전 선포식’과 AX혁신 TF를 출범시키고 전사 AI Transformation을 공식 추진합니다. AX 플랫폼 구축, 업무·사업 데이터 통합관리, 공공데이터 개방과 함께 개발사업·건설현장·임대주택·시설관리 등 핵심 사업에 AX를 단계적으로 적용할 계획입니다.",
+          "insight": "건설 AX가 대형 민간 건설사를 넘어 지역 개발공사와 공공 발주기관으로 확대되는 신호입니다. Data Integration → 업무 재설계 → AI Copilot → Agent → 사업·현장 의사결정의 순서로 발전하면 공공 발주자형 Construction AX 모델이 될 수 있습니다.",
+          "source": "연합뉴스",
+          "published": "2026-08-19",
+          "region": "국내 · 오늘의 AX 핵심"
+        }
+      ],
+      "emptyCategories": {
+        "스마트건설": "최근 24시간 내 산업 중요도와 신규성을 모두 충족하는 주요 신규 발표는 확인되지 않았습니다. 대한건설협회의 ‘2026 스마트건설 청년인재 채용설명회’에는 주요 건설사·공공기관 등 25개 기관이 참여해 인재 수요 확대 신호를 보였습니다.",
+        "건설DX": "별도 주요 신규 건설 프로젝트 발표는 없었습니다. 부산 침수예측 사업은 Digital Twin이 실제 도시 상태를 예측·제어하는 Operational Digital Twin으로 진화하는 사례로 건설AI 분야에 배치했습니다.",
+        "Smart Construction": "해외 Construction AI·Robotics·Autonomous Equipment 관련 이슈를 확인했으나 최근 24시간, 신규성, 산업 중요도를 모두 충족하는 독립 이슈는 없었습니다."
+      },
+      "implications": [
+        {
+          "title": "건설 AI의 다음 단계는 ‘Data AI → Physics + AI’입니다.",
+          "body": "물리법칙과 공학 제약이 지배하는 건설·터널·인프라에서는 Engineering Model, Sensor Data, Digital Twin과 AI를 결합한 구조가 신뢰할 수 있는 예측의 핵심이 됩니다."
+        },
+        {
+          "title": "공공 건설산업도 ‘DX 사업’에서 ‘AX 경영’으로 이동합니다.",
+          "body": "AX 비전, 전담 TF, 플랫폼, 데이터, 현장 적용을 한 흐름으로 제시했다는 점이 중요합니다. KPI 역시 AI 사용 인원보다 시간·원가·안전·시설관리 성과로 옮겨가야 합니다."
+        },
+        {
+          "title": "Construction Agent의 경쟁력은 ‘답’보다 ‘근거’입니다.",
+          "body": "AI가 공정변경·위험판단·설계검토를 지원하려면 어떤 도면, 계측값, 시방·계약조건을 근거로 판단했는지 추적 가능해야 합니다."
+        }
+      ],
+      "closing": "DX가 데이터를 만들고 → Digital Twin이 맥락을 만들고 → Engineering AI가 예측하고 → Agent가 근거를 가지고 판단하며 → <span>Physical AI가 현장에서 행동합니다.</span>"
+    }
+  ]
+  </script>
+
+  <script>
+    (() => {
+      'use strict';
+
+      const CATEGORIES = ['전체', '스마트건설', '건설AI', '건설AX', '건설DX', 'Smart Construction'];
+      let archive = JSON.parse(document.getElementById('briefing-data').textContent);
+      let selectedDate = archive[0].date;
+      let selectedCategory = '전체';
+      const $ = (selector) => document.querySelector(selector);
+
+      const escapeHTML = (value) => String(value ?? '').replace(/[&<>'"]/g, char => ({
+        '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
+      })[char]);
+
+      const currentBrief = () => archive.find(item => item.date === selectedDate) || archive[0];
+      const categoryCount = (brief, category) => category === '전체'
+        ? brief.news.length
+        : brief.news.filter(item => item.category === category).length;
+
+      function renderArchive() {
+        $('#archiveSelect').innerHTML = archive.map(item =>
+          `<option value="${escapeHTML(item.date)}">${escapeHTML(item.date.replaceAll('-', '.'))}</option>`
+        ).join('');
+        $('#archiveSelect').value = selectedDate;
+      }
+
+      function renderHero(brief) {
+        $('#displayDate').textContent = brief.displayDate;
+        $('#headline').innerHTML = brief.headline;
+        const fiveStar = brief.news.filter(item => item.importance === 5).length;
+        const domestic = brief.news.filter(item => item.region.includes('국내')).length;
+        $('#heroStats').innerHTML = [
+          [String(brief.news.length).padStart(2, '0'), '선별 뉴스'],
+          [String(fiveStar).padStart(2, '0'), '최우선 이슈'],
+          [String(domestic).padStart(2, '0'), '국내 신호'],
+          [String(CATEGORIES.length - 1).padStart(2, '0'), '관찰 분야']
+        ].map(([value, label]) => `<div class="stat"><strong>${value}</strong><span>${label}</span></div>`).join('');
+      }
+
+      function renderSignals(brief) {
+        $('#signalStrip').innerHTML = brief.signals.map(signal =>
+          `<div class="signal-item${signal.focus ? ' focus' : ''}"><span class="signal-label">${escapeHTML(signal.label)}</span><div class="signal-value">${escapeHTML(signal.value)}</div></div>`
+        ).join('');
+      }
+
+      function renderFilters(brief) {
+        $('#filters').innerHTML = CATEGORIES.map(category => `
+          <button type="button" class="filter-btn" data-category="${escapeHTML(category)}" aria-pressed="${category === selectedCategory}">
+            ${escapeHTML(category)}<span class="count">${categoryCount(brief, category)}</span>
+          </button>`).join('');
+      }
+
+      function renderNews(brief) {
+        const items = selectedCategory === '전체'
+          ? brief.news
+          : brief.news.filter(item => item.category === selectedCategory);
+        $('#resultCount').textContent = `${selectedCategory} · ${items.length}건`;
+
+        if (!items.length) {
+          const message = brief.emptyCategories[selectedCategory] || '이 분야의 주요 신규 이슈가 없습니다.';
+          $('#newsGrid').innerHTML = `<div class="empty-state"><strong>${escapeHTML(selectedCategory)}</strong><br>${escapeHTML(message)}</div>`;
+          return;
+        }
+
+        $('#newsGrid').innerHTML = items.map(item => `
+          <article class="news-card${item.featured ? ' featured' : ''}">
+            <div>
+              <div class="card-top">
+                <span class="category">${escapeHTML(item.category)} · ${escapeHTML(item.region)}</span>
+                <span class="importance" aria-label="중요도 ${item.importance}점">중요도 ${item.importance}/5</span>
+              </div>
+              <h3>${escapeHTML(item.title)}</h3>
+              ${item.featured ? '' : `<p class="summary">${escapeHTML(item.summary)}</p>`}
+            </div>
+            <div>
+              ${item.featured ? `<p class="summary">${escapeHTML(item.summary)}</p>` : ''}
+              <div class="insight"><span class="insight-label">산업 시사점</span><p>${escapeHTML(item.insight)}</p></div>
+              <div class="source"><span>출처 · ${escapeHTML(item.source)}</span><time datetime="${escapeHTML(item.published)}">보도일 · ${escapeHTML(item.published)}</time></div>
+            </div>
+          </article>`).join('');
+      }
+
+      function renderImplications(brief) {
+        $('#implicationGrid').innerHTML = brief.implications.map((item, index) => `
+          <article class="implication">
+            <span class="implication-num">0${index + 1}</span>
+            <h3>${escapeHTML(item.title)}</h3>
+            <p>${escapeHTML(item.body)}</p>
+          </article>`).join('');
+        $('#closingLine').innerHTML = brief.closing;
+      }
+
+      function render() {
+        const brief = currentBrief();
+        document.title = `${brief.date} | Construction Intelligence Brief`;
+        renderHero(brief);
+        renderSignals(brief);
+        renderFilters(brief);
+        renderNews(brief);
+        renderImplications(brief);
+      }
+
+      function showToast(message) {
+        const toast = $('#toast');
+        toast.textContent = message;
+        toast.classList.add('show');
+        clearTimeout(showToast.timer);
+        showToast.timer = setTimeout(() => toast.classList.remove('show'), 2600);
+      }
+
+      async function shareBrief() {
+        const brief = currentBrief();
+        const payload = {
+          title: `${brief.date} 스마트건설 데일리 브리핑`,
+          text: brief.headline.replace(/<[^>]+>/g, ''),
+          url: location.href
+        };
+        try {
+          if (navigator.share && location.protocol !== 'file:') {
+            await navigator.share(payload);
+          } else if (navigator.clipboard && location.protocol !== 'file:') {
+            await navigator.clipboard.writeText(location.href);
+            showToast('브리핑 링크를 복사했습니다.');
+          } else {
+            showToast('이 index.html 파일을 그대로 전달하면 됩니다.');
+          }
+        } catch (error) {
+          if (error.name !== 'AbortError') showToast('공유 기능을 사용할 수 없습니다.');
+        }
+      }
+
+      function downloadJSON() {
+        const blob = new Blob([JSON.stringify(currentBrief(), null, 2)], { type: 'application/json;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const anchor = document.createElement('a');
+        anchor.href = url;
+        anchor.download = `construction-brief-${selectedDate}.json`;
+        anchor.click();
+        URL.revokeObjectURL(url);
+      }
+
+      $('#filters').addEventListener('click', event => {
+        const button = event.target.closest('[data-category]');
+        if (!button) return;
+        selectedCategory = button.dataset.category;
+        renderFilters(currentBrief());
+        renderNews(currentBrief());
+      });
+      $('#archiveSelect').addEventListener('change', event => {
+        selectedDate = event.target.value;
+        selectedCategory = '전체';
+        render();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+      $('#shareBtn').addEventListener('click', shareBrief);
+      $('#printBtn').addEventListener('click', () => window.print());
+      $('#dataBtn').addEventListener('click', downloadJSON);
+      $('#guideBtn').addEventListener('click', () => $('#guideDialog').showModal());
+      $('#dialogClose').addEventListener('click', () => $('#guideDialog').close());
+      $('#guideDialog').addEventListener('click', event => {
+        if (event.target === $('#guideDialog')) $('#guideDialog').close();
+      });
+
+      async function initialize() {
+        try {
+          const response = await fetch('./data/briefings.json', { cache: 'no-store' });
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          const externalArchive = await response.json();
+          if (!Array.isArray(externalArchive) || !externalArchive.length) {
+            throw new Error('브리핑 데이터가 비어 있습니다.');
+          }
+          archive = externalArchive.sort((a, b) => b.date.localeCompare(a.date));
+          selectedDate = archive[0].date;
+        } catch (error) {
+          console.warn('외부 브리핑 데이터를 불러오지 못해 내장 데이터를 표시합니다.', error);
+          showToast('최신 데이터를 불러오지 못해 저장된 브리핑을 표시합니다.');
+        }
+        renderArchive();
+        render();
+      }
+
+      initialize();
+    })();
+  </script>
+</body>
+</html>
