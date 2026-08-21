@@ -99,7 +99,6 @@ response = client.responses.create(
     tools=[{"type": "web_search"}],
     reasoning={"effort": "medium"},
     input=prompt,
-    text={"format": {"type": "json_object"}},
 )
 
 text = response.output_text.strip()
