@@ -196,7 +196,8 @@
 
     .footer { max-width: var(--max); margin: auto; padding: 28px 24px 42px; display: flex; justify-content: space-between; gap: 24px; color: #65757c; font-size: 12px; }
     .footer strong { color: var(--ink); }
-    .footer-actions { display: flex; gap: 16px; }
+    .footer-actions { display: flex; align-items: center; gap: 16px; }
+    .creator-credit { color: var(--ink); font-weight: 850; letter-spacing: .02em; }
     .text-btn { border: 0; padding: 0; background: transparent; color: inherit; text-decoration: underline; cursor: pointer; }
 
     .toast {
@@ -205,14 +206,6 @@
       transition: .25s ease; font-size: 14px; text-align: center;
     }
     .toast.show { transform: translate(-50%, 0); opacity: 1; }
-    dialog { max-width: 720px; width: calc(100% - 32px); border: 0; padding: 0; box-shadow: 0 30px 100px rgba(0,0,0,.3); background: var(--surface); }
-    dialog::backdrop { background: rgba(11,31,42,.72); backdrop-filter: blur(4px); }
-    .dialog-head { background: var(--navy); color: white; padding: 24px 28px; display: flex; justify-content: space-between; align-items: center; }
-    .dialog-head h2 { font-size: 22px; margin: 0; }
-    .dialog-close { background: transparent; border: 1px solid rgba(255,255,255,.3); color: white; width: 36px; height: 36px; cursor: pointer; }
-    .dialog-body { padding: 28px; color: var(--ink-soft); }
-    .dialog-body ol { padding-left: 22px; }
-    .dialog-body code { background: #ebe8e0; padding: 2px 6px; color: var(--ink); }
 
     @media (max-width: 840px) {
       .hero-inner { grid-template-columns: 1fr; gap: 38px; padding-top: 56px; }
@@ -251,7 +244,7 @@
       .footer { flex-direction: column; padding: 26px 16px 34px; }
     }
     @media print {
-      .topbar, .filters, .discovery-panel, .footer-actions, .toast, dialog { display: none !important; }
+      .topbar, .filters, .discovery-panel, .text-btn, .toast { display: none !important; }
       body { background: white; font-size: 12px; }
       .hero { background: white; color: var(--ink); }
       .hero-inner { padding: 30px 0; grid-template-columns: 1fr; }
@@ -344,28 +337,12 @@
   <footer class="footer">
     <div><strong>Construction Intelligence Brief</strong><br>스마트건설·AI·AX·DX 의사결정 브리핑</div>
     <div class="footer-actions">
-      <button class="text-btn" id="guideBtn" type="button">업데이트 방법</button>
+      <span class="creator-credit">Visioneer ㄱiㅎ™</span>
       <button class="text-btn" id="dataBtn" type="button">현재 JSON 저장</button>
     </div>
   </footer>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-
-  <dialog id="guideDialog">
-    <div class="dialog-head">
-      <h2>매일 브리핑 업데이트</h2>
-      <button class="dialog-close" id="dialogClose" type="button" aria-label="닫기">×</button>
-    </div>
-    <div class="dialog-body">
-      <p>새 브리핑은 화면 코드와 분리된 JSON 파일에 날짜별로 누적합니다.</p>
-      <ol>
-        <li><code>data/briefings.json</code>을 엽니다.</li>
-        <li>JSON 배열 맨 앞에 새 날짜 객체를 추가합니다.</li>
-        <li>GitHub의 <code>main</code> 브랜치에 반영하면 GitHub Pages가 같은 주소로 자동 재배포합니다.</li>
-      </ol>
-      <p>새 기사에는 출처 유형, 원문 URL, 링크 확인일, 왜 중요한가, 필요한 대응을 함께 기록합니다. 날짜별 객체가 아카이브와 검색 조건에 자동으로 반영됩니다.</p>
-    </div>
-  </dialog>
 
   <!-- 매일 업데이트할 때는 아래 JSON 데이터만 교체하거나 배열 맨 앞에 새 날짜 객체를 추가하세요. -->
   <script id="briefing-data" type="application/json">
@@ -814,11 +791,6 @@
       $('#shareBtn').addEventListener('click', shareBrief);
       $('#printBtn').addEventListener('click', () => window.print());
       $('#dataBtn').addEventListener('click', downloadJSON);
-      $('#guideBtn').addEventListener('click', () => $('#guideDialog').showModal());
-      $('#dialogClose').addEventListener('click', () => $('#guideDialog').close());
-      $('#guideDialog').addEventListener('click', event => {
-        if (event.target === $('#guideDialog')) $('#guideDialog').close();
-      });
 
       async function initialize() {
         try {
