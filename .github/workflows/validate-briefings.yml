@@ -1,0 +1,25 @@
+name: Validate briefings
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - data/briefings.json
+      - scripts/validate-briefings.mjs
+      - .github/workflows/validate-briefings.yml
+  schedule:
+    - cron: '5 21 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Validate data, duplicates, and source links
+        run: node scripts/validate-briefings.mjs --check-links

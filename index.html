@@ -89,6 +89,13 @@
     h1 { font-size: clamp(38px, 6vw, 72px); line-height: 1.03; letter-spacing: -.055em; margin: 22px 0; max-width: 840px; }
     .keyline { font-size: clamp(18px, 2.15vw, 25px); line-height: 1.55; max-width: 760px; color: #d7e1e4; margin: 0; }
     .keyline strong { color: white; box-shadow: inset 0 -.32em 0 rgba(198,242,81,.18); }
+    .executive-brief {
+      margin-top: 28px; max-width: 820px; border-left: 3px solid var(--lime);
+      background: rgba(255,255,255,.06); padding: 18px 22px;
+    }
+    .executive-brief-label { display: block; color: var(--lime); font-size: 11px; font-weight: 900; letter-spacing: .14em; margin-bottom: 9px; }
+    .executive-brief ul { margin: 0; padding-left: 20px; color: #e5edef; }
+    .executive-brief li + li { margin-top: 5px; }
     .hero-stats { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid rgba(255,255,255,.2); border-left: 1px solid rgba(255,255,255,.2); }
     .stat { min-height: 112px; padding: 19px; border-right: 1px solid rgba(255,255,255,.2); border-bottom: 1px solid rgba(255,255,255,.2); }
     .stat strong { display: block; font-size: 34px; line-height: 1; letter-spacing: -.04em; color: var(--lime); }
@@ -110,6 +117,22 @@
     .section-kicker { font-size: 11px; letter-spacing: .16em; font-weight: 900; color: var(--teal); text-transform: uppercase; }
     h2 { font-size: clamp(28px, 4vw, 42px); letter-spacing: -.045em; line-height: 1.12; margin: 8px 0 0; }
     .result-count { color: #65757c; font-size: 14px; white-space: nowrap; }
+    .discovery-panel {
+      display: grid; grid-template-columns: minmax(240px, 1.7fr) repeat(2, minmax(145px, .65fr)) auto;
+      gap: 10px; padding: 16px; margin-bottom: 14px; background: var(--surface); border: 1px solid var(--line);
+    }
+    .control { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+    .control span { color: #65757c; font-size: 11px; font-weight: 850; letter-spacing: .06em; }
+    .search-input, .control-select {
+      width: 100%; min-height: 44px; border: 1px solid #c9c6bd; border-radius: 2px;
+      background: white; color: var(--ink); padding: 0 13px; font: inherit;
+    }
+    .search-input:focus, .control-select:focus { border-color: var(--teal); outline: 2px solid rgba(0,168,143,.14); }
+    .reset-btn {
+      align-self: end; min-height: 44px; border: 1px solid var(--navy); background: var(--navy);
+      color: white; padding: 0 17px; font-weight: 800; cursor: pointer;
+    }
+    .reset-btn:hover, .reset-btn:focus-visible { background: var(--teal); border-color: var(--teal); outline: none; }
     .filters {
       display: flex; gap: 6px; overflow-x: auto; padding: 0 0 18px; margin-bottom: 18px;
       border-bottom: 1px solid var(--line); scrollbar-width: thin;
@@ -142,9 +165,21 @@
     }
     .insight-label { display: block; color: var(--teal); font-size: 11px; font-weight: 900; letter-spacing: .08em; margin-bottom: 6px; }
     .insight p { margin: 0; font-size: 14px; }
+    .decision-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin: 18px 0 22px; }
+    .decision-block { background: #f0eee7; padding: 14px 15px; }
+    .decision-block.action { background: #edf6d4; }
+    .decision-label { display: block; margin-bottom: 5px; color: #627178; font-size: 10px; font-weight: 900; letter-spacing: .08em; }
+    .decision-block.action .decision-label { color: #51651e; }
+    .decision-block p { margin: 0; color: #2d424b; font-size: 13px; line-height: 1.6; }
+    .trust-row { display: flex; flex-wrap: wrap; gap: 6px; margin: -8px 0 18px; }
+    .trust-badge { display: inline-flex; align-items: center; min-height: 25px; padding: 3px 8px; background: #e8e6de; color: #53636a; font-size: 10px; font-weight: 850; }
+    .trust-badge.source-type { background: #dff3ee; color: #08735f; }
+    .trust-badge.verified { background: #eef8d5; color: #4f6715; }
+    .trust-badge.unverified { background: #f4e7df; color: #8e4b2a; }
+    .follow-up { margin: 0 0 18px; padding: 10px 12px; background: #eaf0ff; color: #38568f; font-size: 12px; }
     .source { margin-top: auto; padding-top: 18px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px 16px; color: #66757c; font-size: 12px; }
     .article-link { color: var(--ink); font-weight: 800; text-decoration: none; border-bottom: 1px solid currentColor; }
-    .article-link:hover { color: var(--accent); }
+    .article-link:hover { color: var(--teal); }
     .empty-state { grid-column: 1 / -1; padding: 52px 28px; border: 1px dashed #b9b5ac; text-align: center; color: #65757c; background: rgba(255,255,255,.35); }
 
     .implications { margin-top: 88px; background: var(--navy); color: white; padding: clamp(30px, 5vw, 58px); position: relative; overflow: hidden; }
@@ -186,6 +221,9 @@
       .signal-item:nth-child(2) { border-right: 0; }
       .signal-item:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
       .news-card.featured { grid-template-columns: 1fr; gap: 0; }
+      .discovery-panel { grid-template-columns: 1fr 1fr; }
+      .control.search-control { grid-column: 1 / -1; }
+      .reset-btn { width: 100%; }
       .implication-grid { grid-template-columns: 1fr; }
       .implication { border-right: 0; margin-right: 0; padding-right: 0; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,.18); }
       .implication:last-child { border-bottom: 0; }
@@ -204,12 +242,16 @@
       .toolbar { align-items: start; flex-direction: column; gap: 10px; }
       .news-grid { grid-template-columns: 1fr; }
       .news-card, .news-card.featured { grid-column: auto; padding: 23px; min-height: 0; }
+      .executive-brief { padding: 15px 17px; }
+      .discovery-panel { grid-template-columns: 1fr; padding: 12px; }
+      .control.search-control { grid-column: auto; }
+      .decision-grid { grid-template-columns: 1fr; }
       .source { flex-direction: column; gap: 4px; }
       .implications { margin: 64px -16px 0; }
       .footer { flex-direction: column; padding: 26px 16px 34px; }
     }
     @media print {
-      .topbar, .filters, .footer-actions, .toast, dialog { display: none !important; }
+      .topbar, .filters, .discovery-panel, .footer-actions, .toast, dialog { display: none !important; }
       body { background: white; font-size: 12px; }
       .hero { background: white; color: var(--ink); }
       .hero-inner { padding: 30px 0; grid-template-columns: 1fr; }
@@ -250,6 +292,7 @@
           <div class="date-line" id="displayDate"></div>
           <h1 id="pageTitle">건설의 다음을<br>먼저 읽습니다.</h1>
           <p class="keyline" id="headline"></p>
+          <div class="executive-brief" id="executiveBrief" aria-label="오늘의 경영진 핵심 결론"></div>
         </div>
         <div class="hero-stats" id="heroStats" aria-label="오늘의 브리핑 통계"></div>
       </div>
@@ -265,6 +308,25 @@
             <h2 id="newsTitle">오늘의 주요 뉴스</h2>
           </div>
           <div class="result-count" id="resultCount" aria-live="polite"></div>
+        </div>
+        <div class="discovery-panel" role="search" aria-label="브리핑 검색과 조건 선택">
+          <label class="control search-control" for="searchInput">
+            <span>키워드 검색</span>
+            <input class="search-input" id="searchInput" type="search" placeholder="제목·본문·출처 검색" autocomplete="off">
+          </label>
+          <label class="control" for="dateFilter">
+            <span>브리핑 날짜</span>
+            <select class="control-select" id="dateFilter"></select>
+          </label>
+          <label class="control" for="regionFilter">
+            <span>지역</span>
+            <select class="control-select" id="regionFilter">
+              <option value="전체">국내 + 해외</option>
+              <option value="국내">국내</option>
+              <option value="해외">해외</option>
+            </select>
+          </label>
+          <button class="reset-btn" id="resetFilters" type="button">조건 초기화</button>
         </div>
         <div class="filters" id="filters" role="toolbar" aria-label="뉴스 분야 필터"></div>
         <div class="news-grid" id="newsGrid"></div>
@@ -299,9 +361,9 @@
       <ol>
         <li><code>data/briefings.json</code>을 엽니다.</li>
         <li>JSON 배열 맨 앞에 새 날짜 객체를 추가합니다.</li>
-        <li>GitHub에 반영하면 Vercel이 같은 주소로 자동 재배포합니다.</li>
+        <li>GitHub의 <code>main</code> 브랜치에 반영하면 GitHub Pages가 같은 주소로 자동 재배포합니다.</li>
       </ol>
-      <p>날짜별 객체가 자동으로 상단 아카이브 선택기에 표시되며, 모든 필터와 통계도 뉴스 배열을 기준으로 자동 계산됩니다.</p>
+      <p>새 기사에는 출처 유형, 원문 URL, 링크 확인일, 왜 중요한가, 필요한 대응을 함께 기록합니다. 날짜별 객체가 아카이브와 검색 조건에 자동으로 반영됩니다.</p>
     </div>
   </dialog>
 
@@ -444,7 +506,11 @@
       const CATEGORIES = ['전체', '스마트건설', '건설AI', '건설AX', '건설DX', 'Smart Construction'];
       let archive = JSON.parse(document.getElementById('briefing-data').textContent);
       let selectedDate = archive[0].date;
+      let selectedDateFilter = selectedDate;
       let selectedCategory = '전체';
+      let selectedRegion = '전체';
+      let searchQuery = '';
+      let duplicateRemovedCount = 0;
       const $ = (selector) => document.querySelector(selector);
 
       const escapeHTML = (value) => String(value ?? '').replace(/[&<>'"]/g, char => ({
@@ -459,10 +525,74 @@
         }
       };
 
+      const normalizeText = (value) => String(value ?? '').toLocaleLowerCase('ko-KR').replace(/[^0-9a-z가-힣]+/g, ' ').trim();
+      const canonicalURL = (value) => {
+        const href = safeURL(value);
+        if (!href) return '';
+        const url = new URL(href);
+        ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'fbclid', 'gclid'].forEach(key => url.searchParams.delete(key));
+        url.hash = '';
+        url.pathname = url.pathname.replace(/\/$/, '') || '/';
+        return url.href;
+      };
+      const titleGrams = (value) => {
+        const text = normalizeText(value).replaceAll(' ', '');
+        const grams = new Set();
+        for (let index = 0; index < Math.max(1, text.length - 2); index += 1) grams.add(text.slice(index, index + 3));
+        return grams;
+      };
+      const titleSimilarity = (left, right) => {
+        const a = titleGrams(left);
+        const b = titleGrams(right);
+        if (!a.size || !b.size) return 0;
+        const overlap = [...a].filter(value => b.has(value)).length;
+        return (2 * overlap) / (a.size + b.size);
+      };
+      function deduplicateArchive(items) {
+        const seen = [];
+        duplicateRemovedCount = 0;
+        return items
+          .sort((a, b) => b.date.localeCompare(a.date))
+          .map(brief => ({
+            ...brief,
+            news: brief.news.filter(item => {
+              if (item.relatedTo) {
+                seen.push(item);
+                return true;
+              }
+              const itemURL = canonicalURL(item.url);
+              const duplicate = seen.some(existing =>
+                (itemURL && itemURL === canonicalURL(existing.url)) || titleSimilarity(item.title, existing.title) >= .88
+              );
+              if (duplicate) {
+                duplicateRemovedCount += 1;
+                return false;
+              }
+              seen.push(item);
+              return true;
+            })
+          }));
+      }
+
       const currentBrief = () => archive.find(item => item.date === selectedDate) || archive[0];
-      const categoryCount = (brief, category) => category === '전체'
-        ? brief.news.length
-        : brief.news.filter(item => item.category === category).length;
+      const allNews = () => archive.flatMap(brief => brief.news.map(item => ({ ...item, briefingDate: brief.date })));
+      const matchesSearch = (item) => {
+        if (!searchQuery) return true;
+        const searchable = normalizeText([
+          item.title, item.summary, item.insight, item.whyItMatters, item.recommendedAction, item.source
+        ].join(' '));
+        return searchQuery.split(/\s+/).filter(Boolean).every(term => searchable.includes(term));
+      };
+      const baseFilteredNews = () => allNews().filter(item =>
+        (selectedDateFilter === '전체' || item.briefingDate === selectedDateFilter) &&
+        (selectedRegion === '전체' || item.region?.includes(selectedRegion)) &&
+        matchesSearch(item)
+      );
+      const filteredNews = () => baseFilteredNews().filter(item => selectedCategory === '전체' || item.category === selectedCategory);
+      const categoryCount = (category) => category === '전체'
+        ? baseFilteredNews().length
+        : baseFilteredNews().filter(item => item.category === category).length;
+      const findArticle = (id) => allNews().find(item => item.id === id);
 
       function renderArchive() {
         $('#archiveSelect').innerHTML = archive.map(item =>
@@ -471,9 +601,25 @@
         $('#archiveSelect').value = selectedDate;
       }
 
+      function renderSearchControls() {
+        $('#dateFilter').innerHTML = [
+          '<option value="전체">전체 날짜</option>',
+          ...archive.map(item => `<option value="${escapeHTML(item.date)}">${escapeHTML(item.date.replaceAll('-', '.'))}</option>`)
+        ].join('');
+        $('#dateFilter').value = selectedDateFilter;
+        $('#regionFilter').value = selectedRegion;
+        $('#searchInput').value = searchQuery;
+      }
+
       function renderHero(brief) {
         $('#displayDate').textContent = brief.displayDate;
         $('#headline').innerHTML = brief.headline;
+        const summary = Array.isArray(brief.executiveSummary) && brief.executiveSummary.length
+          ? brief.executiveSummary.slice(0, 3)
+          : [brief.headline.replace(/<[^>]+>/g, '')];
+        $('#executiveBrief').innerHTML = `
+          <span class="executive-brief-label">EXECUTIVE TAKEAWAY</span>
+          <ul>${summary.map(item => `<li>${escapeHTML(item)}</li>`).join('')}</ul>`;
         const fiveStar = brief.news.filter(item => item.importance === 5).length;
         const domestic = brief.news.filter(item => item.region.includes('국내')).length;
         $('#heroStats').innerHTML = [
@@ -490,45 +636,70 @@
         ).join('');
       }
 
-      function renderFilters(brief) {
+      function renderFilters() {
         $('#filters').innerHTML = CATEGORIES.map(category => `
           <button type="button" class="filter-btn" data-category="${escapeHTML(category)}" aria-pressed="${category === selectedCategory}">
-            ${escapeHTML(category)}<span class="count">${categoryCount(brief, category)}</span>
+            ${escapeHTML(category)}<span class="count">${categoryCount(category)}</span>
           </button>`).join('');
       }
 
       function renderNews(brief) {
-        const items = selectedCategory === '전체'
-          ? brief.news
-          : brief.news.filter(item => item.category === selectedCategory);
-        $('#resultCount').textContent = `${selectedCategory} · ${items.length}건`;
+        const items = filteredNews();
+        const dateLabel = selectedDateFilter === '전체' ? '전체 기간' : selectedDateFilter;
+        const regionLabel = selectedRegion === '전체' ? '국내·해외' : selectedRegion;
+        $('#resultCount').textContent = `${dateLabel} · ${regionLabel} · ${items.length}건`;
 
         if (!items.length) {
-          const message = brief.emptyCategories[selectedCategory] || '이 분야의 주요 신규 이슈가 없습니다.';
-          $('#newsGrid').innerHTML = `<div class="empty-state"><strong>${escapeHTML(selectedCategory)}</strong><br>${escapeHTML(message)}</div>`;
+          const defaultView = !searchQuery && selectedRegion === '전체' && selectedDateFilter === selectedDate;
+          const message = defaultView && selectedCategory !== '전체'
+            ? brief.emptyCategories?.[selectedCategory]
+            : '선택한 검색 조건에 맞는 기사가 없습니다. 조건을 바꾸거나 초기화해 주세요.';
+          $('#newsGrid').innerHTML = `<div class="empty-state"><strong>검색 결과 없음</strong><br>${escapeHTML(message || '이 분야의 주요 신규 이슈가 없습니다.')}</div>`;
           return;
         }
 
-        $('#newsGrid').innerHTML = items.map(item => `
-          <article class="news-card${item.featured ? ' featured' : ''}">
+        $('#newsGrid').innerHTML = items.map(item => {
+          const related = item.relatedTo ? findArticle(item.relatedTo) : null;
+          const verified = item.linkStatus === 'verified' && safeURL(item.url);
+          const broken = item.linkStatus === 'broken';
+          const isFeatured = item.featured && selectedDateFilter !== '전체';
+          return `
+          <article class="news-card${isFeatured ? ' featured' : ''}" data-article-id="${escapeHTML(item.id)}">
             <div>
               <div class="card-top">
                 <span class="category">${escapeHTML(item.category)} · ${escapeHTML(item.region)}</span>
                 <span class="importance" aria-label="중요도 ${item.importance}점">중요도 ${item.importance}/5</span>
               </div>
               <h3>${escapeHTML(item.title)}</h3>
-              ${item.featured ? '' : `<p class="summary">${escapeHTML(item.summary)}</p>`}
+              <div class="trust-row" aria-label="출처 신뢰도 정보">
+                <span class="trust-badge source-type">${escapeHTML(item.sourceType || '출처 확인')}</span>
+                <span class="trust-badge ${verified ? 'verified' : 'unverified'}">${verified ? `원문 확인 · ${escapeHTML(item.checkedAt || item.briefingDate)}` : broken ? `링크 점검 필요 · ${escapeHTML(item.checkedAt || item.briefingDate)}` : '원문 링크 미확인'}</span>
+              </div>
+              ${related ? `<p class="follow-up">후속 보도 · ${escapeHTML(related.title)}${item.updateNote ? ` — ${escapeHTML(item.updateNote)}` : ''}</p>` : ''}
+              ${isFeatured ? '' : `<p class="summary">${escapeHTML(item.summary)}</p>`}
             </div>
             <div>
-              ${item.featured ? `<p class="summary">${escapeHTML(item.summary)}</p>` : ''}
+              ${isFeatured ? `<p class="summary">${escapeHTML(item.summary)}</p>` : ''}
               <div class="insight"><span class="insight-label">산업 시사점</span><p>${escapeHTML(item.insight)}</p></div>
+              <div class="decision-grid">
+                <div class="decision-block">
+                  <span class="decision-label">왜 중요한가</span>
+                  <p>${escapeHTML(item.whyItMatters || item.insight)}</p>
+                </div>
+                <div class="decision-block action">
+                  <span class="decision-label">우리에게 필요한 대응</span>
+                  <p>${escapeHTML(item.recommendedAction || '관련 사업과 현장에 적용 가능한 범위를 검토해야 합니다.')}</p>
+                </div>
+              </div>
               <div class="source">
                 <span>출처 · ${escapeHTML(item.source)}</span>
                 <time datetime="${escapeHTML(item.published)}">보도일 · ${escapeHTML(item.published)}</time>
-                ${safeURL(item.url) ? `<a class="article-link" href="${escapeHTML(safeURL(item.url))}" target="_blank" rel="noopener noreferrer">원문 기사 보기 ↗</a>` : ''}
+                <time datetime="${escapeHTML(item.briefingDate)}">브리핑 등록일 · ${escapeHTML(item.briefingDate)}</time>
+                ${safeURL(item.url) && !broken ? `<a class="article-link" href="${escapeHTML(safeURL(item.url))}" target="_blank" rel="noopener noreferrer">원문 기사 보기 ↗</a>` : ''}
               </div>
             </div>
-          </article>`).join('');
+          </article>`;
+        }).join('');
       }
 
       function renderImplications(brief) {
@@ -546,7 +717,8 @@
         document.title = `${brief.date} | Construction Intelligence Brief`;
         renderHero(brief);
         renderSignals(brief);
-        renderFilters(brief);
+        renderSearchControls();
+        renderFilters();
         renderNews(brief);
         renderImplications(brief);
       }
@@ -594,12 +766,48 @@
         const button = event.target.closest('[data-category]');
         if (!button) return;
         selectedCategory = button.dataset.category;
-        renderFilters(currentBrief());
+        renderFilters();
         renderNews(currentBrief());
+      });
+      $('#searchInput').addEventListener('input', event => {
+        searchQuery = normalizeText(event.target.value);
+        renderFilters();
+        renderNews(currentBrief());
+      });
+      $('#dateFilter').addEventListener('change', event => {
+        selectedDateFilter = event.target.value;
+        selectedCategory = '전체';
+        if (selectedDateFilter !== '전체') {
+          selectedDate = selectedDateFilter;
+          $('#archiveSelect').value = selectedDate;
+          render();
+          return;
+        }
+        renderFilters();
+        renderNews(currentBrief());
+      });
+      $('#regionFilter').addEventListener('change', event => {
+        selectedRegion = event.target.value;
+        selectedCategory = '전체';
+        renderFilters();
+        renderNews(currentBrief());
+      });
+      $('#resetFilters').addEventListener('click', () => {
+        searchQuery = '';
+        selectedRegion = '전체';
+        selectedCategory = '전체';
+        selectedDateFilter = selectedDate;
+        renderSearchControls();
+        renderFilters();
+        renderNews(currentBrief());
+        $('#searchInput').focus();
       });
       $('#archiveSelect').addEventListener('change', event => {
         selectedDate = event.target.value;
+        selectedDateFilter = selectedDate;
         selectedCategory = '전체';
+        selectedRegion = '전체';
+        searchQuery = '';
         render();
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
@@ -620,14 +828,16 @@
           if (!Array.isArray(externalArchive) || !externalArchive.length) {
             throw new Error('브리핑 데이터가 비어 있습니다.');
           }
-          archive = externalArchive.sort((a, b) => b.date.localeCompare(a.date));
+          archive = deduplicateArchive(externalArchive);
           selectedDate = archive[0].date;
+          selectedDateFilter = selectedDate;
         } catch (error) {
           console.warn('외부 브리핑 데이터를 불러오지 못해 내장 데이터를 표시합니다.', error);
           showToast('최신 데이터를 불러오지 못해 저장된 브리핑을 표시합니다.');
         }
         renderArchive();
         render();
+        if (duplicateRemovedCount) showToast(`중복 기사 ${duplicateRemovedCount}건을 자동 제외했습니다.`);
       }
 
       initialize();
