@@ -142,7 +142,9 @@
     }
     .insight-label { display: block; color: var(--teal); font-size: 11px; font-weight: 900; letter-spacing: .08em; margin-bottom: 6px; }
     .insight p { margin: 0; font-size: 14px; }
-    .source { margin-top: auto; padding-top: 18px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 16px; color: #66757c; font-size: 12px; }
+    .source { margin-top: auto; padding-top: 18px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px 16px; color: #66757c; font-size: 12px; }
+    .article-link { color: var(--ink); font-weight: 800; text-decoration: none; border-bottom: 1px solid currentColor; }
+    .article-link:hover { color: var(--accent); }
     .empty-state { grid-column: 1 / -1; padding: 52px 28px; border: 1px dashed #b9b5ac; text-align: center; color: #65757c; background: rgba(255,255,255,.35); }
 
     .implications { margin-top: 88px; background: var(--navy); color: white; padding: clamp(30px, 5vw, 58px); position: relative; overflow: hidden; }
@@ -448,6 +450,14 @@
       const escapeHTML = (value) => String(value ?? '').replace(/[&<>'"]/g, char => ({
         '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
       })[char]);
+      const safeURL = (value) => {
+        try {
+          const url = new URL(value);
+          return ['http:', 'https:'].includes(url.protocol) ? url.href : '';
+        } catch {
+          return '';
+        }
+      };
 
       const currentBrief = () => archive.find(item => item.date === selectedDate) || archive[0];
       const categoryCount = (brief, category) => category === '전체'
@@ -512,7 +522,11 @@
             <div>
               ${item.featured ? `<p class="summary">${escapeHTML(item.summary)}</p>` : ''}
               <div class="insight"><span class="insight-label">산업 시사점</span><p>${escapeHTML(item.insight)}</p></div>
-              <div class="source"><span>출처 · ${escapeHTML(item.source)}</span><time datetime="${escapeHTML(item.published)}">보도일 · ${escapeHTML(item.published)}</time></div>
+              <div class="source">
+                <span>출처 · ${escapeHTML(item.source)}</span>
+                <time datetime="${escapeHTML(item.published)}">보도일 · ${escapeHTML(item.published)}</time>
+                ${safeURL(item.url) ? `<a class="article-link" href="${escapeHTML(safeURL(item.url))}" target="_blank" rel="noopener noreferrer">원문 기사 보기 ↗</a>` : ''}
+              </div>
             </div>
           </article>`).join('');
       }

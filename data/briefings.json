@@ -20,7 +20,8 @@
         "insight": "Physical AI의 상용화 단위가 ‘자율 장비 한 대’에서 Vehicle + Road + Cloud Dispatch + Lifecycle O&M을 묶은 운영체계로 이동하고 있습니다. 통제된 광산·대규모 토공에서 검증된 Fleet 운영모델은 향후 댐·도로·터널 포털 등 반복 운반이 많은 건설현장으로 확산될 가능성이 큽니다.",
         "source": "SANY Group / PR Newswire",
         "published": "2026-08-20",
-        "region": "해외 · 오늘의 Physical AI 핵심"
+        "region": "해외 · 오늘의 Physical AI 핵심",
+        "url": "https://www.prnewswire.com/news-releases/sany-ships-its-first-autonomous-mining-trucks-to-south-america-302855920.html"
       },
       {
         "id": "20260821-bentley-yii-ai-data",
@@ -32,7 +33,8 @@
         "insight": "선도 인프라 프로젝트에서 AI는 차별화 기능보다 기본 역량에 가까워지고 있습니다. 다만 AI 성능을 만드는 핵심 자산은 단발성 BIM 파일이 아니라 설계·시공·운영 정보를 계속 연결하는 Persistent Data Estate입니다. 터널사업도 CDE와 4D 모델을 준공 이후 계측·점검·보수 데이터까지 이어야 AI 활용가치가 누적됩니다.",
         "source": "Highways Today / Bentley YII 2026",
         "published": "2026-08-20",
-        "region": "해외 · 인프라 DX 분석"
+        "region": "해외 · 인프라 DX 분석",
+        "url": "https://highways.today/2026/08/20/bentley-yii-2026-finalists/"
       }
     ],
     "emptyCategories": {
@@ -101,7 +103,8 @@
         "insight": "건설 AX가 대형 민간 건설사를 넘어 지역 개발공사와 공공 발주기관으로 확대되는 신호입니다. Data Integration → 업무 재설계 → AI Copilot → Agent → 사업·현장 의사결정의 순서로 발전하면 공공 발주자형 Construction AX 모델이 될 수 있습니다.",
         "source": "연합뉴스",
         "published": "2026-08-19",
-        "region": "국내 · 오늘의 AX 핵심"
+        "region": "국내 · 오늘의 AX 핵심",
+        "url": "https://www.yna.co.kr/view/AKR20260819124200062"
       }
     ],
     "emptyCategories": {
