@@ -2,93 +2,89 @@
   {
     "date": "2026-08-22",
     "displayDate": "2026년 8월 22일 · 토요일 · 06:00 KST",
-    "headline": "건설기술의 경쟁은 도구 도입을 넘어, <strong>운영 통합 + 사람의 책임 통제</strong>를 설계하는 단계로 이동하고 있습니다.",
+    "headline": "최근 24시간의 핵심 변화는 <strong>주택건설 데이터 플랫폼의 대형 인수와 AI 안전관리의 책임 체계 부상</strong>이다.",
     "executiveSummary": [
-      "미국 건설사 조사에서 드론은 현장 진행관리 중심의 일상 도구로 확산됐지만, 규제와 전문인력 부족이 다음 확산의 병목으로 확인됐습니다.",
-      "NVIDIA와 Cloverleaf의 협력은 데이터센터 개발에서 부지·전력·냉각·컴퓨팅·시설운영을 설계 초기부터 함께 최적화하는 통합 엔지니어링 흐름을 보여줍니다.",
-      "AI 안전 자동화가 확대돼도 최종 법적 책임은 시공자에게 남으므로, 기술 도입과 동시에 사람의 승인·대응 절차를 명확히 해야 합니다."
+      "CoStar Group이 주택건설 데이터·소프트웨어 기업 Zonda를 8억 달러에 인수 완료하면서 건설 데이터, 공간정보, 디지털 트윈 역량의 통합 가능성이 커졌다.",
+      "건설현장 AI 안전기술은 위험 탐지 자동화를 넘어 경보 이후 조치, 책임 소재, 데이터 증적을 포함한 운영체계 설계가 중요하다는 분석이 제기됐다.",
+      "국내 스마트건설·건설 AX 분야에서는 검색 시간창 안에 최초 공개된 것으로 확인할 만한 주요 신규 이슈가 제한적이었다."
     ],
     "signals": [
-      {"label": "TODAY'S FOCUS", "value": "Drone Adoption 36%", "focus": true},
-      {"label": "DESIGN STACK", "value": "Site → Power → Cooling → Compute"},
-      {"label": "SAFETY CONTROL", "value": "Assistive AI + Human Response"},
-      {"label": "LEADERSHIP MOVE", "value": "Automation Governance"}
+      {
+        "label": "TODAY'S FOCUS",
+        "value": "건설 데이터 통합",
+        "focus": true
+      },
+      {
+        "label": "AI/AX SIGNAL",
+        "value": "안전 AI 책임체계"
+      },
+      {
+        "label": "DATA LAYER",
+        "value": "필지·공간 데이터 결합"
+      },
+      {
+        "label": "MARKET MOVE",
+        "value": "8억달러 플랫폼 인수"
+      }
     ],
     "news": [
       {
-        "id": "20260822-abc-construction-drone-survey",
-        "category": "Smart Construction",
-        "importance": 5,
-        "featured": true,
-        "title": "ABC 조사: 미국 건설사 36%가 드론 활용…진행관리 중심으로 일상화",
-        "summary": "Associated Builders and Contractors(ABC)의 첫 드론 활용 조사에서 응답 회원사의 36%가 드론을 운용한다고 답했습니다. 주요 용도는 현장 진행관리 80.8%, 마케팅·미디어 77.5%, 검사·매핑 50%였으며, 응답자의 74% 이상은 상업건설 업체였습니다. 확산의 주요 장애물은 규제·컴플라이언스 53.5%, 교육·인력 43.4%, 제한된 활용사례 37.4%로 나타났습니다.",
-        "insight": "드론은 일부 혁신 현장의 실험 장비를 넘어 진행관리와 검사 데이터를 반복 수집하는 표준 현장 도구로 이동하고 있습니다. 다음 생산성 격차는 기체 보유 대수가 아니라 촬영 데이터를 공정·품질·BIM 체계에 연결하고, 규제와 조종 인력을 운영 표준으로 관리하는 능력에서 발생합니다.",
-        "whyItMatters": "Reality Capture의 현장 보급이 일정 수준을 넘으면 경쟁력은 촬영 자체보다 데이터를 의사결정과 증빙에 재사용하는 체계에서 결정되기 때문입니다.",
-        "recommendedAction": "드론 활용 KPI를 촬영 횟수가 아닌 공정 업데이트 시간, 검사 소요시간, 재작업 감소와 연결하고 규제·자격·데이터 보관 절차를 표준화해야 합니다.",
-        "source": "The Daily Reporter · ABC 조사",
-        "sourceType": "언론 보도",
-        "published": "2026-08-21",
-        "region": "해외 · 미국 건설기술 도입",
-        "url": "https://dailyreporter.com/2026/08/21/more-than-one-third-of-abc-construction-companies-now-fly-drones/",
-        "linkStatus": "verified",
-        "checkedAt": "2026-08-22"
-      },
-      {
-        "id": "20260822-cloverleaf-nvidia-dsx",
+        "id": "20260822-costar-zonda-data-platform",
         "category": "건설DX",
         "importance": 4,
-        "featured": false,
-        "title": "Cloverleaf·NVIDIA, 데이터센터 부지부터 운영까지 DSX로 통합",
-        "summary": "Cloverleaf Infrastructure는 NVIDIA와 미국 AI 데이터센터 인프라 개발을 위한 전략적 파트너십을 체결했다고 발표했습니다. Cloverleaf는 NVIDIA DSX 플랫폼을 적용해 부지, 전력, 냉각, 컴퓨팅과 시설 의사결정을 설계 초기부터 함께 검토하고, 운영 단계에서는 에너지 사용과 컴퓨팅 용량을 최적화할 계획입니다. NVIDIA는 Cloverleaf에 소수지분 투자도 단행했습니다.",
-        "insight": "데이터센터 개발의 Digital Twin 범위가 건물 모델에 머물지 않고 전력·냉각·IT 부하·시설운영을 하나의 의사결정 체계로 연결하는 방향으로 확대되고 있습니다. 이는 설계–시공–운영 조직이 각자 최적화하는 방식에서 프로젝트 전체 제약조건을 함께 다루는 통합 엔지니어링으로의 전환입니다.",
-        "whyItMatters": "전력과 냉각 제약이 큰 AI 인프라는 건축·설비·컴퓨팅 결정을 초기에 함께 최적화해야 개발 속도와 운영 효율을 동시에 확보할 수 있기 때문입니다.",
-        "recommendedAction": "대형 복합시설과 데이터센터 사업에서 부지·전력·냉각·설비·운영 KPI를 단일 의사결정 모델로 연결하는 사전설계 체계를 구축해야 합니다.",
-        "source": "Cloverleaf Infrastructure / PR Newswire",
-        "sourceType": "공식 발표",
+        "featured": true,
+        "title": "CoStar, 주택건설 데이터 플랫폼 Zonda 8억 달러 인수 완료",
+        "summary": "사실: CoStar Group은 2026년 8월 21일 Zonda 인수를 8억 달러 현금 거래로 완료했다고 발표했다. Zonda는 3,000개 이상의 고객에게 토지 확보, 개발계획, 공사 현황, 분양·판매와 관련된 필지 단위 데이터와 주택건설 소프트웨어를 제공한다. CoStar는 Zonda의 시각화 역량과 Matterport 공간기술을 결합할 기회도 제시했다.",
+        "insight": "분석: 이번 거래는 건설 DX의 경쟁축이 개별 업무 소프트웨어에서 데이터 소유권과 전 생애주기 연결성으로 이동하고 있음을 보여준다. 필지·공사현황·판매 데이터가 3차원 공간정보와 연결되면 계획 대비 실적, 공정 예측, 원가·수요 시뮬레이션을 지원하는 Digital Twin 데이터 계층으로 발전할 수 있다. 다만 공식 발표는 기술 결합의 가능성을 제시한 단계이므로 실제 제품 통합과 생산성 개선 효과는 후속 검증이 필요하다.",
+        "whyItMatters": "설계·시공 데이터뿐 아니라 토지, 시장, 금융, 판매 데이터를 통합한 플랫폼이 건설 의사결정의 중심으로 부상할 수 있기 때문이다.",
+        "recommendedAction": "건설사는 BIM과 현장 데이터를 필지·원가·분양 데이터에 연결할 수 있도록 공통 식별체계와 API 기반 데이터 아키텍처를 점검해야 한다.",
+        "source": "CoStar Group",
+        "sourceType": "공식 발표·기업 홍보성",
         "published": "2026-08-21",
-        "region": "해외 · 데이터센터 통합 DX",
-        "url": "https://www.prnewswire.com/news-releases/cloverleaf-infrastructure-forms-strategic-partnership-with-nvidia-to-accelerate-data-center-infrastructure-development-302857329.html",
+        "region": "해외 · 미국 주택건설 데이터 시장",
+        "url": "https://www.costargroup.com/press-room/2026/costar-group-completes-acquisition-zonda-expanding-new-home-data-analytics-and",
         "linkStatus": "verified",
         "checkedAt": "2026-08-22"
       },
       {
-        "id": "20260822-ai-construction-safety-liability",
+        "id": "20260822-ai-site-safety-accountability",
         "category": "건설AI",
         "importance": 3,
         "featured": false,
-        "title": "AI 안전 자동화가 확대돼도 현장 책임은 사람에게 남는다",
-        "summary": "미국 건설전문 매체의 전문가 기고는 드론·영상분석·웨어러블 센서·안전 챗봇이 위험 탐지와 경보를 자동화하고 있지만, 현장 대응과 법규 준수 책임은 여전히 시공자에게 있다고 분석했습니다. 기술은 현재 사람을 대체하기보다 보조하는 형태가 중심이며, 자동 경보 이후 신속한 조치와 교육 체계가 함께 작동해야 한다고 강조했습니다.",
-        "insight": "건설 안전 AI의 성패는 탐지 정확도만으로 평가할 수 없습니다. 누가 경보를 받고, 얼마 안에 확인하며, 어떤 작업중지 권한을 행사하고, 조치 결과를 어떻게 기록할지까지 업무 흐름으로 설계해야 실제 위험과 법적 노출을 줄일 수 있습니다.",
-        "whyItMatters": "AI가 위험을 발견해도 사람이 적시에 대응하지 않으면 사고 예방과 책임 관리라는 최종 성과로 이어지지 않기 때문입니다.",
-        "recommendedAction": "안전 AI 도입 시 경보 등급, 담당자, 응답시간, 작업중지 권한, 조치 증빙을 포함한 Human-in-the-loop 운영 절차를 계약·안전계획에 반영해야 합니다.",
-        "source": "The Daily Reporter · BridgeTower Media Newswires",
-        "sourceType": "전문가 기고",
+        "title": "건설현장 AI 안전관리, 자동 탐지보다 대응 절차와 법적 책임이 핵심",
+        "summary": "사실: 미국 건설 전문매체 The Daily Reporter는 AI 기반 드론, 영상 모니터링, 웨어러블 센서와 챗봇이 현장의 위험요소 및 안전계획 위반 가능성을 탐지하는 활용 사례를 소개했다. 기고문은 이러한 기술이 보조수단이며, 경보 이후 실제 조치와 규정 준수 책임은 여전히 원도급자와 현장 관리체계에 있다고 지적했다.",
+        "insight": "분석: 안전 AI의 성과지표는 탐지 정확도만으로 설정해서는 안 된다. 경보 접수부터 작업중지, 담당자 확인, 시정조치, 재개 승인까지의 시간을 데이터로 남겨야 사고 예방과 법적 증적을 동시에 확보할 수 있다. 향후 Agentic AI가 작업중지나 장비 제어를 제안하고 Physical AI가 이를 실행하려면 사람의 승인 권한, 오탐 처리, 센서 장애 시 대체 절차를 먼저 설계해야 한다.",
+        "whyItMatters": "AI 경보를 도입하고도 후속 조치가 표준화되지 않으면 안전성과 생산성이 개선되지 않고 새로운 책임 공백만 발생할 수 있다.",
+        "recommendedAction": "현장별 AI 안전 경보에 대해 책임자, 응답시간, 작업중지 기준과 증적 보존 규칙을 포함한 인간 개입형 운영 프로토콜을 마련해야 한다.",
+        "source": "The Daily Reporter / BridgeTower Media Newswires",
+        "sourceType": "전문가 기고·언론 보도",
         "published": "2026-08-21",
-        "region": "해외 · 건설안전 거버넌스",
+        "region": "해외 · 미국 건설현장 안전·법률",
         "url": "https://dailyreporter.com/2026/08/21/ai-automation-improving-construction-site-safety/",
         "linkStatus": "verified",
         "checkedAt": "2026-08-22"
       }
     ],
     "emptyCategories": {
-      "스마트건설": "최근 24시간 내 국내 스마트건설 정책·현장 실증 중 원문 신규성과 산업 중요도를 모두 충족하는 독립 이슈는 확인되지 않았습니다.",
-      "건설AX": "최근 24시간 내 건설기업의 조직·업무·데이터를 AI 중심으로 재설계한다고 공식 발표한 독립적인 신규 이슈는 확인되지 않았습니다."
+      "스마트건설": "2026년 8월 21일 08:11 KST부터 8월 22일 08:11 KST까지 최초 공개된 것으로 확인할 만한 주요 국내 신규 이슈 없음.",
+      "건설AX": "최근 24시간 안에 건설기업의 업무·조직·의사결정 체계를 AI 중심으로 전환한 구체적인 신규 발표나 검증 사례 없음.",
+      "Smart Construction": "해외 검색에서 유지보수 공지와 기존 조사자료의 재보도는 확인됐으나 최초 공개일 기준을 충족하는 주요 신규 이슈로 선별하지 않음."
     },
     "implications": [
       {
-        "title": "Reality Capture는 보급 단계를 넘어 운영 표준화 단계에 들어갔습니다.",
-        "body": "드론의 현장 활용률이 높아질수록 차별화는 기체가 아니라 공정·검사·BIM 데이터와의 연결, 규제 대응, 전문인력과 증빙 관리에서 만들어집니다."
+        "title": "데이터 확보가 건설 DX의 시장 지배력을 좌우",
+        "body": "BIM 기능 자체보다 토지, 인허가, 공정, 원가, 공간, 판매 데이터를 얼마나 지속적으로 축적하고 연결하는지가 경쟁력이 되고 있다. 국내 건설사도 프로젝트 종료 후 데이터가 단절되지 않도록 자산 단위의 공통 ID와 데이터 소유·활용 조건을 계약에 반영할 필요가 있다."
       },
       {
-        "title": "고성능 인프라는 건축과 운영을 동시에 설계해야 합니다.",
-        "body": "부지·전력·냉각·컴퓨팅을 설계 초기에 통합하면 개별 분야 최적화로 생기는 병목을 줄일 수 있습니다. Digital Twin의 범위도 건물 형상에서 운영 제약과 성과까지 확장돼야 합니다."
+        "title": "안전 AI는 탐지 모델이 아니라 폐쇄형 실행 루프로 평가",
+        "body": "카메라나 센서가 위험을 찾는 것만으로는 사고를 줄일 수 없다. 탐지, 판단, 작업중지, 시정, 재개와 결과 학습이 하나의 데이터 루프로 연결돼야 하며 공정 지연과 오탐 비용까지 함께 측정해야 한다."
       },
       {
-        "title": "자동화가 커질수록 사람의 책임 지점은 더 명확해야 합니다.",
-        "body": "AI 경보와 자율 데이터 수집은 판단을 돕지만 책임을 대신하지 않습니다. 응답시간, 승인권자, 작업중지 권한과 조치 기록을 기술과 같은 수준으로 설계해야 합니다."
+        "title": "Agentic AI와 Physical AI 도입 전 권한 경계부터 정의",
+        "body": "AI가 일정 변경, 인력 재배치 또는 장비 정지를 제안·실행할수록 생산성과 안전의 잠재효과는 커지지만 오류의 영향도 확대된다. 자율 실행 가능 업무, 인간 승인 필수 업무, 비상시 수동 전환 조건을 데이터와 운영규정에 명시해야 한다."
       }
     ],
-    "closing": "현장 데이터 수집, 통합 설계와 AI 경보가 빠르게 확산되는 가운데, 경쟁력은 기술 보유보다 <span>데이터를 행동으로 바꾸는 운영체계</span>에서 결정됩니다."
+    "closing": "오늘의 한 줄: <span>건설 AI의 승부처는 더 똑똑한 모델보다 연결된 데이터와 실행 책임이다.</span>"
   },
   {
     "date": "2026-08-21",
@@ -100,10 +96,23 @@
       "지금은 자율장비 실증과 CDE·Digital Twin 구축을 하나의 Closed-loop Construction 로드맵으로 통합할 시점입니다."
     ],
     "signals": [
-      {"label": "TODAY'S FOCUS", "value": "Autonomous Fleet", "focus": true},
-      {"label": "AI SIGNAL", "value": "AI, flagship의 기본값으로"},
-      {"label": "DATA LAYER", "value": "Connected Digital Foundation"},
-      {"label": "MARKET MOVE", "value": "Pilot → Baseline"}
+      {
+        "label": "TODAY'S FOCUS",
+        "value": "Autonomous Fleet",
+        "focus": true
+      },
+      {
+        "label": "AI SIGNAL",
+        "value": "AI, flagship의 기본값으로"
+      },
+      {
+        "label": "DATA LAYER",
+        "value": "Connected Digital Foundation"
+      },
+      {
+        "label": "MARKET MOVE",
+        "value": "Pilot → Baseline"
+      }
     ],
     "news": [
       {
@@ -174,10 +183,23 @@
       "AI 판단을 실제 업무에 적용하려면 답변보다 근거·출처·변경 이력을 추적할 수 있는 검증 체계가 먼저 필요합니다."
     ],
     "signals": [
-      {"label": "TODAY'S FOCUS", "value": "Physics + AI", "focus": true},
-      {"label": "AX SIGNAL", "value": "공공 발주자의 전사 AX"},
-      {"label": "TRUST LAYER", "value": "Evidence-based AI"},
-      {"label": "NEXT STACK", "value": "Twin → Agent → Physical AI"}
+      {
+        "label": "TODAY'S FOCUS",
+        "value": "Physics + AI",
+        "focus": true
+      },
+      {
+        "label": "AX SIGNAL",
+        "value": "공공 발주자의 전사 AX"
+      },
+      {
+        "label": "TRUST LAYER",
+        "value": "Evidence-based AI"
+      },
+      {
+        "label": "NEXT STACK",
+        "value": "Twin → Agent → Physical AI"
+      }
     ],
     "news": [
       {
