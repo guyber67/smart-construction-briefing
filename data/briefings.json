@@ -1,5 +1,92 @@
 [
   {
+    "date": "2026-08-23",
+    "displayDate": "2026년 8월 23일 · 일요일 · 06:00 KST",
+    "headline": "건설 AI가 범용 보조도구를 넘어 <strong>도면→견적→CAD와 과거 기록→현재 의사결정</strong>을 연결하기 시작했습니다.",
+    "executiveSummary": [
+      "전문공종 AI가 건축 PDF에서 견적 범위를 만들고 동일 데이터를 CAD 배치로 직접 넘기면서, 반복 입력을 줄이는 설계·생산 연결형 워크플로가 구체화됐습니다.",
+      "건설사의 프로젝트 기록은 RAG와 지식그래프를 통해 견적·공정·장비·리스크 판단에 재사용할 수 있는 기업 고유 자산으로 부상하고 있습니다.",
+      "성과를 내려면 AI 모델보다 데이터의 맥락·출처·사용권을 보존하고, 전문가가 최종 판단하는 운영체계를 먼저 설계해야 합니다."
+    ],
+    "signals": [
+      {
+        "label": "TODAY'S FOCUS",
+        "value": "Drawing → Estimate → CAD",
+        "focus": true
+      },
+      {
+        "label": "AI SIGNAL",
+        "value": "Vertical Engineering AI"
+      },
+      {
+        "label": "DATA ASSET",
+        "value": "Corporate Project Memory"
+      },
+      {
+        "label": "TRUST LAYER",
+        "value": "Context + Provenance + Rights"
+      }
+    ],
+    "news": [
+      {
+        "id": "20260823-millworksuite-ai-estimating-cad",
+        "category": "건설AI",
+        "importance": 5,
+        "featured": true,
+        "title": "MillworkSuite, 건축 PDF를 견적·CAD 배치로 직접 연결하는 전문공종 AI 출시",
+        "summary": "사실: MillworkSuite는 8월 22일 목공·캐비닛 제작사를 위한 AI 견적 및 Direct-to-CAD 플랫폼을 정식 출시했다. 플랫폼은 건축 PDF에서 실명, 축척, 목공 유형과 치수를 읽어 가격이 포함된 작업범위를 만들고, 같은 데이터를 HOMAG iX·Microvellum·CabinetVision의 벽면별 캐비닛 배치로 내보낸다. 회사는 고객사 SMI Cabinetry가 제도 시간을 절반으로 줄였다고 밝혔으나, 이는 공급사 발표에 기반한 사례다.",
+        "insight": "분석: 건설 AI의 가치가 문서 요약에서 전문공종의 견적–상세설계–제작 데이터 연결로 이동하고 있다. 동일한 도면을 여러 단계에서 다시 측정하고 입력하는 대신 하나의 구조화된 Scope가 견적과 CAD를 함께 구동하면, 자동화의 성과를 시간 절감과 오류 감소로 직접 측정할 수 있다. 다만 도면 인식 정확도와 예외 상세에 대한 숙련 제도자의 검토가 필수다.",
+        "whyItMatters": "전문공종의 병목은 범용 AI 기능보다 반복적인 물량 산출과 CAD 재입력에 있으므로, 공정 전환점 사이의 데이터 단절을 없애는 제품이 즉각적인 생산성 효과를 만들 수 있기 때문이다.",
+        "recommendedAction": "반복 상세가 많은 전문공종을 선정해 도면 인식률, 견적 수정시간, CAD 재작업률과 숙련자 승인시간을 함께 측정하는 4주 단위 실증을 추진해야 한다.",
+        "source": "MillworkSuite·CLOUDSUFI / PR Newswire",
+        "sourceType": "공식 발표",
+        "published": "2026-08-22",
+        "region": "해외 · 미국 전문공종 AI",
+        "url": "https://www.prnewswire.com/news-releases/millworksuite-launches-ai-estimating-and-direct-to-cad-platform-that-cuts-drafting-time-in-half-302857729.html",
+        "linkStatus": "verified",
+        "checkedAt": "2026-08-23"
+      },
+      {
+        "id": "20260823-learning-contractor-project-memory",
+        "category": "건설AX",
+        "importance": 4,
+        "featured": false,
+        "title": "‘학습하는 건설사’ 부상…프로젝트 기록을 RAG·지식그래프로 재사용",
+        "summary": "사실: Highways Today는 8월 22일 기고에서 장비제어·텔레매틱스·드론·CDE·품질·원가 시스템이 남기는 기록을 기업의 프로젝트 기억으로 재구성하는 흐름을 분석했다. 글은 Autodesk 의뢰 조사에서 수집·분석된 건설 데이터의 62%가 의사결정에 쓰이지 않았다는 결과를 인용하고, 최근 연구가 회의 이력과 공정 제약정보에 RAG와 지식그래프를 적용하고 있다고 소개했다.",
+        "insight": "분석: 범용 모델은 한 회사가 특정 지반조건, 장비 구성이나 계약 문구에서 반복적으로 겪은 문제를 알지 못한다. 과거 프로젝트의 결과뿐 아니라 당시 조건·변경·판단근거를 연결해 검색할 수 있으면 견적, 공정계획, 장비선정과 리스크 검토의 품질을 높일 수 있다. 다만 과거 데이터를 그대로 정답으로 사용하지 않고 전문가 판단을 보조하는 구조가 필요하다.",
+        "whyItMatters": "AI 도구가 보편화될수록 경쟁사가 복제하기 어려운 차별점은 조직이 축적한 프로젝트 경험과 이를 현재 업무에 호출하는 능력이 되기 때문이다.",
+        "recommendedAction": "완료 프로젝트 3~5개를 대상으로 공정·원가·변경·회의·장비 기록에 공통 ID와 출처를 부여하고, 견적·공정 질문에 근거문서를 함께 반환하는 폐쇄형 RAG 실증을 시작해야 한다.",
+        "source": "Highways Today",
+        "sourceType": "전문가 기고",
+        "published": "2026-08-22",
+        "region": "해외 · 건설 지식경영·AX",
+        "url": "https://highways.today/2026/08/22/when-construction-starts-learning/",
+        "linkStatus": "verified",
+        "checkedAt": "2026-08-23"
+      }
+    ],
+    "emptyCategories": {
+      "스마트건설": "최근 24시간 내 국내 스마트건설 정책·현장 실증 중 원문 신규성과 산업 중요도를 모두 충족하는 독립 이슈는 확인되지 않았습니다.",
+      "건설DX": "프로젝트 데이터와 CDE·Digital Twin 관련 신호는 확인됐으나, 조직의 지식 재사용과 업무 전환 관점이 더 강해 건설AX 분야에 배치했습니다.",
+      "Smart Construction": "최근 24시간 내 자율장비·로봇·드론·OSC의 신규 현장 적용으로 확인할 수 있는 주요 해외 발표는 없었습니다."
+    },
+    "implications": [
+      {
+        "title": "Vertical AI는 전문공종의 데이터 재입력을 먼저 없앱니다.",
+        "body": "견적과 CAD를 같은 구조화 Scope로 구동하면 자동화 성과를 산출시간, 수정횟수와 재작업률로 명확히 측정할 수 있습니다. 범용 챗봇보다 업무 경계 사이의 반복 입력을 제거하는 것이 빠른 ROI를 만듭니다."
+      },
+      {
+        "title": "완료 프로젝트 기록은 기업 고유의 AI 자산입니다.",
+        "body": "과거의 원가·공정·장비·변경 결과에 당시 조건과 판단근거가 연결돼야 다음 프로젝트에서 재사용할 수 있습니다. 문서 보관을 넘어 맥락이 살아 있는 Corporate Project Memory가 필요합니다."
+      },
+      {
+        "title": "데이터 출처와 사용권이 AX의 상한을 결정합니다.",
+        "body": "발주자 CDE, 협력사 기록, 장비 OEM 플랫폼과 운영 데이터는 소유·사용 권한이 다릅니다. 계약 단계에서 보존기간, 재사용 범위, 기밀성과 AI 학습·검색 허용조건을 명시해야 합니다."
+      }
+    ],
+    "closing": "오늘의 한 줄: <span>건설 AI의 다음 경쟁력은 도구가 아니라 전문업무와 기업의 기억을 연결하는 데이터 구조다.</span>"
+  },
+  {
     "date": "2026-08-22",
     "displayDate": "2026년 8월 22일 · 토요일 · 06:00 KST",
     "headline": "최근 24시간의 핵심 변화는 <strong>주택건설 데이터 플랫폼의 대형 인수와 AI 안전관리의 책임 체계 부상</strong>이다.",
@@ -44,7 +131,7 @@
         "region": "해외 · 미국 주택건설 데이터 시장",
         "url": "https://www.costargroup.com/press-room/2026/costar-group-completes-acquisition-zonda-expanding-new-home-data-analytics-and",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-22"
+        "checkedAt": "2026-08-23"
       },
       {
         "id": "20260822-ai-site-safety-accountability",
@@ -62,7 +149,7 @@
         "region": "해외 · 미국 건설현장 안전·법률",
         "url": "https://dailyreporter.com/2026/08/21/ai-automation-improving-construction-site-safety/",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-22"
+        "checkedAt": "2026-08-23"
       }
     ],
     "emptyCategories": {
@@ -131,7 +218,7 @@
         "region": "해외 · 오늘의 Physical AI 핵심",
         "url": "https://www.prnewswire.com/news-releases/sany-ships-its-first-autonomous-mining-trucks-to-south-america-302855920.html",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-22"
+        "checkedAt": "2026-08-23"
       },
       {
         "id": "20260821-bentley-yii-ai-data",
@@ -149,7 +236,7 @@
         "region": "해외 · 인프라 DX 분석",
         "url": "https://highways.today/2026/08/20/bentley-yii-2026-finalists/",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-22"
+        "checkedAt": "2026-08-23"
       }
     ],
     "emptyCategories": {
@@ -250,7 +337,7 @@
         "region": "국내 · 오늘의 AX 핵심",
         "url": "https://www.yna.co.kr/view/AKR20260819124200062",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-22"
+        "checkedAt": "2026-08-23"
       }
     ],
     "emptyCategories": {
