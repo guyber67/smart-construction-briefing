@@ -1,5 +1,75 @@
 [
   {
+    "date": "2026-08-24",
+    "displayDate": "2026년 8월 24일 · 월요일 · 06:00 KST",
+    "headline": "홍콩 공공공사의 건설로봇 정책이 <strong>시범 도입에서 의무 적용·유지관리·기술 인증</strong>으로 확장되고 있습니다.",
+    "executiveSummary": [
+      "홍콩 발전국은 20개가 넘는 공공공사에서 원격 타워크레인, 용접·천공 로봇과 공정 모니터링 드론을 적용하고 있다고 공개했습니다.",
+      "드론 운반, 원격 압토, 자동 도장·연마, AI 기반 시설 순찰까지 적용 범위가 시공 공정에서 운영·유지관리로 넓어지고 있습니다.",
+      "경영진은 개별 로봇 구매보다 적용 공정의 표준화, 원격관제 데이터와 성과 검증, 조달 가능한 기술 인증체계를 함께 설계해야 합니다."
+    ],
+    "signals": [
+      {
+        "label": "TODAY'S FOCUS",
+        "value": "Pilot → Mandate → Standard",
+        "focus": true
+      },
+      {
+        "label": "ROBOTICS SCALE",
+        "value": "20+ Public Works Projects"
+      },
+      {
+        "label": "LIFECYCLE",
+        "value": "Construction → Inspection & O&M"
+      },
+      {
+        "label": "TRUST LAYER",
+        "value": "Technical Specification & Certification"
+      }
+    ],
+    "news": [
+      {
+        "id": "20260824-hk-public-works-construction-robots",
+        "category": "Smart Construction",
+        "importance": 5,
+        "featured": true,
+        "title": "홍콩, 20개 이상 공공공사에 건설로봇 적용…시공에서 AI 유지관리까지 확대",
+        "summary": "사실: 홍콩 발전국은 8월 23일, 2025년 12월부터 모든 공공공사가 적합한 공정에 고효율 건설로봇을 사용하도록 한 정책에 따라 현재 20개가 넘는 공사에서 원격 타워크레인, 용접로봇, 천공로봇과 공정 모니터링 드론을 적용하고 있다고 발표했다. 사례에는 경사지에서 1회 약 60kg의 공구·자재를 운반하는 드론, 홍콩 최초의 원격제어·지능형 압토 모니터링 시스템, 수작업 대비 효율을 4배 높였다고 발표한 자동 도장·연마 로봇, AI 영상과 센서를 활용한 시설 점검 로봇이 포함됐다.",
+        "insight": "분석: 이번 발표의 핵심은 로봇 한 대의 성능보다 정부가 적용 의무화, 현장 실증, 유지관리 확장과 기술 규격·인증을 하나의 확산 체계로 묶고 있다는 점이다. 시공 로봇이 남기는 작업·품질 데이터와 점검 로봇의 운영 데이터를 공통 자산 ID로 연결하면 공공 인프라의 폐쇄형 건설·유지관리 루프로 발전할 수 있다. 다만 효율 수치는 정부 발표 사례이므로 공정별 기준선과 장기 운영비를 독립적으로 검증해야 한다.",
+        "whyItMatters": "공공 발주자가 적용 가능한 공정을 지정하고 기술 규격을 표준화하면 건설로봇 수요가 단발성 실증에서 반복 가능한 조달시장으로 전환될 수 있기 때문이다.",
+        "recommendedAction": "반복성과 위험도가 높은 운반·도장·천공·점검 공정을 선정해 작업시간, 인력 노출시간, 재작업률, 장비 가동률과 원격개입 횟수를 공통 KPI로 측정하고, 발주 규격에 데이터 제출 형식과 인간 승인 기준을 포함해야 한다.",
+        "source": "홍콩특별행정구 발전국(Development Bureau)",
+        "sourceType": "공식 발표",
+        "published": "2026-08-23",
+        "region": "해외 · 홍콩 공공공사 로봇",
+        "url": "https://www.devb.gov.hk/en/home/my_blog/index_id_1617.html",
+        "linkStatus": "verified",
+        "checkedAt": "2026-08-24"
+      }
+    ],
+    "emptyCategories": {
+      "스마트건설": "최근 24시간 내 국내 정책·현장 실증 중 원문 신규성과 산업 중요도를 모두 충족하는 독립 이슈는 확인되지 않았습니다.",
+      "건설AI": "AI 영상·센서 활용은 홍콩 공공공사 로봇 사례에 포함됐으나 Physical AI와 공공 조달 관점이 더 강해 Smart Construction 분야에 통합했습니다.",
+      "건설AX": "최근 24시간 내 건설기업의 조직·업무·의사결정 체계를 AI 중심으로 재설계한 구체적인 신규 발표는 확인되지 않았습니다.",
+      "건설DX": "최근 24시간 내 BIM·CDE·Digital Twin의 신규 현장 적용으로 원문과 공개시각을 검증할 수 있는 주요 독립 이슈는 없었습니다."
+    },
+    "implications": [
+      {
+        "title": "공공 조달이 건설로봇의 확산 속도를 결정합니다.",
+        "body": "적합 공정에 로봇 사용을 요구하고 검증된 유형을 발주 규격으로 전환하면 시장은 시연 중심에서 반복 구매 중심으로 이동합니다. 국내도 기술명보다 적용 공정, 성능 기준과 데이터 제출 요건을 명확히 해야 합니다."
+      },
+      {
+        "title": "Physical AI의 범위가 시공에서 자산 운영으로 넓어집니다.",
+        "body": "운반·압토·도장 로봇과 AI 순찰·시설점검 로봇을 같은 데이터 체계로 연결하면 건설 단계의 품질 기록이 운영 단계의 기준선이 됩니다. 공통 자산 ID와 작업 이력의 연속성이 핵심입니다."
+      },
+      {
+        "title": "확산 전에는 성능·안전·원격개입을 함께 검증해야 합니다.",
+        "body": "공급자 또는 정부가 제시한 속도 향상만으로 투자성을 판단하기 어렵습니다. 장비 가동률, 작업자 위험 노출, 오탐·오작동, 원격개입 횟수, 유지보수비와 재작업률을 동일한 실증에서 측정해야 합니다."
+      }
+    ],
+    "closing": "오늘의 한 줄: <span>건설로봇의 상용화는 기계 성능이 아니라 의무 적용, 데이터 검증과 기술 표준이 함께 움직일 때 시작됩니다.</span>"
+  },
+  {
     "date": "2026-08-23",
     "displayDate": "2026년 8월 23일 · 일요일 · 06:00 KST",
     "headline": "엄격한 공개시각 검증 결과, <strong>5개 분야 모두 주요 신규 이슈 없음</strong>",
@@ -96,7 +166,7 @@
         "region": "해외 · 미국 주택건설 데이터 시장",
         "url": "https://www.costargroup.com/press-room/2026/costar-group-completes-acquisition-zonda-expanding-new-home-data-analytics-and",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-23"
+        "checkedAt": "2026-08-24"
       },
       {
         "id": "20260822-ai-site-safety-accountability",
@@ -114,7 +184,7 @@
         "region": "해외 · 미국 건설현장 안전·법률",
         "url": "https://dailyreporter.com/2026/08/21/ai-automation-improving-construction-site-safety/",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-23"
+        "checkedAt": "2026-08-24"
       }
     ],
     "emptyCategories": {
@@ -183,7 +253,7 @@
         "region": "해외 · 오늘의 Physical AI 핵심",
         "url": "https://www.prnewswire.com/news-releases/sany-ships-its-first-autonomous-mining-trucks-to-south-america-302855920.html",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-23"
+        "checkedAt": "2026-08-24"
       },
       {
         "id": "20260821-bentley-yii-ai-data",
@@ -201,7 +271,7 @@
         "region": "해외 · 인프라 DX 분석",
         "url": "https://highways.today/2026/08/20/bentley-yii-2026-finalists/",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-23"
+        "checkedAt": "2026-08-24"
       }
     ],
     "emptyCategories": {
@@ -302,7 +372,7 @@
         "region": "국내 · 오늘의 AX 핵심",
         "url": "https://www.yna.co.kr/view/AKR20260819124200062",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-23"
+        "checkedAt": "2026-08-24"
       }
     ],
     "emptyCategories": {
