@@ -1,5 +1,92 @@
 [
   {
+    "date": "2026-08-25",
+    "displayDate": "2026년 8월 25일 · 화요일 · 06:00 KST",
+    "headline": "건설 AI의 실전 가치는 <strong>현장 물류의 실시간 제어와 센서 데이터의 의미 기반 연결</strong>에서 구체화되고 있습니다.",
+    "executiveSummary": [
+      "호주 대형 인프라 프로젝트에서는 배송 예약, 출입 인증, 위험 감지와 계약자 온보딩을 하나의 AI 물류 운영체계로 연결하고 있습니다.",
+      "새로운 시맨틱 Digital Twin 연구는 서로 다른 센서와 건물 상태를 W3C Web of Things 기반의 공통 의미체계로 묶어 구조건전성 모니터링의 확장성을 검증했습니다.",
+      "경영진은 AI 기능 수보다 실시간 현장 데이터의 공통 ID·이벤트 정의·인간 승인 절차를 우선 설계하고, 현장 KPI로 효과를 검증해야 합니다."
+    ],
+    "signals": [
+      {
+        "label": "TODAY'S FOCUS",
+        "value": "AI-enabled Construction Logistics",
+        "focus": true
+      },
+      {
+        "label": "FIELD LOOP",
+        "value": "Booking → Access → Hazard Alert"
+      },
+      {
+        "label": "DATA LAYER",
+        "value": "Semantic Digital Twin + WoT"
+      },
+      {
+        "label": "CONTROL",
+        "value": "Human-verified Decisions"
+      }
+    ],
+    "news": [
+      {
+        "id": "20260825-select-ai-construction-logistics",
+        "category": "건설AI",
+        "importance": 5,
+        "featured": true,
+        "title": "호주 대형 인프라 현장, AI로 배송·출입·안전·온보딩을 통합 관리",
+        "summary": "사실: Infrastructure Magazine은 8월 24일 Select Plant Australia가 대형 인프라 프로젝트에서 Delivery Management System과 AI를 결합해 물류계획, 현장 출입과 배송을 관리하는 사례를 보도했다. 빅토리아주의 도로·교량·트램 인프라가 교차하는 프로젝트에서 시스템은 5만1,000건 이상의 출입 이벤트를 처리했으며, AI 카메라와 차량번호 자동인식으로 차량을 확인·승인하고 공유구역의 보행자·자전거 위험을 탐지한다. 계약자 서류와 사진 증거의 부적합 가능성을 표시하는 AI도 시험 중이며 최종 출입·규정준수 결정은 권한 있는 사람이 검증한다.",
+        "insight": "분석: 건설 AI가 단일 영상탐지나 문서검토 기능을 넘어 배송 예약–게이트 인증–현장 이동–안전 경보–온보딩을 하나의 운영 흐름으로 연결하고 있다. 물류와 안전 이벤트를 공정계획에 연결하면 혼잡과 작업중단의 선행지표를 만들 수 있다. 다만 기사에 제시된 효과는 기업 사례 설명에 기반하며, 지연·비용·안전 개선의 독립적인 전후 비교 수치는 공개되지 않았다.",
+        "whyItMatters": "대형 인프라의 공정 차질은 개별 작업보다 배송 충돌, 제한된 출입구와 공유 장비의 조정 실패에서 시작되는 경우가 많아, AI가 실제 생산성에 기여할 수 있는 명확한 운영 접점이기 때문이다.",
+        "recommendedAction": "복수 협력사와 제한된 반입 동선이 있는 현장을 선정해 예약 준수율, 게이트 대기시간, 배송 충돌, 위험경보 후 조치시간과 수동 예외처리율을 기준선과 비교하는 물류 AI 실증을 추진해야 한다.",
+        "source": "Infrastructure Magazine / Select Plant Australia",
+        "sourceType": "언론 보도",
+        "published": "2026-08-24",
+        "region": "해외 · 호주 인프라 건설물류",
+        "url": "https://infrastructuremagazine.com.au/how-ai-is-transforming-construction-logistics-on-major-infrastructure-projects/",
+        "linkStatus": "verified",
+        "checkedAt": "2026-08-25"
+      },
+      {
+        "id": "20260825-semantic-digital-twin-shm",
+        "category": "건설DX",
+        "importance": 3,
+        "featured": false,
+        "title": "시맨틱 Digital Twin, 이종 센서와 구조건전성 이벤트를 WoT로 통합",
+        "summary": "사실: Chen 등 연구진은 8월 24일 스마트빌딩 구조건전성 모니터링을 위한 시맨틱 Digital Twin 아키텍처 프리프린트를 공개했다. SensorType·DeviceProfile·현장 메타데이터를 의미 기반 단일 출처로 두고 W3C Web of Things Thing Description을 동적으로 생성해 데이터 수집, 저장, API, 시각화와 공학 임계값 평가를 연결했다. 연구진은 지진 후 이벤트 평가와 상시 시공 기울기 모니터링을 서로 다른 워크플로로 운영하고, 통제된 실험에서 300개 센서 기준 초당 7만1,040개 데이터 포인트를 누락 없이 처리했다고 보고했다.",
+        "insight": "분석: Digital Twin의 확장 병목은 3D 화면보다 센서마다 다른 이름·단위·주기와 이벤트 의미를 일관되게 해석하는 데이터 계약이다. 센서 프로필과 자산 메타데이터가 런타임 인터페이스를 자동 생성하면 새 장비 추가 때마다 데이터 계층과 화면을 수작업으로 고치는 비용을 줄일 수 있다. 다만 비동료평가 프리프린트이며 결과는 통제된 실험이므로 실제 구조물과 장기 장애조건에서의 검증이 필요하다.",
+        "whyItMatters": "터널·교량·빌딩의 계측 장비가 늘어날수록 센서별 맞춤 연계 방식은 유지비와 오류를 확대하므로, 의미·단위·상태 전이를 표준 계약으로 관리하는 능력이 예측 유지관리의 기반이 되기 때문이다.",
+        "recommendedAction": "계측 데이터 표준에 센서 유형, 단위, 위치, 자산 ID, 정상·경보 상태와 이벤트 처리기한을 포함하고, 신규 센서를 추가할 때 코드 수정량·데이터 지연·누락률을 측정하는 소규모 시맨틱 연계 실증을 진행해야 한다.",
+        "source": "Preprints.org / Chen et al.",
+        "sourceType": "연구기관",
+        "published": "2026-08-24",
+        "region": "해외 · 스마트빌딩 구조건전성 연구",
+        "url": "https://www.preprints.org/manuscript/202608.1592",
+        "linkStatus": "verified",
+        "checkedAt": "2026-08-25"
+      }
+    ],
+    "emptyCategories": {
+      "스마트건설": "최근 24시간 내 국내 정책·현장 실증 중 원문 신규성과 산업 중요도를 모두 충족하는 독립 이슈는 확인되지 않았습니다.",
+      "건설AX": "호주 사례는 사람의 승인과 업무 흐름 재설계를 포함하지만, 전사 조직 전환보다 현장 AI 적용의 성격이 강해 건설AI 분야에 배치했습니다.",
+      "Smart Construction": "최근 24시간 내 건설로봇·자율장비·드론·OSC의 신규 현장 배치로 원문과 공개시각을 검증할 수 있는 주요 해외 독립 이슈는 없었습니다."
+    },
+    "implications": [
+      {
+        "title": "AI의 ROI는 현장 이벤트를 끝까지 연결할 때 발생합니다.",
+        "body": "배송 예약, 출입 승인, 위험 감지와 조치가 각각 다른 시스템에 남으면 AI는 경보만 늘릴 수 있습니다. 이벤트별 담당자·응답시간·결과를 공정과 원가 데이터까지 연결해야 혼잡과 지연 감소를 측정할 수 있습니다."
+      },
+      {
+        "title": "Digital Twin의 핵심은 3D보다 의미 기반 데이터 계약입니다.",
+        "body": "센서 유형, 단위, 위치, 자산 ID와 상태 전이를 공통 의미체계로 관리하면 새 센서와 분석 기능을 낮은 비용으로 추가할 수 있습니다. BIM·IoT·계측 연계 표준에 Semantic Layer를 포함해야 합니다."
+      },
+      {
+        "title": "자동화가 커질수록 인간 승인과 예외 로그가 중요합니다.",
+        "body": "출입·안전·규정준수 판단은 오류 시 공정과 책임에 직접 영향을 줍니다. AI가 제안하고 권한자가 승인하는 경계를 명확히 하며, 오탐·수동개입·처리 지연을 함께 기록해야 합니다."
+      }
+    ],
+    "closing": "오늘의 한 줄: <span>건설 AI의 경쟁력은 모델보다 현장 이벤트를 의미 있게 연결하고 책임 있게 실행하는 운영 데이터 구조에 있습니다.</span>"
+  },
+  {
     "date": "2026-08-24",
     "displayDate": "2026년 8월 24일 · 월요일 · 06:00 KST",
     "headline": "검증된 신규 이슈 0건—<strong>외부 발표보다 내부 실행 데이터 점검에 집중</strong>",
@@ -148,7 +235,7 @@
         "region": "해외 · 미국 주택건설 데이터 시장",
         "url": "https://www.costargroup.com/press-room/2026/costar-group-completes-acquisition-zonda-expanding-new-home-data-analytics-and",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-24"
+        "checkedAt": "2026-08-25"
       },
       {
         "id": "20260822-ai-site-safety-accountability",
@@ -166,7 +253,7 @@
         "region": "해외 · 미국 건설현장 안전·법률",
         "url": "https://dailyreporter.com/2026/08/21/ai-automation-improving-construction-site-safety/",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-24"
+        "checkedAt": "2026-08-25"
       }
     ],
     "emptyCategories": {
@@ -235,7 +322,7 @@
         "region": "해외 · 오늘의 Physical AI 핵심",
         "url": "https://www.prnewswire.com/news-releases/sany-ships-its-first-autonomous-mining-trucks-to-south-america-302855920.html",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-24"
+        "checkedAt": "2026-08-25"
       },
       {
         "id": "20260821-bentley-yii-ai-data",
@@ -253,7 +340,7 @@
         "region": "해외 · 인프라 DX 분석",
         "url": "https://highways.today/2026/08/20/bentley-yii-2026-finalists/",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-24"
+        "checkedAt": "2026-08-25"
       }
     ],
     "emptyCategories": {
@@ -354,7 +441,7 @@
         "region": "국내 · 오늘의 AX 핵심",
         "url": "https://www.yna.co.kr/view/AKR20260819124200062",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-24"
+        "checkedAt": "2026-08-25"
       }
     ],
     "emptyCategories": {
