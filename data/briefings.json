@@ -1,5 +1,109 @@
 [
   {
+    "date": "2026-08-26",
+    "displayDate": "2026년 8월 26일 · 수요일 · 06:00 KST",
+    "headline": "건설 AI·로봇의 경쟁축이 <strong>기능 시연에서 전 생애주기 플랫폼·현장 검증·도입조건 관리</strong>로 이동하고 있습니다.",
+    "executiveSummary": [
+      "Builders FirstSource는 Digs에 2,530만 달러를 투자하고 5년 협약을 체결해 주택의 설계·조달·시공·보증 문서를 하나의 AI 데이터 기반으로 연결할 계획입니다.",
+      "중동에서는 도장로봇이 실제 주거·기가프로젝트 적용과 현지 자재·고온 조건 검증을 앞세우며 Physical AI의 지역별 상용화 단계로 진입하고 있습니다.",
+      "동료평가 연구는 AI·BIM Digital Twin 자체보다 교육, 발주자 요구와 제도적 지원이 시간·비용 리스크 개선 기대를 좌우한다는 점을 보여주지만, 실제 전후 성과가 아닌 전문가 판단 모델이라는 한계가 있습니다."
+    ],
+    "signals": [
+      {
+        "label": "TODAY'S FOCUS",
+        "value": "Lifecycle AI Platform",
+        "focus": true
+      },
+      {
+        "label": "MARKET MOVE",
+        "value": "$25.3M + 5-year Agreement"
+      },
+      {
+        "label": "PHYSICAL AI",
+        "value": "Regional Field Validation"
+      },
+      {
+        "label": "ADOPTION LAYER",
+        "value": "Training + Client Demand"
+      }
+    ],
+    "news": [
+      {
+        "id": "20260826-builders-firstsource-digs-ai-platform",
+        "category": "건설AI",
+        "importance": 5,
+        "featured": true,
+        "title": "Builders FirstSource, Digs에 2,530만 달러 투자…5년 AI 홈빌딩 플랫폼 협약",
+        "summary": "사실: Builders FirstSource와 Digs는 8월 25일 전략적 파트너십을 발표했다. Builders FirstSource는 Digs의 2,530만 달러 Series A 단독 주도 투자자이며 5년 상업협약도 체결했다. 양사는 도면, 사양, 마감선택, 제품, 승인, 보증, 대화와 프로젝트 이력을 하나의 AI 기반 정보원으로 연결하고, 견적·구매·시공·인도·보증 이후까지 이어지는 워크플로를 개발할 계획이다. Builders FirstSource는 현재 14만 곳 이상의 고객을 서비스한다고 밝혔다.",
+        "insight": "분석: 건설 AI의 경쟁 단위가 개별 문서 검색에서 주택 한 채의 전체 데이터와 고객 관계를 장기간 관리하는 Lifecycle Platform으로 확대되고 있다. 자재·제품 데이터와 프로젝트 문서가 연결되면 견적과 조달뿐 아니라 인도 후 유지관리·보증 서비스까지 자동화할 수 있다. 다만 통합 기능과 생산성 개선 효과는 대부분 계획 단계의 미래지향적 발표이므로 실제 제품 출시와 고객 도입률을 후속 검증해야 한다.",
+        "whyItMatters": "대형 자재 공급망 사업자가 AI 문서 플랫폼을 결합하면 설계·조달·시공 정보의 표준화와 유통 범위를 동시에 확보해 주택건설 데이터 생태계의 운영 계층을 선점할 수 있기 때문이다.",
+        "recommendedAction": "주택 또는 반복형 건축사업에서 도면·사양·자재코드·승인·보증을 동일 자산 ID로 연결하고, 견적 수정시간, 구매 오류, 현장 RFI, 인도 후 보증처리시간을 기준선과 비교하는 데이터 연속성 실증을 추진해야 한다.",
+        "source": "Builders FirstSource·Digs / PR Newswire",
+        "sourceType": "공식 발표",
+        "published": "2026-08-25",
+        "region": "해외 · 미국 주택건설 AI",
+        "url": "https://www.prnewswire.com/news-releases/builders-firstsource-and-digs-announce-strategic-partnership-to-deliver-the-next-generation-of-ai-powered-homebuilding-302858609.html",
+        "linkStatus": "verified",
+        "checkedAt": "2026-08-26"
+      },
+      {
+        "id": "20260826-legend-robot-gcc-painting",
+        "category": "Smart Construction",
+        "importance": 4,
+        "featured": false,
+        "title": "Legend Robot, GCC 도장로봇 현장검증 공개…Qiddiya 등 중동 프로젝트 적용",
+        "summary": "사실: Legend Robot은 8월 25일 중동 현장에 맞춘 3.3m 퍼티·라텍스 분사로봇의 적용 사례를 공개했다. 회사 발표에 따르면 로봇은 Dubai DAMAC Hills와 DAMAC Lagoons, 사우디 Qiddiya 프로젝트에서 실내 벽면 마감에 투입됐고, Qiddiya Mock-up 시험에서 시간당 최대 226㎡ 분사 효율을 기록했다. Jotun·Jazeera 등 지역 도료와의 호환성 시험, 고온환경 대응 설계와 AI 경로계획도 제시했으며 자재 낭비 15% 감소 수치는 공급사 주장이다.",
+        "insight": "분석: Physical AI 상용화의 관건이 범용 자율성보다 현지 온도, 도료 점도, 표면 품질기준과 조달 자재에 맞춘 공정 적합성으로 이동하고 있다. 동일 로봇을 다른 국가에 확산하려면 장비 사양뿐 아니라 재료 인증, 품질검측과 유지보수 체계가 함께 필요하다. 공급사 발표만으로는 장기 가동률과 실제 인건비·재작업 절감 효과를 판단하기 어렵다.",
+        "whyItMatters": "도장·퍼티처럼 반복면적이 크고 품질 편차와 작업자 노출이 문제인 공정은 로봇의 생산성·안전·재료절감 효과를 동시에 측정할 수 있어 건설 Physical AI의 조기 상용화 영역이기 때문이다.",
+        "recommendedAction": "실내 마감 공정을 대상으로 면적당 작업시간, 도료 사용량, 두께·평활도 편차, 재작업률, 장비 가동률과 작업자 유해환경 노출시간을 수작업 기준선과 동일 조건에서 비교해야 한다.",
+        "source": "Legend Robot / PR Newswire",
+        "sourceType": "공식 발표",
+        "published": "2026-08-25",
+        "region": "해외 · 사우디·UAE 건설로봇",
+        "url": "https://www.prnewswire.com/news-releases/legend-robot-unveils-how-its-mobile-continuous-spraying-technology-accelerates-vision-2030-gigaprojects-at-big-5-saudi-302857206.html",
+        "linkStatus": "verified",
+        "checkedAt": "2026-08-26"
+      },
+      {
+        "id": "20260826-frontiers-ai-bim-dt-risk",
+        "category": "건설DX",
+        "importance": 4,
+        "featured": false,
+        "title": "AI·BIM Digital Twin 리스크 연구…기술보다 교육·발주자 요구가 성과 기대 좌우",
+        "summary": "사실: Frontiers in Artificial Intelligence는 8월 25일 요르단 건축 프로젝트의 AI 기반 BIM Digital Twin 도입과 시간·비용 리스크 관계를 분석한 동료평가 연구를 게재했다. 연구진은 2022~2026년 수집한 건설 전문가 600명의 구조화된 판단을 계층 베이지안 모델과 Bayesian Network로 통합해 다양한 도입 시나리오를 비교했다. 연구는 기술 도입과 함께 높은 교육수준과 명확한 발주자 요구가 결합될 때 가장 큰 리스크 개선을 기대했으나, 모든 수치는 실제 프로젝트 전후 데이터가 아닌 조건부 전문가 신념을 모델링한 결과다.",
+        "insight": "분석: AI·BIM Digital Twin의 성과는 소프트웨어 구매만으로 발생하지 않고 현장 역량, 발주요건, 계약과 규제 같은 사회기술적 조건에 좌우된다. 실측 데이터가 부족한 초기 단계에서는 Bayesian Network로 불확실성을 구조화하고 어떤 정보를 우선 수집해야 하는지 결정할 수 있다. 다만 예측값을 투자수익이나 확정적 성과로 사용해서는 안 되며 실제 실증 데이터로 지속 보정해야 한다.",
+        "whyItMatters": "신기술 도입 실패의 원인이 기술 성능보다 교육 부족, 불명확한 발주요건과 운영책임에 있는 경우가 많아, 투자 전에 성공조건과 정보가치를 함께 평가하는 체계가 필요하기 때문이다.",
+        "recommendedAction": "AI·BIM Digital Twin 실증계획에 기술 KPI뿐 아니라 교육이수율, 발주 정보요구사항, 데이터 제출 준수율과 현장 사용률을 포함하고, 사전 위험모델을 실제 공정·원가 결과로 분기별 보정해야 한다.",
+        "source": "Frontiers in Artificial Intelligence / Albtoush et al.",
+        "sourceType": "연구기관",
+        "published": "2026-08-25",
+        "region": "해외 · 요르단 건설 리스크 연구",
+        "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2026.1846388/full",
+        "linkStatus": "verified",
+        "checkedAt": "2026-08-26"
+      }
+    ],
+    "emptyCategories": {
+      "스마트건설": "최근 24시간 내 국내 정책·현장 실증 중 원문 신규성과 산업 중요도를 모두 충족하는 독립 이슈는 확인되지 않았습니다.",
+      "건설AX": "플랫폼 통합과 도입조건 연구는 업무전환 시사점을 포함하지만, 독립적인 전사 조직·의사결정 체계 전환 발표는 확인되지 않았습니다."
+    },
+    "implications": [
+      {
+        "title": "AI 플랫폼의 가치는 프로젝트 종료 후까지 데이터가 이어질 때 커집니다.",
+        "body": "설계·견적·구매·시공·보증 데이터를 주택이나 자산 단위로 연결하면 AI는 일회성 문서도구가 아니라 장기 서비스 운영계층이 됩니다. 공통 자산 ID와 데이터 소유·재사용 조건을 계약에 포함해야 합니다."
+      },
+      {
+        "title": "건설로봇의 확산은 지역별 공정·재료 인증이 좌우합니다.",
+        "body": "고온, 도료 특성, 표면 품질과 현장 동선은 국가와 프로젝트마다 다릅니다. 로봇 사양만 비교하지 말고 재료 호환성, 품질검측, 장기 가동률과 현지 유지보수를 함께 검증해야 합니다."
+      },
+      {
+        "title": "기술 투자와 교육·발주요건을 하나의 포트폴리오로 관리해야 합니다.",
+        "body": "Digital Twin과 AI의 효과는 데이터를 사용할 사람과 요구할 발주자가 준비되지 않으면 제한됩니다. 기술·교육·계약·데이터 품질 KPI를 통합하고, 전문가 예측은 실측 결과로 반복 보정해야 합니다."
+      }
+    ],
+    "closing": "오늘의 한 줄: <span>건설 AX의 성패는 AI 기능보다 생애주기 데이터, 현장 적합성, 교육과 발주체계가 함께 움직이는가에 달려 있습니다.</span>"
+  },
+  {
     "date": "2026-08-25",
     "displayDate": "2026년 8월 25일 · 화요일 · 06:00 KST",
     "headline": "건설 AI의 실전 가치는 <strong>현장 물류의 실시간 제어와 센서 데이터의 의미 기반 연결</strong>에서 구체화되고 있습니다.",
@@ -44,7 +148,7 @@
         "region": "해외 · 호주 인프라 건설물류",
         "url": "https://infrastructuremagazine.com.au/how-ai-is-transforming-construction-logistics-on-major-infrastructure-projects/",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-25"
+        "checkedAt": "2026-08-26"
       },
       {
         "id": "20260825-semantic-digital-twin-shm",
@@ -62,7 +166,7 @@
         "region": "해외 · 스마트빌딩 구조건전성 연구",
         "url": "https://www.preprints.org/manuscript/202608.1592",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-25"
+        "checkedAt": "2026-08-26"
       }
     ],
     "emptyCategories": {
@@ -235,7 +339,7 @@
         "region": "해외 · 미국 주택건설 데이터 시장",
         "url": "https://www.costargroup.com/press-room/2026/costar-group-completes-acquisition-zonda-expanding-new-home-data-analytics-and",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-25"
+        "checkedAt": "2026-08-26"
       },
       {
         "id": "20260822-ai-site-safety-accountability",
@@ -253,7 +357,7 @@
         "region": "해외 · 미국 건설현장 안전·법률",
         "url": "https://dailyreporter.com/2026/08/21/ai-automation-improving-construction-site-safety/",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-25"
+        "checkedAt": "2026-08-26"
       }
     ],
     "emptyCategories": {
@@ -322,7 +426,7 @@
         "region": "해외 · 오늘의 Physical AI 핵심",
         "url": "https://www.prnewswire.com/news-releases/sany-ships-its-first-autonomous-mining-trucks-to-south-america-302855920.html",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-25"
+        "checkedAt": "2026-08-26"
       },
       {
         "id": "20260821-bentley-yii-ai-data",
@@ -340,7 +444,7 @@
         "region": "해외 · 인프라 DX 분석",
         "url": "https://highways.today/2026/08/20/bentley-yii-2026-finalists/",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-25"
+        "checkedAt": "2026-08-26"
       }
     ],
     "emptyCategories": {
@@ -441,7 +545,7 @@
         "region": "국내 · 오늘의 AX 핵심",
         "url": "https://www.yna.co.kr/view/AKR20260819124200062",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-25"
+        "checkedAt": "2026-08-26"
       }
     ],
     "emptyCategories": {
