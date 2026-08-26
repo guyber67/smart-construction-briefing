@@ -1,5 +1,109 @@
 [
   {
+    "date": "2026-08-27",
+    "displayDate": "2026년 8월 27일 · 목요일 · 06:00 KST",
+    "headline": "건설 AI의 적용 범위가 <strong>계약 의사결정·건물 자율운영·현장 로봇 확산체계</strong>로 넓어지고 있습니다.",
+    "executiveSummary": [
+      "AIA Contract Documents는 300개 이상의 표준계약 문서를 기반으로 계약 작성 화면 안에서 질의형 안내를 제공하는 AI Assistant를 출시했습니다. 계약 AI의 핵심은 답변 속도보다 문서 근거, 책임 경계와 변경 이력을 보존하는 것입니다.",
+      "한화 건설부문은 BIM Digital Twin과 운영데이터를 결합한 건물에너지 실증에서 운영·유지관리 검증을 맡습니다. 95% 예측정확도와 20% 피크전력 감소는 성과가 아니라 향후 검증할 목표치입니다.",
+      "싱가포르는 AI·로봇 전시, 보조금, 테스트베드와 공공조달을 하나의 확산 경로로 연결하고 있습니다. 개별 장비 도입보다 검증에서 반복구매로 넘어가는 제도적 경로가 경쟁력이 되고 있습니다."
+    ],
+    "signals": [
+      {
+        "label": "TODAY'S FOCUS",
+        "value": "Contract-grounded AI",
+        "focus": true
+      },
+      {
+        "label": "OPERATIONS",
+        "value": "BIM DT + Energy Data"
+      },
+      {
+        "label": "VALIDATION",
+        "value": "Targets ≠ Results"
+      },
+      {
+        "label": "ADOPTION PATH",
+        "value": "Grant + Sandbox + Procurement"
+      }
+    ],
+    "news": [
+      {
+        "id": "20260827-aia-contract-documents-ai-assistant",
+        "category": "건설AI",
+        "importance": 5,
+        "featured": true,
+        "title": "AIA Contract Documents, 계약 작성 화면에 AI Assistant 출시",
+        "summary": "사실: AIA Contract Documents(ACD)는 8월 26일 계약 작성·편집 과정에서 사용자의 요청에 따라 안내를 제공하는 AI Assistant와 개선된 계약 편집 환경을 출시했다. ACD는 300개 이상의 표준계약 문서를 기반으로 하며, 회사 발표에 따르면 4만5천 개 이상 기업이 매년 120만 건 이상의 계약을 작성하는 데 사용한다. 추가로 프로젝트 리스크 평가와 계약업무 효율화를 돕는 AI 기능을 개발 중이라고 밝혔다.",
+        "insight": "분석: 생성형 AI가 일반 문서요약을 넘어 계약 체결 전의 권리·의무 검토 워크플로 안으로 들어오고 있다. 표준계약 문서를 근거로 사용하면 범용 챗봇보다 출처 추적성과 문맥 일관성을 높일 수 있지만, 발표문은 답변 근거표시 방식, 법률자문과의 경계, 오류율과 책임배분을 공개하지 않았다. 실제 적용 전에는 사람이 검토해야 하는 조항과 AI가 제안할 수 있는 범위를 명시해야 한다.",
+        "whyItMatters": "계약 조건은 설계변경, 지연, 지급과 위험배분의 출발점이므로 AI가 이 단계에 내장되면 후속 공정·원가 리스크 관리의 입력 품질과 의사결정 속도에 직접 영향을 주기 때문이다.",
+        "recommendedAction": "표준계약·특수조건·협상 이력을 조항 단위로 구조화하고, AI 답변마다 인용 조항과 문서 버전을 표시하도록 요구해야 한다. 고위험 조항은 법무·계약 담당자의 승인 없이는 확정되지 않도록 Human-in-the-loop 통제를 설계해야 한다.",
+        "source": "AIA Contract Documents / PR Newswire",
+        "sourceType": "공식 발표",
+        "published": "2026-08-26",
+        "region": "해외 · 미국 AEC 계약 AI",
+        "url": "https://www.prnewswire.com/news-releases/aia-contract-documents-launches-ai-assistant-and-names-arijit-aj-saha-chief-technology-officer-302860669.html",
+        "linkStatus": "verified",
+        "checkedAt": "2026-08-27"
+      },
+      {
+        "id": "20260827-hanwha-bim-digital-twin-energy",
+        "category": "건설DX",
+        "importance": 5,
+        "featured": false,
+        "title": "한화 건설부문, BIM Digital Twin 기반 건물에너지 실증 역할 공개",
+        "summary": "사실: 한화 건설부문은 8월 26일 기후에너지환경부의 ‘BIM 활용 디지털트윈 기반 건물에너지 관리 시뮬레이터 개발 및 실증’ 과제 참여 내용과 담당 범위를 공개했다. E8, 서울대학교, 한국건설기술연구원 등 11개 기관이 참여하는 약 153억원 규모 과제로, 한화는 건물 운영·유지관리 검증을 담당한다. 시간대별 에너지 예측정확도 95% 이상과 피크전력 20% 이상 감소를 목표로 하며 경기도청, 킨텍스와 서울대학교 등에 적용해 검증할 계획이다.",
+        "insight": "분석: BIM이 설계·시공 모델에서 운영데이터와 연결된 에너지 제어 기반으로 확장되는 사례다. 중요한 점은 예측모델 자체보다 센서데이터 품질, 설비 제어권한, 운영자 승인과 실증 전후 기준선을 함께 설계하는 것이다. 발표된 95%와 20%는 아직 검증 전 목표치이므로 실제 기후·사용패턴 변화와 건물 유형별 성능을 분리해 확인해야 한다.",
+        "whyItMatters": "Digital Twin이 운영단계의 에너지 예측과 이상징후 탐지까지 연결되면 건설사가 준공 후 성능보증·운영서비스로 가치사슬을 확장할 수 있고, 설계 의사결정을 실제 운영성과로 되먹임할 수 있기 때문이다.",
+        "recommendedAction": "실증 건물별로 기상·점유·설비 운전조건을 통제한 기준선을 마련하고 예측오차, 피크감축, 에너지비용, 쾌적도와 수동개입 횟수를 함께 측정해야 한다. BIM 객체와 설비·센서 ID를 일치시키고 제어 실패 시 수동전환·책임 절차도 사전에 정의해야 한다.",
+        "source": "㈜한화 건설부문",
+        "sourceType": "공식 발표",
+        "published": "2026-08-26",
+        "region": "국내 · 건물에너지 Digital Twin",
+        "url": "https://www.hwenc.co.kr/pr/newsroom/view.do?board_id=4244&pageIndex=1&searchCondition=&searchKeyword=",
+        "linkStatus": "verified",
+        "checkedAt": "2026-08-27"
+      },
+      {
+        "id": "20260827-bex-asia-ai-robotics-adoption",
+        "category": "Smart Construction",
+        "importance": 4,
+        "featured": false,
+        "title": "BEX Asia 2026, AI·로봇을 보조금·실증·조달과 연결하는 확산 경로 부각",
+        "summary": "사실: Highways Today는 8월 26일 9월 2~4일 싱가포르에서 열리는 BEX Asia 2026의 AI·로봇 프로그램과 싱가포르의 도입 지원체계를 보도했다. 주최 측은 200개 이상 참가 브랜드 중 약 60%가 AI 관련 솔루션을 선보일 것으로 예상하며, Build with AI Pavilion과 Build with Robotics Demo Zone을 새로 운영한다. 보도는 싱가포르 BCA가 20개 이상의 즉시 적용 가능한 로봇·자동화 솔루션과 50개 이상 프로젝트 적용을 제시하고, 2026~2031년 보조금이 로봇·자동화 장비까지 지원한다고 전했다.",
+        "insight": "분석: 스마트건설 생태계의 경쟁이 기술 전시에서 보조금, 샌드박스, 현장실증과 공공조달을 연결하는 시장형성 단계로 이동하고 있다. 공정별 로봇을 반복 배치하려면 공용 인프라, 다기종 상호운용성, 현지 기준과 유지보수까지 함께 검증해야 한다. 참가 비율과 기대효과는 주최 측 전망이며 전시 이후 실제 계약과 프로젝트 확대를 추적해야 한다.",
+        "whyItMatters": "현장실증이 일회성 시범사업으로 끝나는 가장 큰 이유는 후속 구매와 표준화 경로가 없기 때문에, 지원금·테스트베드·조달을 연계한 제도가 기술의 반복배치와 단가 하락을 촉진할 수 있기 때문이다.",
+        "recommendedAction": "스마트건설 실증사업을 기획할 때 기술성능뿐 아니라 승인기준, 표준 인터페이스, 유지보수 주체와 후속 조달조건을 포함해야 한다. BEX Asia 이후 실제 계약·현장 적용과 BCA 지원사업의 생산성 데이터를 추적해 국내 제도와 비교해야 한다.",
+        "source": "Highways Today",
+        "sourceType": "언론 보도",
+        "published": "2026-08-26",
+        "region": "해외 · 싱가포르 스마트건설 생태계",
+        "url": "https://highways.today/2026/08/26/bex-asia-2026/",
+        "linkStatus": "verified",
+        "checkedAt": "2026-08-27"
+      }
+    ],
+    "emptyCategories": {
+      "스마트건설": "최근 24시간 내 국내 현장 자동화·OSC·스마트안전 분야에서 원문 신규성과 산업 중요도를 모두 충족하는 독립 이슈는 확인되지 않았습니다.",
+      "건설AX": "오늘 이슈들은 계약·운영·시장확산의 업무변화 신호를 포함하지만, 독립적인 전사 AX 조직·거버넌스 전환 발표는 확인되지 않았습니다."
+    },
+    "implications": [
+      {
+        "title": "AI의 신뢰성은 모델보다 업무 근거와 승인체계에서 결정됩니다.",
+        "body": "계약처럼 책임이 큰 업무에서는 빠른 답변보다 인용 조항, 문서 버전, 변경 이력과 사람의 최종승인이 중요합니다. AI 도입요건에 근거표시와 권한통제를 필수 항목으로 포함해야 합니다."
+      },
+      {
+        "title": "Digital Twin의 성과는 예측·제어·검증이 닫힌 루프로 연결될 때 발생합니다.",
+        "body": "BIM과 운영데이터를 연결한 뒤 실제 설비제어와 결과 측정까지 이어져야 에너지 성과를 입증할 수 있습니다. 목표치와 실적을 분리하고 건물별 기준선으로 검증해야 합니다."
+      },
+      {
+        "title": "스마트건설 확산정책은 실증 이후의 반복구매까지 설계해야 합니다.",
+        "body": "지원금, 샌드박스와 공공조달을 연결하면 검증된 기술이 여러 프로젝트로 확산될 가능성이 커집니다. 기술개발 KPI에 후속계약, 반복배치와 표준 인터페이스 채택률을 추가해야 합니다."
+      }
+    ],
+    "closing": "오늘의 한 줄: <span>건설 AX는 AI 기능을 추가하는 일이 아니라 계약 근거, 운영데이터와 확산제도를 하나의 검증 가능한 업무체계로 묶는 일입니다.</span>"
+  },
+  {
     "date": "2026-08-26",
     "displayDate": "2026년 8월 26일 · 수요일 · 06:00 KST",
     "headline": "건설 AI·로봇의 경쟁축이 <strong>기능 시연에서 전 생애주기 플랫폼·현장 검증·도입조건 관리</strong>로 이동하고 있습니다.",
@@ -44,7 +148,7 @@
         "region": "해외 · 미국 주택건설 AI",
         "url": "https://www.prnewswire.com/news-releases/builders-firstsource-and-digs-announce-strategic-partnership-to-deliver-the-next-generation-of-ai-powered-homebuilding-302858609.html",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-26"
+        "checkedAt": "2026-08-27"
       },
       {
         "id": "20260826-legend-robot-gcc-painting",
@@ -62,7 +166,7 @@
         "region": "해외 · 사우디·UAE 건설로봇",
         "url": "https://www.prnewswire.com/news-releases/legend-robot-unveils-how-its-mobile-continuous-spraying-technology-accelerates-vision-2030-gigaprojects-at-big-5-saudi-302857206.html",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-26"
+        "checkedAt": "2026-08-27"
       },
       {
         "id": "20260826-frontiers-ai-bim-dt-risk",
@@ -80,7 +184,7 @@
         "region": "해외 · 요르단 건설 리스크 연구",
         "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2026.1846388/full",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-26"
+        "checkedAt": "2026-08-27"
       }
     ],
     "emptyCategories": {
@@ -148,7 +252,7 @@
         "region": "해외 · 호주 인프라 건설물류",
         "url": "https://infrastructuremagazine.com.au/how-ai-is-transforming-construction-logistics-on-major-infrastructure-projects/",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-26"
+        "checkedAt": "2026-08-27"
       },
       {
         "id": "20260825-semantic-digital-twin-shm",
@@ -166,7 +270,7 @@
         "region": "해외 · 스마트빌딩 구조건전성 연구",
         "url": "https://www.preprints.org/manuscript/202608.1592",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-26"
+        "checkedAt": "2026-08-27"
       }
     ],
     "emptyCategories": {
@@ -339,7 +443,7 @@
         "region": "해외 · 미국 주택건설 데이터 시장",
         "url": "https://www.costargroup.com/press-room/2026/costar-group-completes-acquisition-zonda-expanding-new-home-data-analytics-and",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-26"
+        "checkedAt": "2026-08-27"
       },
       {
         "id": "20260822-ai-site-safety-accountability",
@@ -357,7 +461,7 @@
         "region": "해외 · 미국 건설현장 안전·법률",
         "url": "https://dailyreporter.com/2026/08/21/ai-automation-improving-construction-site-safety/",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-26"
+        "checkedAt": "2026-08-27"
       }
     ],
     "emptyCategories": {
@@ -426,7 +530,7 @@
         "region": "해외 · 오늘의 Physical AI 핵심",
         "url": "https://www.prnewswire.com/news-releases/sany-ships-its-first-autonomous-mining-trucks-to-south-america-302855920.html",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-26"
+        "checkedAt": "2026-08-27"
       },
       {
         "id": "20260821-bentley-yii-ai-data",
@@ -444,7 +548,7 @@
         "region": "해외 · 인프라 DX 분석",
         "url": "https://highways.today/2026/08/20/bentley-yii-2026-finalists/",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-26"
+        "checkedAt": "2026-08-27"
       }
     ],
     "emptyCategories": {
@@ -545,7 +649,7 @@
         "region": "국내 · 오늘의 AX 핵심",
         "url": "https://www.yna.co.kr/view/AKR20260819124200062",
         "linkStatus": "verified",
-        "checkedAt": "2026-08-26"
+        "checkedAt": "2026-08-27"
       }
     ],
     "emptyCategories": {
