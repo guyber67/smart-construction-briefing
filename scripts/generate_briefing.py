@@ -394,6 +394,14 @@ def main():
     today = now.date().isoformat()
     existing = load_archive()
 
+    if (
+        os.getenv("SKIP_IF_TODAY_EXISTS", "").lower() == "true"
+        and existing
+        and existing[0].get("date") == today
+    ):
+        print(f"Briefing for {today} already exists at the top of {DATA_FILE}; skipping.")
+        return
+
     # Disable the SDK's own retries so the workflow has one predictable policy.
     client = OpenAI(max_retries=0, timeout=120.0)
     research = with_retry(
