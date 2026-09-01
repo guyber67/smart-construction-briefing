@@ -1,5 +1,92 @@
 [
   {
+    "date": "2026-09-02",
+    "displayDate": "2026년 9월 2일 · 수요일 · 06:00 KST",
+    "headline": "<strong>현장 데이터가 AI의 실행 입력으로</strong>—진도측정과 견적 업무에서 대화형·증거기반 자동화가 제품화",
+    "executiveSummary": [
+      "최근 24시간에는 DatuBIM이 공정표·설계형상·드론 현황을 연결해 공정률과 준공예측을 산출하는 진도관리 모듈을 정식 출시하고, STACK이 실제 프로젝트 데이터로 물량산출·견적감사·제안서 생성을 수행하는 대화형 AI 기능을 공개했다.",
+      "두 발표는 건설 AI가 정보를 요약하는 보조도구에서 기존 업무시스템 안의 데이터를 읽고 결과물을 만드는 실행 계층으로 이동하고 있음을 보여준다. 다만 기능과 초기 사용효과는 공급사 발표에 근거하며 독립적인 정확도·생산성 검증치는 제시되지 않았다.",
+      "경영진은 도입 속도보다 원본 데이터의 품질, 작업별 승인권한, 계산근거와 변경이력, 기존 기준선 대비 공기·견적 정확도 개선을 함께 관리해야 한다."
+    ],
+    "signals": [
+      {
+        "label": "TODAY'S FOCUS",
+        "value": "현장·설계·공정·견적 데이터를 연결해 실제 업무를 수행하는 AI",
+        "focus": true
+      },
+      {
+        "label": "PROGRESS",
+        "value": "P6·MS Project, 2D CAD·IFC와 드론 현황을 연결한 가중 공정률"
+      },
+      {
+        "label": "PRECON AI",
+        "value": "자연어로 물량산출·견적감사·제안서 생성 및 프로젝트 설정"
+      },
+      {
+        "label": "GOVERNANCE",
+        "value": "공급사 주장과 검증된 현장 KPI를 구분하고 승인·감사기록 설계"
+      }
+    ],
+    "news": [
+      {
+        "id": "20260902-datubim-progress-tracking",
+        "category": "건설DX",
+        "importance": 5,
+        "featured": true,
+        "title": "DatuBIM, 공정표·설계·드론 현황 연계 진도측정 모듈 정식 출시",
+        "summary": "Datumate가 중토목 프로젝트용 DatuBIM Progress Tracking을 정식 출시했다. Primavera P6 또는 Microsoft Project 일정, 2D CAD·IFC 설계형상과 기존 드론 촬영 데이터를 활동 단위로 연결하고, 수량·길이·면적·부피·중량 등 계약 물량 단위에 따라 가중 공정률과 관측 생산속도 기반 준공예측일을 산출한다. 현장 입력에는 사진·음성메모·영상·문서를 증거로 첨부할 수 있다.",
+        "insight": "분석: 계획·설계·실제 시공현황을 한 기록으로 연결해 주관적 공정률 보고를 측정 가능한 이력으로 바꾸려는 제품화 사례다. 2D CAD도 측정 객체로 전환하고 기존 드론 촬영을 활용한다는 점은 선형 인프라 도입 장벽을 낮출 수 있다. 다만 정확도, 입력노력 절감과 준공예측 성능은 공급사 설명이며 독립 실증치는 공개되지 않았다.",
+        "whyItMatters": "공정률은 기성, 자원배치와 준공일 판단의 공통 기준이다. 동일 활동에 계획일정·설계물량·현장증거와 계산근거를 묶으면 발주자와 시공자가 같은 기준으로 편차를 검토할 수 있고, Reality Capture가 단순 기록에서 공정 의사결정 데이터로 확장된다.",
+        "recommendedAction": "도로·철도·교량 프로젝트 한 개 공종에서 기존 월간 공정률과 병행해 측정값을 비교한다. 설계객체 매핑시간, 현장 갱신주기, 기성물량 오차, 예측 준공일 오차와 이견조정 시간을 KPI로 두고, 가중치 변경권한과 증거 승인 절차를 계약·공정관리 규정에 명시한다.",
+        "source": "Datumate",
+        "sourceType": "공식 발표",
+        "published": "2026-09-01 (공식 발표·정식 제공일)",
+        "region": "글로벌 · 중토목·Reality Capture",
+        "url": "https://www.datumate.com/company/news-and-events/introducing-datubim-progress-tracking-percent-complete-you-can-defend/",
+        "linkStatus": "verified",
+        "checkedAt": "2026-09-02"
+      },
+      {
+        "id": "20260902-stack-iq-preconstruction",
+        "category": "건설AI",
+        "importance": 4,
+        "featured": false,
+        "title": "STACK IQ, 자연어로 물량산출·견적감사·제안서 생성",
+        "summary": "STACK Construction Technologies가 프리콘 업무용 STACK IQ를 공개하고 모든 구독등급에 추가 비용 없이 제공하기 시작했다. MCP 기반으로 Claude·ChatGPT 등 AI 모델을 STACK의 실제 프로젝트 데이터에 연결해 스프레드시트 기반 물량산출 라이브러리 생성, 기존 견적 누락 점검, 고객용 제안서 작성, 이메일 기반 신규 프로젝트 설정과 외부 업무도구 연결을 자연어 요청으로 수행한다.",
+        "insight": "분석: 대화형 인터페이스가 단순 질의응답을 넘어 견적시스템 안에서 데이터를 읽고 결과물을 생성하는 실행 계층으로 들어온 사례다. 공급사가 공개한 초기 고객평가는 문서 형식의 일관성과 누락 탐지 가능성을 보여주지만, 처리시간·오류율·낙찰 또는 원가 성과에 대한 독립 비교자료는 없다.",
+        "whyItMatters": "견적가는 수량·단가·마진과 고객정보가 결합된 고위험 데이터다. AI가 실제 프로젝트에 작업을 수행하면 반복업무를 줄일 여지가 크지만, 잘못된 물량이나 내부 마진 노출은 입찰손실로 직결되므로 권한·검토·감사기록이 제품 편의성만큼 중요해진다.",
+        "recommendedAction": "과거 완료 견적을 이용한 비운영 환경에서 누락 검출률, 잘못된 수정 제안, 산출시간과 사람의 검토시간을 먼저 측정한다. 원본 견적 덮어쓰기를 금지하고 읽기·초안생성·승인 권한을 분리하며, 외부 AI 모델로 전달되는 필드와 보존정책을 보안·계약 담당자가 확인한다.",
+        "source": "STACK Construction Technologies",
+        "sourceType": "공식 발표",
+        "published": "2026-09-01 (공식 발표·제공 개시일)",
+        "region": "미국 · 프리콘·견적",
+        "url": "https://www.stackct.com/blog/stack-introduces-stack-iq-bringing-conversational-ai-to-estimating-and-preconstruction/",
+        "linkStatus": "verified",
+        "checkedAt": "2026-09-02"
+      }
+    ],
+    "emptyCategories": {
+      "스마트건설": "주요 신규 이슈 없음 — 허용 시간창과 원문 검증 기준을 충족한 별도 국내 신규 사례가 확인되지 않았다.",
+      "건설AX": "주요 신규 이슈 없음 — STACK IQ는 프리콘 기능 중심의 건설AI로 분류했으며 조직·업무 전반의 전환 성과가 확인된 별도 발표는 없었다.",
+      "Smart Construction": "주요 신규 이슈 없음 — 영문권 후보 중 기존 아카이브와 중복되거나 최초 발표가 시간창 밖인 사례를 제외했다."
+    },
+    "implications": [
+      {
+        "title": "생산성·공정·원가: AI 산출물을 기준선과 병행 측정",
+        "body": "[사실] DatuBIM은 계획·설계·드론 현황으로 가중 공정률과 준공예측일을 산출하고, STACK IQ는 물량산출과 견적감사 작업을 자연어로 실행한다. [분석] 공급사 기능 설명을 현장 성과로 간주하지 말고 기존 방식과 병행해 공정률·기성물량·견적 누락·검토시간의 차이를 측정해야 한다. 원본 보존과 사람의 최종 승인을 전제로 단계적으로 자동화 범위를 넓혀야 한다."
+      },
+      {
+        "title": "안전·현장운영: 자동 판단보다 증거와 예외처리부터",
+        "body": "[사실] DatuBIM은 활동별 현장 입력에 사진·음성·영상·문서를 첨부하고 실제 시작·종료 및 검사·승인 상태를 기록한다. [분석] 진도판정이 장비·인력 투입이나 작업순서 변경으로 이어질 때는 데이터 지연, 가려짐, 촬영 누락과 잘못된 객체연결을 예외로 처리해야 한다. 현장책임자가 근거를 확인하고 승인·정정한 이력을 남기는 운영절차가 필요하다."
+      },
+      {
+        "title": "데이터·Agentic AI·AX: 연결 권한과 감사 가능성이 경쟁력",
+        "body": "[사실] 두 제품은 기존 공정·설계·견적 데이터를 다른 시스템 또는 AI 모델과 연결해 작업 결과를 만든다. [분석] Agentic AI로 확장하려면 프로젝트·활동·설계객체·원가코드의 공통 식별체계와 최소권한, 데이터 계보, 프롬프트·결과·승인 로그가 필요하다. 정확한 데이터 연결 없이 자동화만 확대하면 오류가 기성·입찰·공정 전반으로 빠르게 전파될 수 있다."
+      }
+    ],
+    "closing": "<span>오늘의 판단: 건설 AI의 실질가치는 대화 기능이 아니라 검증 가능한 현장 데이터로 업무 결과를 만들고 사람이 그 근거를 통제할 수 있을 때 발생한다.</span>"
+  },
+  {
     "date": "2026-09-01",
     "displayDate": "2026년 9월 1일 · 화요일 · 06:00 KST",
     "headline": "<strong>Physical AI는 공장으로, Agentic AI는 EPC 업무로</strong>—건설 AI가 실험에서 운영체계 확장 단계로 이동",
@@ -44,7 +131,7 @@
         "region": "미국 · OSC·Physical AI",
         "url": "https://www.businesswire.com/news/home/20260831532459/en/",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-01"
+        "checkedAt": "2026-09-02"
       },
       {
         "id": "20260901-octave-maire-agentic-ai-epc",
@@ -62,7 +149,7 @@
         "region": "이탈리아·미국 · 글로벌 EPC",
         "url": "https://www.octave.com/newsroom/press-releases/2026/octave-and-maire-collaborate-on-the-application-of-ai-across-engineering-and-construction-workflows",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-01"
+        "checkedAt": "2026-09-02"
       },
       {
         "id": "20260901-digital-twin-highrise-safety",
@@ -80,7 +167,7 @@
         "region": "글로벌 · 건설안전 연구",
         "url": "https://techxplore.com/news/2026-08-digital-twin-hazards.html",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-01"
+        "checkedAt": "2026-09-02"
       }
     ],
     "emptyCategories": {
@@ -148,7 +235,7 @@
         "region": "미국·글로벌",
         "url": "https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining/",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-01"
+        "checkedAt": "2026-09-02"
       },
       {
         "id": "2026-08-30-construction-dx-icic-summit",
@@ -166,7 +253,7 @@
         "region": "멕시코",
         "url": "https://www.wboc.com/online_features/press_releases/icic-joins-digital-construction-innovation-summit-2026-in-monterrey/article_a2b464ee-fd52-5a86-8f20-d9f77c07dc1e.html",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-01"
+        "checkedAt": "2026-09-02"
       }
     ],
     "emptyCategories": {
@@ -287,7 +374,7 @@
         "region": "국내 · 발전소 건설안전",
         "url": "https://www.etnews.com/20260828000194",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-01"
+        "checkedAt": "2026-09-02"
       }
     ],
     "emptyCategories": {
@@ -357,7 +444,7 @@
         "region": "대한민국",
         "url": "https://www.etoday.co.kr/news/view/2619069",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-01"
+        "checkedAt": "2026-09-02"
       },
       {
         "id": "20260828-construction-ax-zyxcad",
@@ -375,7 +462,7 @@
         "region": "대한민국",
         "url": "https://zdnet.co.kr/view/?no=20260827180515",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-01"
+        "checkedAt": "2026-09-02"
       }
     ],
     "emptyCategories": {
@@ -444,7 +531,7 @@
         "region": "해외 · 미국 AEC 계약 AI",
         "url": "https://www.prnewswire.com/news-releases/aia-contract-documents-launches-ai-assistant-and-names-arijit-aj-saha-chief-technology-officer-302860669.html",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-01"
+        "checkedAt": "2026-09-02"
       },
       {
         "id": "20260827-hanwha-bim-digital-twin-energy",
@@ -462,7 +549,7 @@
         "region": "국내 · 건물에너지 Digital Twin",
         "url": "https://www.hwenc.co.kr/pr/newsroom/view.do?board_id=4244&pageIndex=1&searchCondition=&searchKeyword=",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-01"
+        "checkedAt": "2026-09-02"
       },
       {
         "id": "20260827-bex-asia-ai-robotics-adoption",
@@ -480,7 +567,7 @@
         "region": "해외 · 싱가포르 스마트건설 생태계",
         "url": "https://highways.today/2026/08/26/bex-asia-2026/",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-01"
+        "checkedAt": "2026-09-02"
       }
     ],
     "emptyCategories": {
@@ -548,7 +635,7 @@
         "region": "해외 · 미국 주택건설 AI",
         "url": "https://www.prnewswire.com/news-releases/builders-firstsource-and-digs-announce-strategic-partnership-to-deliver-the-next-generation-of-ai-powered-homebuilding-302858609.html",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-01"
+        "checkedAt": "2026-09-02"
       },
       {
         "id": "20260826-legend-robot-gcc-painting",
@@ -566,7 +653,7 @@
         "region": "해외 · 사우디·UAE 건설로봇",
         "url": "https://www.prnewswire.com/news-releases/legend-robot-unveils-how-its-mobile-continuous-spraying-technology-accelerates-vision-2030-gigaprojects-at-big-5-saudi-302857206.html",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-01"
+        "checkedAt": "2026-09-02"
       },
       {
         "id": "20260826-frontiers-ai-bim-dt-risk",
@@ -584,7 +671,7 @@
         "region": "해외 · 요르단 건설 리스크 연구",
         "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2026.1846388/full",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-01"
+        "checkedAt": "2026-09-02"
       }
     ],
     "emptyCategories": {
@@ -652,7 +739,7 @@
         "region": "해외 · 호주 인프라 건설물류",
         "url": "https://infrastructuremagazine.com.au/how-ai-is-transforming-construction-logistics-on-major-infrastructure-projects/",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-01"
+        "checkedAt": "2026-09-02"
       },
       {
         "id": "20260825-semantic-digital-twin-shm",
@@ -670,7 +757,7 @@
         "region": "해외 · 스마트빌딩 구조건전성 연구",
         "url": "https://www.preprints.org/manuscript/202608.1592",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-01"
+        "checkedAt": "2026-09-02"
       }
     ],
     "emptyCategories": {
@@ -843,7 +930,7 @@
         "region": "해외 · 미국 주택건설 데이터 시장",
         "url": "https://www.costargroup.com/press-room/2026/costar-group-completes-acquisition-zonda-expanding-new-home-data-analytics-and",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-01"
+        "checkedAt": "2026-09-02"
       },
       {
         "id": "20260822-ai-site-safety-accountability",
@@ -861,7 +948,7 @@
         "region": "해외 · 미국 건설현장 안전·법률",
         "url": "https://dailyreporter.com/2026/08/21/ai-automation-improving-construction-site-safety/",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-01"
+        "checkedAt": "2026-09-02"
       }
     ],
     "emptyCategories": {
@@ -930,7 +1017,7 @@
         "region": "해외 · 오늘의 Physical AI 핵심",
         "url": "https://www.prnewswire.com/news-releases/sany-ships-its-first-autonomous-mining-trucks-to-south-america-302855920.html",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-01"
+        "checkedAt": "2026-09-02"
       },
       {
         "id": "20260821-bentley-yii-ai-data",
@@ -948,7 +1035,7 @@
         "region": "해외 · 인프라 DX 분석",
         "url": "https://highways.today/2026/08/20/bentley-yii-2026-finalists/",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-01"
+        "checkedAt": "2026-09-02"
       }
     ],
     "emptyCategories": {
@@ -1049,7 +1136,7 @@
         "region": "국내 · 오늘의 AX 핵심",
         "url": "https://www.yna.co.kr/view/AKR20260819124200062",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-01"
+        "checkedAt": "2026-09-02"
       }
     ],
     "emptyCategories": {
