@@ -1,5 +1,92 @@
 [
   {
+    "date": "2026-09-04",
+    "displayDate": "2026년 9월 4일 · 금요일 · 06:07 KST 기준",
+    "headline": "<strong>AI는 전사 업무로, 사전제작은 생산시설로</strong>—건설 전환 투자가 소프트웨어 도입과 공장 기반 확장으로 연결",
+    "executiveSummary": [
+      "Aurecon의 Nomic 전략적 투자·전사 AI 확대 발표와 홍콩의 철근·MiMEP 사전제작 시설 지원 심사가 오늘의 핵심이다.",
+      "두 발표는 전문 엔지니어링 업무와 건설 생산체계에 대한 투자 신호다. 다만 AI의 독립 검증된 생산성 성과나 신설 공장의 가동 실적이 발표된 것은 아니며, 홍콩 지원은 원칙적 지지 단계다.",
+      "경영진은 AI의 검토·승인 책임과 공장형 생산의 설계동결·물류·품질관리를 각각 설계하고, 실증 KPI 및 투자 집행 조건을 확인해야 한다."
+    ],
+    "signals": [
+      {
+        "label": "TODAY'S FOCUS",
+        "value": "전사 AI 운영체계와 사전제작 생산시설에 대한 투자",
+        "focus": true
+      },
+      {
+        "label": "ENTERPRISE AX",
+        "value": "Aurecon, Nomic 투자와 6,700명 대상 플랫폼 접근 확대 발표"
+      },
+      {
+        "label": "INDUSTRIALISATION",
+        "value": "홍콩 철근·MiMEP 시설: 총투자 약 HK$3.9억 계획"
+      },
+      {
+        "label": "EVIDENCE CHECK",
+        "value": "투자·지원 발표와 실제 생산성·가동 성과는 구분"
+      }
+    ],
+    "news": [
+      {
+        "id": "20260904-aurecon-nomic-agentic-ai",
+        "title": "Aurecon, Nomic에 전략적 투자…전사 엔지니어링 AI 확대",
+        "category": "건설AX",
+        "importance": 5,
+        "featured": true,
+        "summary": "Nomic은 9월 3일 Aurecon이 전략적 투자자이자 장기 상업 파트너로 참여하고, 4년간의 협력을 바탕으로 6,700명 규모 인력에 플랫폼 접근을 확대한다고 발표했다. 플랫폼은 도면·기준·프로젝트 문서를 연결해 도면 검토, 제출물 초벌 검토와 RFI 조사 등을 지원한다. 이번 신규성은 Aurecon의 투자에 두며, 함께 소개된 Arcadis의 기존 투자·시험운영을 별도 신규 기사로 세지 않았다.",
+        "insight": "분석: 엔지니어링 기업이 단순 구매자를 넘어 AI 공급사의 투자자로 참여하면 자사 업무 지식과 검토 절차를 제품 개발에 반영할 여지가 커진다. 다만 투자액과 독립적으로 검증된 생산성 개선치는 해당 발표에 제시되지 않았다.",
+        "whyItMatters": "AI를 전사 규모로 확대하면 오류도 여러 프로젝트로 전파될 수 있다. 도구 사용률보다 근거 추적, 검토 책임과 업무별 승인 경계를 운영체계에 포함하는 것이 중요하다.",
+        "recommendedAction": "완료 프로젝트의 도면 검토·RFI 업무를 대상으로 기존 방식과 병행 평가한다. 누락·오탐, 검토시간, 근거 인용 정확도를 측정하고, AI 초안과 책임기술자의 최종 승인을 분리한다.",
+        "source": "Nomic",
+        "sourceType": "공식 발표",
+        "published": "2026-09-03 00:00 UTC (원문 게시 메타데이터)",
+        "region": "아시아·태평양 / 글로벌 · 엔지니어링 AX",
+        "url": "https://www.nomic.ai/news/announcing-nomics-strategic-funding-round-and-partnerships-with-aurecon-and-arcadis",
+        "linkStatus": "verified",
+        "checkedAt": "2026-09-04"
+      },
+      {
+        "id": "20260904-hk-rebar-mimep-smart-production",
+        "title": "홍콩, 철근·MiMEP 사전제작 시설 투자에 원칙적 지원",
+        "category": "Smart Construction",
+        "importance": 4,
+        "featured": false,
+        "summary": "홍콩 혁신기술서는 신산업화 가속계획(NIAS) 심사위원회가 Hong Kong Smart Construction Industry Park의 신청을 원칙적으로 지지했다고 발표했다. 중국건축국제 계열인 이 회사는 철근 사전제작과 다공종 통합 기계·전기·배관(MiMEP) 가공시설을 계획한다. 예상 총투자는 약 3억9,000만 홍콩달러, 예상 지원금은 약 1억3,000만 홍콩달러다.",
+        "insight": "분석: 현장 작업의 일부를 표준화된 생산시설로 옮기는 건설 산업화 투자다. 발표는 지원 심사 단계이며, 자금 집행 완료·시설 가동·생산능력·AI나 로봇의 구체적 적용은 확인되지 않았다.",
+        "whyItMatters": "철근과 통합 설비의 사전제작은 설계·조달·생산·운송·설치의 연계가 전제돼야 한다. 공장 설비만 확보해도 현장 공기와 원가가 자동으로 개선되는 것은 아니다.",
+        "recommendedAction": "유사 투자 검토 시 안정적 수주물량, 설계변경률, 공장 가동률, 운송·양중 제약과 현장 접합 불량률을 함께 평가한다. 지원 승인·집행 조건과 생산시설 가동 일정을 구분해 관리한다.",
+        "source": "홍콩 정부 혁신기술서",
+        "sourceType": "공식 발표",
+        "published": "2026-09-03 10:00 HKT",
+        "region": "홍콩 · 사전제작·스마트 생산",
+        "url": "https://www.info.gov.hk/gia/general/202609/03/P2026090300205.htm",
+        "linkStatus": "verified",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "emptyCategories": {
+      "스마트건설": "주요 신규 이슈 없음 — 국내 후보에서 시간창·원문·신규성 기준을 충족하는 별도 기술 발표를 확인하지 못했다.",
+      "건설AI": "주요 신규 이슈 없음 — Nomic 발표는 개별 기능 출시보다 기업 투자·전사 확대가 핵심이므로 건설AX에 분류했다.",
+      "건설DX": "주요 신규 이슈 없음 — 검증 가능한 별도 신규 발표를 확인하지 못했으며 기존 협력의 재보도는 제외했다."
+    },
+    "implications": [
+      {
+        "title": "전사 AX: 사용 확대 전에 책임과 검증을 설계",
+        "body": "[사실] Aurecon의 Nomic 투자와 플랫폼 접근 확대가 발표됐다. [분석] 경영진은 라이선스 보급률뿐 아니라 사람의 검토시간, 오류 발견률과 근거 추적성을 관리해야 한다. 프로젝트별 기밀·계약 조건을 반영한 권한과 최종 승인 절차가 전사 확대의 선행 조건이다."
+      },
+      {
+        "title": "건설 산업화: 공장과 현장을 하나의 생산계획으로",
+        "body": "[사실] 홍콩은 철근·MiMEP 가공시설 신청에 원칙적 지지를 표명했다. [분석] 공장형 생산의 경제성은 반복 물량과 설계 안정성에 좌우된다. 설계동결, 자재 조달, 운송·양중과 설치 검사를 통합 계획하고 변경 비용을 계약에 반영해야 한다."
+      },
+      {
+        "title": "투자 판단: 발표와 성과를 구분",
+        "body": "[사실] 두 사례는 투자·확대 및 지원 심사 소식이며 검증된 현장 성과 보고가 아니다. [분석] AI는 검토 정확도와 업무시간, 사전제작은 가동률과 설치 품질처럼 서로 다른 KPI로 평가해야 한다. 제한적 실증과 단계별 투자 집행으로 불확실성을 줄이는 접근이 적절하다."
+      }
+    ],
+    "closing": "<span>오늘의 판단: 건설 전환의 실질가치는 AI 접근권이나 생산시설 규모가 아니라 검증 가능한 업무 품질과 현장 성과로 평가해야 한다.</span>"
+  },
+  {
     "date": "2026-09-03",
     "displayDate": "2026년 9월 3일 · 목요일 · 10:34 KST",
     "headline": "<strong>장비 OEM과 로봇 파운데이션 모델의 결합</strong>—Physical AI가 자율점검·현장 Digital Twin으로 확장",
@@ -44,7 +131,7 @@
         "region": "미국·글로벌 · Physical AI·중장비",
         "url": "https://www.caterpillar.com/en/news/corporate-press-releases/h/caterpillar-and-fieldai-advance-ai-powered-industrial-innovation.html",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-03",
+        "checkedAt": "2026-09-04",
         "relatedTo": "2026-08-31-construction-ai-caterpillar",
         "updateNote": "8월 31일 기사 이후 FieldAI와의 공식 협력, 로봇 비종속형 파운데이션 모델 결합, 자율점검·현장 Digital Twin·상황인지·운영 최적화라는 초기 적용 범위가 새로 공개됐다."
       }
@@ -116,7 +203,7 @@
         "region": "글로벌 · 중토목·Reality Capture",
         "url": "https://www.datumate.com/company/news-and-events/introducing-datubim-progress-tracking-percent-complete-you-can-defend/",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-03"
+        "checkedAt": "2026-09-04"
       },
       {
         "id": "20260902-stack-iq-preconstruction",
@@ -134,7 +221,7 @@
         "region": "미국 · 프리콘·견적",
         "url": "https://www.stackct.com/blog/stack-introduces-stack-iq-bringing-conversational-ai-to-estimating-and-preconstruction/",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-03"
+        "checkedAt": "2026-09-04"
       }
     ],
     "emptyCategories": {
@@ -203,7 +290,7 @@
         "region": "미국 · OSC·Physical AI",
         "url": "https://www.businesswire.com/news/home/20260831532459/en/",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-03"
+        "checkedAt": "2026-09-04"
       },
       {
         "id": "20260901-octave-maire-agentic-ai-epc",
@@ -221,7 +308,7 @@
         "region": "이탈리아·미국 · 글로벌 EPC",
         "url": "https://www.octave.com/newsroom/press-releases/2026/octave-and-maire-collaborate-on-the-application-of-ai-across-engineering-and-construction-workflows",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-03"
+        "checkedAt": "2026-09-04"
       },
       {
         "id": "20260901-digital-twin-highrise-safety",
@@ -239,7 +326,7 @@
         "region": "글로벌 · 건설안전 연구",
         "url": "https://techxplore.com/news/2026-08-digital-twin-hazards.html",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-03"
+        "checkedAt": "2026-09-04"
       }
     ],
     "emptyCategories": {
@@ -307,7 +394,7 @@
         "region": "미국·글로벌",
         "url": "https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining/",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-03"
+        "checkedAt": "2026-09-04"
       },
       {
         "id": "2026-08-30-construction-dx-icic-summit",
@@ -325,7 +412,7 @@
         "region": "멕시코",
         "url": "https://www.wboc.com/online_features/press_releases/icic-joins-digital-construction-innovation-summit-2026-in-monterrey/article_a2b464ee-fd52-5a86-8f20-d9f77c07dc1e.html",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-03"
+        "checkedAt": "2026-09-04"
       }
     ],
     "emptyCategories": {
@@ -446,7 +533,7 @@
         "region": "국내 · 발전소 건설안전",
         "url": "https://www.etnews.com/20260828000194",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-03"
+        "checkedAt": "2026-09-04"
       }
     ],
     "emptyCategories": {
@@ -516,7 +603,7 @@
         "region": "대한민국",
         "url": "https://www.etoday.co.kr/news/view/2619069",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-03"
+        "checkedAt": "2026-09-04"
       },
       {
         "id": "20260828-construction-ax-zyxcad",
@@ -534,7 +621,7 @@
         "region": "대한민국",
         "url": "https://zdnet.co.kr/view/?no=20260827180515",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-03"
+        "checkedAt": "2026-09-04"
       }
     ],
     "emptyCategories": {
@@ -603,7 +690,7 @@
         "region": "해외 · 미국 AEC 계약 AI",
         "url": "https://www.prnewswire.com/news-releases/aia-contract-documents-launches-ai-assistant-and-names-arijit-aj-saha-chief-technology-officer-302860669.html",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-03"
+        "checkedAt": "2026-09-04"
       },
       {
         "id": "20260827-hanwha-bim-digital-twin-energy",
@@ -621,7 +708,7 @@
         "region": "국내 · 건물에너지 Digital Twin",
         "url": "https://www.hwenc.co.kr/pr/newsroom/view.do?board_id=4244&pageIndex=1&searchCondition=&searchKeyword=",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-03"
+        "checkedAt": "2026-09-04"
       },
       {
         "id": "20260827-bex-asia-ai-robotics-adoption",
@@ -639,7 +726,7 @@
         "region": "해외 · 싱가포르 스마트건설 생태계",
         "url": "https://highways.today/2026/08/26/bex-asia-2026/",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-03"
+        "checkedAt": "2026-09-04"
       }
     ],
     "emptyCategories": {
@@ -707,7 +794,7 @@
         "region": "해외 · 미국 주택건설 AI",
         "url": "https://www.prnewswire.com/news-releases/builders-firstsource-and-digs-announce-strategic-partnership-to-deliver-the-next-generation-of-ai-powered-homebuilding-302858609.html",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-03"
+        "checkedAt": "2026-09-04"
       },
       {
         "id": "20260826-legend-robot-gcc-painting",
@@ -725,7 +812,7 @@
         "region": "해외 · 사우디·UAE 건설로봇",
         "url": "https://www.prnewswire.com/news-releases/legend-robot-unveils-how-its-mobile-continuous-spraying-technology-accelerates-vision-2030-gigaprojects-at-big-5-saudi-302857206.html",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-03"
+        "checkedAt": "2026-09-04"
       },
       {
         "id": "20260826-frontiers-ai-bim-dt-risk",
@@ -743,7 +830,7 @@
         "region": "해외 · 요르단 건설 리스크 연구",
         "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2026.1846388/full",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-03"
+        "checkedAt": "2026-09-04"
       }
     ],
     "emptyCategories": {
@@ -811,7 +898,7 @@
         "region": "해외 · 호주 인프라 건설물류",
         "url": "https://infrastructuremagazine.com.au/how-ai-is-transforming-construction-logistics-on-major-infrastructure-projects/",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-03"
+        "checkedAt": "2026-09-04"
       },
       {
         "id": "20260825-semantic-digital-twin-shm",
@@ -829,7 +916,7 @@
         "region": "해외 · 스마트빌딩 구조건전성 연구",
         "url": "https://www.preprints.org/manuscript/202608.1592",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-03"
+        "checkedAt": "2026-09-04"
       }
     ],
     "emptyCategories": {
@@ -1002,7 +1089,7 @@
         "region": "해외 · 미국 주택건설 데이터 시장",
         "url": "https://www.costargroup.com/press-room/2026/costar-group-completes-acquisition-zonda-expanding-new-home-data-analytics-and",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-03"
+        "checkedAt": "2026-09-04"
       },
       {
         "id": "20260822-ai-site-safety-accountability",
@@ -1020,7 +1107,7 @@
         "region": "해외 · 미국 건설현장 안전·법률",
         "url": "https://dailyreporter.com/2026/08/21/ai-automation-improving-construction-site-safety/",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-03"
+        "checkedAt": "2026-09-04"
       }
     ],
     "emptyCategories": {
@@ -1089,7 +1176,7 @@
         "region": "해외 · 오늘의 Physical AI 핵심",
         "url": "https://www.prnewswire.com/news-releases/sany-ships-its-first-autonomous-mining-trucks-to-south-america-302855920.html",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-03"
+        "checkedAt": "2026-09-04"
       },
       {
         "id": "20260821-bentley-yii-ai-data",
@@ -1107,7 +1194,7 @@
         "region": "해외 · 인프라 DX 분석",
         "url": "https://highways.today/2026/08/20/bentley-yii-2026-finalists/",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-03"
+        "checkedAt": "2026-09-04"
       }
     ],
     "emptyCategories": {
@@ -1208,7 +1295,7 @@
         "region": "국내 · 오늘의 AX 핵심",
         "url": "https://www.yna.co.kr/view/AKR20260819124200062",
         "linkStatus": "verified",
-        "checkedAt": "2026-09-03"
+        "checkedAt": "2026-09-04"
       }
     ],
     "emptyCategories": {
