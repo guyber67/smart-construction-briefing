@@ -1,5 +1,122 @@
 [
   {
+    "date": "2026-09-21",
+    "displayDate": "2026년 9월 21일 · 월요일 · 06:15 KST 기준 · 주간 브리핑",
+    "headline": "<strong>현장 실증·설계 데이터 연결·AI 업무 자동화</strong>가 이번 주 건설기술의 핵심 축",
+    "executiveSummary": [
+      "최근 7일(9월 14일 06:15~21일 06:15 KST) 발표 가운데 기존 아카이브와 중복되지 않는 5건을 선별했다. 국내에서는 SH가 디지털 감리와 시공로봇을 실제 공공주택 현장에서 실증했고, 해외에서는 측량 데이터와 토목설계 맥락을 연결하는 제품·기능이 발표됐다.",
+      "AI에서는 Suffolk·MIT가 설계 자동화를 다른 공정 개선의 출발점으로 분석했고, Geom은 주택 시공도서 작성 자동화 제품을 선보였다. 연구의 비용·일정 절감 수치는 실제 현장 실적이 아닌 사례 기반 추정이며, 신제품·기술 미리보기 역시 상용 운영 성과와 구분해야 한다.",
+      "경영진의 우선 과제는 기능 목록보다 검측 정확도, 데이터 연속성, 변경 이력, 작업자 개입, 실제 공정·원가 효과를 파일럿에서 측정하는 것이다. 이미 일별 아카이브에 기록된 자율장비·에이전틱 AI 발표는 이번 주간 카드에 다시 넣지 않았다."
+    ],
+    "signals": [
+      { "label": "WEEKLY FOCUS", "value": "SH 공공주택 현장 디지털 감리·로봇 실증", "focus": true },
+      { "label": "FIELD DATA", "value": "측량·시공 위치정보와 설계 맥락 연결" },
+      { "label": "AI EVIDENCE", "value": "비용·일정 절감은 연구 모델, 현장 실적 아님" },
+      { "label": "TIME WINDOW", "value": "2026-09-14 06:15~2026-09-21 06:15 KST" }
+    ],
+    "news": [
+      {
+        "id": "20260921-smartconstruction-sh-digital-supervision-robots",
+        "category": "스마트건설",
+        "importance": 5,
+        "featured": true,
+        "title": "SH, 마곡 공공주택 현장에서 디지털 감리·시공로봇 12종 실증",
+        "summary": "서울주택도시개발공사(SH)는 9월 14일 마곡16단지 공공주택 건설현장에서 디지털 감리·시공 자동화 기술의 현장 적용 가능성을 확인했다. 시연 기술에는 태블릿 기반 검측·기록, AI·3D 카메라를 활용한 철근 배근 원격검측, 위험 작업을 대신하는 시공 자동화 로봇 등이 포함된다. 연구단은 확인된 개선 사항을 12월 과제 종료 전 반영할 계획이라고 16일 밝혔다.",
+        "insight": "공공 발주자의 실증이 검측 기록, 품질 판단, 위험 작업 자동화를 한 현장에 묶었다는 점이 중요하다. 다만 기사에는 생산성·사고 감소의 정량 결과가 제시되지 않아 효과가 입증됐다고 해석해서는 안 된다.",
+        "whyItMatters": "로봇 장비의 개별 성능보다 감리 승인·증빙 데이터·시공 작업이 이어지는 절차를 검증해야 실제 발주·확산 기준을 만들 수 있다.",
+        "recommendedAction": "후속 실증에서는 철근 검측의 오탐·누락률, 재검측 시간, 작업자 개입 횟수, 로봇 가동·정지 시간과 감리 승인 이력을 기존 방식과 비교하고 안전 책임 경계를 문서화한다.",
+        "source": "뉴스핌",
+        "sourceType": "언론 보도",
+        "published": "2026-09-16 17:01 KST",
+        "region": "한국",
+        "url": "https://www.newspim.com/news/view/20260916001088",
+        "linkStatus": "verified",
+        "checkedAt": "2026-09-21"
+      },
+      {
+        "id": "20260921-ai-suffolk-mit-construction-study",
+        "category": "건설AI",
+        "importance": 4,
+        "featured": false,
+        "title": "Suffolk·MIT, 건설 AI의 설계·조달·공정 연쇄효과를 사례 모델로 분석",
+        "summary": "Suffolk와 MIT 연구진은 9월 16일 건설 AI 백서를 발표하고 설계 자동화, OSC, 인허가, 일정, 숙련인력·하도급, 공급망·조달의 6개 적용 영역을 제시했다. 18만 제곱피트 규모 공동주택 사례에 이를 적용한 분석은 비용 17~20%, 일정 22~25% 절감 가능성을 추정했다. 이는 완료된 현장에서 AI로 달성한 성과가 아니라 과거 프로젝트를 활용한 비인과적 모델 분석이다.",
+        "insight": "연구는 설계 자동화가 인허가 검토, 조달, 일정 생성과 협력업체 조정에 필요한 데이터 토대가 될 수 있다고 본다. 수치를 투자수익률 보장으로 쓰지 않고, 공정 간 데이터 연계의 가설로 검증해야 한다.",
+        "whyItMatters": "AI의 가치가 단일 업무 시간 절약에만 있지 않고 설계 정보의 구조화가 후속 공정의 지연·재작업을 줄일 수 있는지에 달려 있음을 보여준다.",
+        "recommendedAction": "시범 프로젝트에서 설계 변경부터 물량·조달·일정 반영까지 걸리는 시간, 재입력 횟수, 변경 누락 건수와 총원가를 기준선과 비교한다. 연구 추정치를 사업계획의 확정 절감액으로 쓰지 않는다.",
+        "source": "Construction Dive (Suffolk·MIT 연구 보도)",
+        "sourceType": "언론 보도",
+        "published": "2026-09-16",
+        "region": "미국",
+        "url": "https://www.constructiondive.com/news/suffolk-mit-ai-shave-costs-schedules-construction/830571/",
+        "linkStatus": "verified",
+        "checkedAt": "2026-09-21"
+      },
+      {
+        "id": "20260921-smartconstruction-trimble-st30-target",
+        "category": "Smart Construction",
+        "importance": 4,
+        "featured": false,
+        "title": "Trimble, 광학 측량과 GNSS를 묶는 ST30 스마트 타깃 발표",
+        "summary": "Trimble은 9월 15일 광학 측량과 GNSS 기능을 한 타깃에 통합하는 ST30을 발표했다. 자동 폴 높이 측정, 경사 보정, 로봇 토털스테이션 추적을 제공하며 지형측량·위치표시·준공검측에 활용하도록 설계됐다. 제품 주문은 2026년 4분기부터, 별도 구독형 고정밀 GNSS 기능은 2027년부터 제공할 계획이다.",
+        "insight": "현장 위치정보를 반복 측량·기록하는 장비가 사무실·클라우드 데이터 환경과 더 촘촘히 연결되는 방향이다. GNSS 통합 기능을 현재 전면 상용화된 것으로 표현해서는 안 된다.",
+        "whyItMatters": "정확한 위치·준공측량 데이터는 BIM과 실제 시공 상태를 연결하는 기초 데이터이며, 측량 오류는 후속 공종의 재작업으로 번질 수 있다.",
+        "recommendedAction": "도입 검토 시 현재 제공 기능과 2027년 예정 기능을 분리하고, 기존 토털스테이션·CDE와의 연동, 기준점 관리, 오측정률·재측량 시간을 현장 조건에서 비교한다.",
+        "source": "Trimble",
+        "sourceType": "공식 발표",
+        "published": "2026-09-15",
+        "region": "미국·독일",
+        "url": "https://news.trimble.com/Trimble-Unveils-ST30-Smart-Target-for-Optical-Surveying-to-Enable-Unparalleled-Accuracy-Productivity-and-Integrated-GNSS-Capabilities",
+        "linkStatus": "verified",
+        "checkedAt": "2026-09-21"
+      },
+      {
+        "id": "20260921-dx-autodesk-civil3d-forma-client",
+        "category": "건설DX",
+        "importance": 4,
+        "featured": false,
+        "title": "Autodesk, Civil 3D–Forma·Revit 연결과 공통 위치정보 계획 공개",
+        "summary": "Autodesk는 9월 15일 Civil 3D를 Forma Connected Client로 발전시키겠다고 발표했다. 초기에는 기술 미리보기로 Forma·Revit 설계 정보를 Civil 3D에서 참조하는 연결 방식과 세 제품 간 공통 지리좌표 워크플로를 선보일 계획이다. 토목 계획·건축 모델·상세 설계 간 맥락을 이어가는 것이 목표지만, 일반 출시된 완성 기능은 아니다.",
+        "insight": "BIM 파일을 따로 전달하는 수준을 넘어 계획 단계의 맥락과 위치 좌표를 상세 설계까지 유지하려는 DX 방향을 보여준다. 실제 프로젝트의 데이터 손실·좌표 오차 감소는 추후 검증이 필요하다.",
+        "whyItMatters": "도로·철도·부지 설계에서 모델 간 기준점과 버전이 어긋나면 간섭 검토·물량·시공 위치 판단이 흔들린다. 공통 위치정보는 설계 데이터 연속성의 선결 조건이다.",
+        "recommendedAction": "시범 프로젝트에서 좌표계·기준점·모델 버전 규칙을 먼저 정하고 Forma–Revit–Civil 3D 왕복 참조 시 위치 오차, 누락 객체, 변경 반영 시간을 측정한다.",
+        "source": "Autodesk AEC Tech Drop",
+        "sourceType": "공식 발표",
+        "published": "2026-09-15",
+        "region": "미국",
+        "url": "https://www.autodesk.com/blogs/aec/2026/09/15/civil-3d-the-next-forma-connected-client/",
+        "linkStatus": "verified",
+        "checkedAt": "2026-09-21"
+      },
+      {
+        "id": "20260921-ai-geom-homebuilding-documents",
+        "category": "건설AI",
+        "importance": 3,
+        "featured": false,
+        "title": "Geom, 주택 초기설계를 시공도서로 전환하는 AI 제품 출시",
+        "summary": "Business of Home의 9월 17일 창업자 인터뷰에 따르면 Geom은 대량 주택건설사를 대상으로 초기설계에서 치수·주석·전기·기초 도면 등을 포함한 시공도서 작성의 반복 작업을 자동화하는 제품을 출시했다. Pulte, Century Communities, Meritage 등과 개발 협력을 진행했다고 밝혔다. 실제 도서 작성 시간·오류 감소에 대한 독립 검증 결과는 제시되지 않았다.",
+        "insight": "범용 문서 생성보다 설계 옵션 변경과 지역별 기준 반영이 잦은 주택 시공도서 업무를 표적으로 삼았다. 제품 출시와 실무 검증 완료를 구분해야 한다.",
+        "whyItMatters": "반복형 주택사업에서는 유사 설계를 여러 현장에 적용하되 규정·기초 조건을 수정해야 하므로 도면 변경 추적과 최종 검토 책임이 자동화 효용을 좌우한다.",
+        "recommendedAction": "표준 주택형 하나를 대상으로 기존 작성 도서와 AI 산출물을 비교해 누락 치수·상충 정보·지역 규정 반영률·설계사 검토 시간을 기록하고, 승인 권한은 담당 전문가에게 둔다.",
+        "source": "Business of Home",
+        "sourceType": "언론 보도",
+        "published": "2026-09-17",
+        "region": "미국",
+        "url": "https://businessofhome.com/articles/modsy-founder-shanna-tellerman-returns-with-a-new-startup",
+        "linkStatus": "verified",
+        "checkedAt": "2026-09-21"
+      }
+    ],
+    "emptyCategories": {
+      "건설AX": "주요 신규 독립 이슈 없음 — 업무 전환 관련 기존 에이전틱 AI 발표는 일별 아카이브에 이미 반영돼 주간 카드에서 중복 제외했다."
+    },
+    "implications": [
+      { "title": "실증은 성능 수치보다 업무 체계로 평가", "body": "[사실] SH는 디지털 감리·원격검측·시공로봇을 현장에서 시연했고 12월까지 보완할 계획이다. [분석] 검측 정확도와 승인 이력, 안전 개입, 재작업 시간을 함께 측정해야 확산 여부를 판단할 수 있다." },
+      { "title": "설계·측량 데이터의 연속성이 AI의 선행 조건", "body": "[사실] Trimble은 측량 기능 통합 장비를, Autodesk는 Civil 3D·Forma·Revit 간 참조와 공통 지리좌표 계획을 발표했다. [분석] 기준점·버전·변경 이력의 일관성이 확보돼야 AI의 일정·조달 추천도 검증 가능하다." },
+      { "title": "예상 편익과 실측 편익을 분리", "body": "[사실] Suffolk·MIT의 비용·일정 절감률은 사례 모델 추정이며 Geom은 제품 출시 단계다. [분석] 도입 의사결정에는 현장 기준선 대비 처리 시간, 오류율, 수정 횟수, 전체 비용을 별도로 확인해야 한다." }
+    ],
+    "closing": "<span>이번 주의 판단: 현장 실증과 데이터 연결은 진전됐지만, 투자 판단은 계획·연구 추정보다 프로젝트별 검증 지표에 근거해야 한다.</span>"
+  },
+  {
     "date": "2026-09-20",
     "displayDate": "2026년 9월 20일 · 일요일 · 06:04 KST 기준",
     "headline": "<strong>검증된 주요 신규 이슈 없음</strong>—주간 재정리·기존 발표 재배포를 신규 성과로 집계하지 않음",
