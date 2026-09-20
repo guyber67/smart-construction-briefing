@@ -1,11 +1,11 @@
-name: Daily Smart Construction Briefing
+name: Weekly Smart Construction Briefing
 
 on:
   schedule:
-    # 21:07 UTC = 06:07 KST (next calendar day in Korea)
-    - cron: "7 21 * * *"
-    # 22:07 UTC = 07:07 KST backup
-    - cron: "7 22 * * *"
+    # Sunday 21:07 UTC = Monday 06:07 KST
+    - cron: "7 21 * * 0"
+    # Sunday 22:07 UTC = Monday 07:07 KST backup
+    - cron: "7 22 * * 0"
   workflow_dispatch:
 
 permissions:
@@ -32,7 +32,7 @@ jobs:
       - name: Generate briefing
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          SKIP_IF_TODAY_EXISTS: ${{ github.event_name == 'schedule' && github.event.schedule == '7 22 * * *' }}
+          SKIP_IF_TODAY_EXISTS: ${{ github.event_name == 'schedule' }}
         run: python scripts/generate_briefing.py
 
       - name: Commit updated briefing
@@ -48,5 +48,5 @@ jobs:
 
           git add -- data/briefings.json
           TODAY=$(TZ=Asia/Seoul date +%F)
-          git commit -m "Update daily briefing ${TODAY}"
+          git commit -m "Update weekly briefing ${TODAY}"
           git push
