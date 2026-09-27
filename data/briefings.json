@@ -1,5 +1,122 @@
 [
   {
+    "date": "2026-09-28",
+    "displayDate": "2026년 9월 28일 · 월요일 · 06:07 KST 기준 · 주간 브리핑",
+    "headline": "<strong>AI 도입 경쟁이 기능 출시에서 검증 가능한 데이터·ROI·물리공간 인프라로 이동</strong>",
+    "executiveSummary": [
+      "최근 7일(9월 21일 06:07~28일 06:07 KST) 발표 중 기존 아카이브와 중복되지 않는 5건을 선별했다. 싱가포르는 국가 3D 지도와 시각 위치추정 기술을 결합해 로봇·자율시스템이 활용할 위치 인프라의 타당성을 검토하고, 건물 운영에서는 AI 기반 HVAC 최적화의 에너지 절감 효과를 모델과 현장 파일럿 자료로 분석했다.",
+      "건설 AI는 입찰서·도면·IFC의 수량과 범위를 상호 검증하는 전문 작업으로 진입하고 있지만, 업계 조사에서는 AI 사용자의 15%만 명확한 ROI를 동반한 큰 효과를 보고했다. BIM–로봇 연구도 정보교환 구조를 구체화했으나 자율 시공을 실증한 것은 아니므로, 제품 주장·모델 추정·개념검증을 실제 현장 성과와 구분해야 한다.",
+      "이번 주의 경영 과제는 AI 기능 수보다 출처 추적, 기준 데이터, 사람 승인, 실측 ROI를 함께 설계하는 것이다. 국내에서는 기간 내 원문·신규성·직접 관련성을 모두 충족한 독립 이슈를 확인하지 못했다."
+    ],
+    "signals": [
+      { "label": "WEEKLY FOCUS", "value": "국가 3D 지도에서 Physical AI 위치 인프라로", "focus": true },
+      { "label": "ROI GAP", "value": "AI 사용자 중 명확한 ROI 동반 큰 효과 15%" },
+      { "label": "EVIDENCE", "value": "모델·제품 주장·개념검증을 현장 실적과 분리" },
+      { "label": "TIME WINDOW", "value": "2026-09-21 06:07~2026-09-28 06:07 KST" }
+    ],
+    "news": [
+      {
+        "id": "20260928-dx-singapore-national-vps-feasibility",
+        "category": "건설DX",
+        "importance": 5,
+        "featured": true,
+        "title": "싱가포르, 국가 3D 지도 기반 로봇·자율시스템 위치 인프라 타당성 검토",
+        "summary": "Niantic Spatial과 싱가포르 토지청(SLA)은 9월 21일 국가 단위 시각 위치추정시스템(VPS)의 기술적 타당성과 활용 가능성을 공동 검토하는 양해각서를 발표했다. SLA의 고해상도 항공영상·전국 3D 포인트클라우드와 컴퓨터비전·시각 위치추정 기술을 결합해 로봇과 기계가 물리공간에서 더 정확히 위치를 파악하도록 하는 구상이다. 적용 후보는 자율주행·로봇, 스마트 인프라, 도시 운영과 비상 대응이지만 현재 단계는 타당성 평가다.",
+        "insight": "개별 현장을 매번 새로 스캔하는 방식에서 국가가 유지하는 공신력 있는 공간 데이터를 기계용 기준 좌표로 재사용하는 방향을 제시한다. 다만 항공·도시 모델이 지상 로봇의 시야와 변화하는 현장 조건에 충분한지는 아직 검증 대상이다.",
+        "whyItMatters": "건설·인프라 로봇이 여러 현장으로 확장되려면 GPS 음영과 동적 장애물 속에서도 공통 위치 기준을 확보해야 한다. 공공 3D 지도와 민간 VPS의 결합은 Physical AI 확산 비용과 데이터 표준을 바꿀 수 있다.",
+        "recommendedAction": "국내 실증에서는 국가 공간정보·현장 스캔·BIM 좌표를 연결해 위치 오차, 맵 갱신 주기, 추가 캡처 범위, 개인정보·보안, 장애 시 안전정지 기준을 함께 측정한다.",
+        "source": "Niantic Spatial",
+        "sourceType": "공식 발표",
+        "published": "2026-09-21",
+        "region": "싱가포르",
+        "url": "https://nianticspatial.com/blog/singapore-land-authority",
+        "linkStatus": "verified",
+        "checkedAt": "2026-09-28"
+      },
+      {
+        "id": "20260928-ai-schneider-building-hvac-study",
+        "category": "건설AI",
+        "importance": 4,
+        "featured": false,
+        "title": "Schneider Electric, AI 건물제어의 에너지 절감 효과를 모델·파일럿으로 분석",
+        "summary": "Schneider Electric은 9월 21일 AI 기반 HVAC 최적화를 디지털 건물관리시스템에 적용한 연구를 발표했다. 호주·인도·미국의 건물 시나리오를 대상으로 실제 파일럿 자료로 검증한 에너지 모델은 기존 제어 대비 건물 전체 에너지를 최대 22%, 그중 AI 계층이 7.2~12.7% 추가 절감할 수 있다고 추정했다. 수치는 모든 건물의 실측 보장값이 아니라 건물 유형·기후·요금 조건에 따른 모델 결과다.",
+        "insight": "건물 운영 AI의 가치는 범용 대화형 기능보다 점유·날씨·설비 성능 데이터를 연결해 제어 명령으로 전환하는 폐쇄루프에 있다. 모델 추정과 개별 건물의 실제 절감률을 분리해 평가해야 한다.",
+        "whyItMatters": "준공 이후 운영비와 탄소가 자산 생애주기 성과를 좌우하므로 설계·시공 단계에서 센서, BMS 데이터 품질과 제어 권한을 준비해야 AI 최적화를 확장할 수 있다.",
+        "recommendedAction": "파일럿 건물에서 AI 적용 전후를 동일한 날씨·점유 조건으로 보정해 kWh, 피크수요, 쾌적도, 수동 개입, 설비 고장과 총소유비용을 측정하고 모델 예측과 실측 편차를 공개한다.",
+        "source": "Schneider Electric / GlobeNewswire",
+        "sourceType": "공식 발표",
+        "published": "2026-09-21 08:00 ET",
+        "region": "글로벌",
+        "url": "https://www.globenewswire.com/news-release/2026/09/21/3365434/0/en/schneider-electric-finds-ai-enabled-buildings-can-cut-energy-use-by-up-to-22-save-on-annual-utility-costs-and-carbon.html",
+        "linkStatus": "verified",
+        "checkedAt": "2026-09-28"
+      },
+      {
+        "id": "20260928-ai-volve-tender-orchestration",
+        "category": "건설AI",
+        "importance": 4,
+        "featured": false,
+        "title": "Volve, 입찰서·도면·IFC 수량을 교차검증하는 AI 오케스트레이션 공개",
+        "summary": "Volve는 9월 24일 입찰·계약 문서 전체를 대상으로 시방서, 도면, IFC 모델의 수량과 범위 불일치를 확인하고 결과의 근거를 표시하는 AI 오케스트레이션 계층을 공개했다. 회사는 자사 플랫폼이 2,500개 이상 건설 프로젝트에 적용됐다고 밝혔지만, 이번 업그레이드의 정확도·절감시간·오류 감소를 독립적으로 검증한 수치는 제시하지 않았다.",
+        "insight": "건설 AI가 검색·요약에서 여러 문서와 모델을 순차적으로 점검하는 전문 작업으로 이동하고 있다. 핵심 경쟁력은 답변 생성보다 어떤 문서·도면·모델의 어느 근거에서 차이를 찾았는지 추적하는 능력이다.",
+        "whyItMatters": "입찰 단계의 수량·범위 누락은 계약 후 변경과 원가 손실로 이어진다. AI가 사람 검토 전에 불일치를 선별하면 검토 범위를 넓힐 수 있지만 최종 판단과 책임은 견적·기술 담당자에게 남는다.",
+        "recommendedAction": "과거 입찰 3~5건을 재검토해 탐지율·오탐률·근거 링크 정확도·검토시간을 기존 방식과 비교하고, 사람이 승인한 결과만 공식 견적·질의 기록에 반영한다.",
+        "source": "Volve",
+        "sourceType": "공식 발표",
+        "published": "2026-09-24",
+        "region": "노르웨이·글로벌",
+        "url": "https://www.volvetech.com/insights/volve-brings-ai-into-expert-tender-work",
+        "linkStatus": "verified",
+        "checkedAt": "2026-09-28"
+      },
+      {
+        "id": "20260928-ax-servicetitan-commercial-ai-roi",
+        "category": "건설AX",
+        "importance": 4,
+        "featured": false,
+        "title": "상업 전문공사업체 62%가 AI를 시험·도입했지만 명확한 ROI는 제한적",
+        "summary": "ServiceTitan이 제3자 조사기관 Thrive Analytics를 통해 미국 상업용 건물의 기계·전기·배관 중심 사업자 1,020명을 조사한 결과, 62%가 AI를 시험하거나 도입했고 33%는 실제 사용 또는 업무 내재화 단계라고 답했다. AI 사용자 중 59%는 긍정적 영향을 보고했지만, 명확한 ROI를 동반한 큰 효과를 보고한 비율은 15%였다. 조사는 7월 10~28일 온라인으로 진행됐고 9월 24일 공개됐다.",
+        "insight": "AI 도입률과 경영 성과 사이에 간극이 있음을 보여준다. 응답 기업은 상업 전문공사업체 중심이고 공급사 후원 조사이므로 전체 건설산업으로 일반화하기보다 AX 성숙도를 점검하는 참고지표로 써야 한다.",
+        "whyItMatters": "도구 수를 늘리는 것만으로는 현금흐름·생산성 개선이 보장되지 않는다. 일정·배차, 예지보전처럼 기대효과가 큰 업무도 데이터 연결과 표준 프로세스, 성과 기준이 있어야 ROI를 설명할 수 있다.",
+        "recommendedAction": "AI 과제를 사용률이 아닌 처리시간, 재방문, 청구 소요일, 회수기간, 마진 개선으로 평가하고 90일 단위로 중단·확대 기준을 정한다. 공급사 수치와 내부 실측을 분리해 경영진에게 보고한다.",
+        "source": "Nasdaq / ServiceTitan 조사",
+        "sourceType": "언론 보도",
+        "published": "2026-09-24 09:00 ET",
+        "region": "미국",
+        "url": "https://www.nasdaq.com/press-release/servicetitan-report-finds-commercial-contractors-prioritizing-profitability-and-ai",
+        "linkStatus": "verified",
+        "checkedAt": "2026-09-28"
+      },
+      {
+        "id": "20260928-smartconstruction-bim-robot-information-exchange",
+        "category": "Smart Construction",
+        "importance": 3,
+        "featured": false,
+        "title": "BIM 정보를 로봇 작업 데이터로 바꾸는 정보교환 구조 제안",
+        "summary": "Penn State·University of Virginia 연구진은 9월 24일 BIM의 형상·위치·재료·순서 정보를 로봇 작업 준비에 전달하는 시스템 구조를 발표했다. 20개 콘크리트 블록 벽 사례에서 Revit·Dynamo로 부재별 좌표와 식별정보를 추출하고 작업자가 이를 이용해 벽을 쌓았으며, Husky A200 로봇은 현장 이미지를 수집해 포인트클라우드 기록을 만들었다. 로봇이 벽을 자율 시공한 실험은 아니다.",
+        "insight": "BIM–로봇 연계의 병목이 파일 연결 자체가 아니라 작업 단위 분해, 좌표·재료·순서·제약조건을 로봇이 읽을 수 있게 준비하는 데 있음을 구조화했다. 논문은 종단 구조를 제안하지만 종단 자율시공 성능을 검증하지 않았다.",
+        "whyItMatters": "Physical AI를 현장에 적용하려면 설계 모델을 작업 명령과 안전 제약으로 변환하고, 실행 결과를 다시 모델에 기록하는 표준화된 정보교환 계층이 필요하다.",
+        "recommendedAction": "국내 로봇 파일럿에서 BIM 객체 ID, 작업순서, 허용오차, 작업구역, 비상정지 조건과 실행 로그의 최소 데이터셋을 정의하고 사람이 해석한 단계와 자동 실행 단계를 구분해 검증한다.",
+        "source": "Intelligent Infrastructure and Construction (MDPI)",
+        "sourceType": "연구기관",
+        "published": "2026-09-24",
+        "region": "미국",
+        "url": "https://www.mdpi.com/3042-4720/2/4/12",
+        "linkStatus": "verified",
+        "checkedAt": "2026-09-28"
+      }
+    ],
+    "emptyCategories": {
+      "스마트건설": "주요 신규 국내 이슈 없음 — 기간 내 원문 게시일과 독립적인 현장 적용·성과를 함께 확인한 국내 발표가 없었다."
+    },
+    "implications": [
+      { "title": "Physical AI의 선행 투자는 위치·공간 데이터", "body": "[사실] 싱가포르는 국가 3D 데이터와 VPS를 결합하는 타당성 검토에 착수했다. [분석] 자율장비 확산의 공통 기반은 기체별 알고리즘뿐 아니라 신뢰할 수 있고 갱신 가능한 공간 기준정보다." },
+      { "title": "AI 도입률보다 검증 가능한 ROI", "body": "[사실] 상업 전문공사업체 조사에서 62%가 AI를 시험·도입했지만 명확한 ROI를 동반한 큰 효과를 보고한 AI 사용자는 15%였다. [분석] 사용량 대신 처리시간·오류·현금흐름·마진의 기준선을 먼저 정해야 한다." },
+      { "title": "전문 작업 AI는 근거와 사람 승인이 핵심", "body": "[사실] 입찰 검토 AI와 BIM–로봇 연구는 문서·모델 간 정보교환과 검증 경로를 강조했다. [분석] 자동화 범위를 넓힐수록 출처 추적, 허용오차, 사람 승인, 실행 로그를 함께 설계해야 책임 있는 AX가 된다." }
+    ],
+    "closing": "<span>이번 주의 판단: AI 기능을 추가하는 단계에서 벗어나, 신뢰할 수 있는 공간·프로젝트 데이터와 실측 ROI로 확장 여부를 결정해야 한다.</span>"
+  },
+  {
     "date": "2026-09-21",
     "displayDate": "2026년 9월 21일 · 월요일 · 06:15 KST 기준 · 주간 브리핑",
     "headline": "<strong>현장 실증·설계 데이터 연결·AI 업무 자동화</strong>가 이번 주 건설기술의 핵심 축",
