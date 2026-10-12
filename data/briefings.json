@@ -1,5 +1,104 @@
 [
   {
+    "date": "2026-10-12",
+    "displayDate": "2026년 10월 12일 · 월요일 · 14:15 KST 기준 · 주간 브리핑",
+    "headline": "<strong>건설로봇은 현장 계약으로, 설계·현장 AI는 사람 승인과 연결 데이터로 확장</strong>",
+    "executiveSummary": [
+      "최근 7일(10월 5일 14:15~12일 14:15 KST) 발표 가운데 원문 날짜와 기존 아카이브의 신규성을 확인한 4건을 선별했다. 미국에서는 바닥 타일 시공로봇이 3년간 최대 400만달러 규모 계약을 맺어 장비 판매 대신 시공 면적 단위의 서비스 구매 방식을 제시했다.",
+      "설계 분야에서는 Graphisoft가 Archicad 2026 제품군과 AI 연결 계획을 공개했고, 호주 Build Paperless는 공사기록·하자 등 현장 데이터에 AI 에이전트가 접근하는 기능을 발표했다. Bentley의 인프라상은 터널 설계, 운영형 디지털 트윈 등 실제 프로젝트의 데이터 활용 사례를 보여주지만, 수상 사실만으로 AI 성과가 독립 검증됐다고 해석해서는 안 된다.",
+      "경영진은 로봇의 설치 생산성·품질·안전을 실제 계약 현장에서 측정하고, AI의 읽기·쓰기 권한과 계약 변경 승인 경로를 점검할 필요가 있다. 이번 주에는 동일 기준을 충족하는 별도의 국내 현장 적용 발표를 확인하지 못했다."
+    ],
+    "signals": [
+      {"label": "WEEKLY FOCUS", "value": "타일 시공로봇, 3년 서비스 계약 체결", "focus": true},
+      {"label": "AI ACCESS", "value": "현장 기록 읽기·쓰기와 승인 권한 분리"},
+      {"label": "BIM ROADMAP", "value": "Archicad AI·MCP 연계는 단계별 출시"},
+      {"label": "TIME WINDOW", "value": "2026-10-05 14:15~2026-10-12 14:15 KST"}
+    ],
+    "news": [
+      {
+        "id": "20261012-smartconstruction-hfr-robotic-flooring-contract",
+        "title": "미국 타일 시공로봇, 3년간 최대 400만달러 현장 계약 체결",
+        "category": "스마트건설",
+        "importance": 5,
+        "featured": true,
+        "summary": "Human Friendly Robotics는 10월 6일 상업용 바닥재 전문업체 Flooring Concepts of NJ와 3년간 최대 400만달러 규모의 로봇 타일 시공 계약을 발표했다. Tyler 로봇을 미국 북동부 현장에 투입하며, 계약 대상 설치 용량은 발주 업체의 고급 비닐 타일 작업량 중 최소 15~40%에 해당한다고 밝혔다. 로봇은 반복 배치를 맡고 숙련 작업자는 절단·모서리·마감·품질을 담당한다. 고객사는 장비를 구입하는 대신 시공 면적에 따라 비용을 지불한다.",
+        "insight": "건설로봇의 상용화 기준이 시연 횟수에서 실제 시공 물량과 계약 형태로 옮겨가고 있다. 계약 상한액과 예정 작업 비율은 실현 매출이나 검증된 생산성 실적이 아니며, 업체가 주장한 작업속도도 현장별 실측이 필요하다.",
+        "whyItMatters": "면적 단위 과금은 시공사가 초기 장비 투자 없이 로봇을 도입할 수 있는 방식이다. 반복 작업을 로봇에 맡기면서 숙련공의 품질 책임을 유지할 수 있는지가 현장 확산의 핵심이다.",
+        "recommendedAction": "동일 바닥재·구역에서 기존 시공과 로봇 병행 시공의 실제 설치 면적/시간, 재작업률, 인력 투입, 안전·근골격 부담, 장비 대기시간과 총원가를 비교한다. 계약상 최소 물량과 성능 미달 시 책임도 확인한다.",
+        "source": "Human Friendly Robotics",
+        "sourceType": "공식 발표",
+        "published": "2026-10-06",
+        "region": "미국",
+        "url": "https://www.humanfriendly.bot/press/flooring-concepts-nj-four-million-tiling-contract",
+        "linkStatus": "verified",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "id": "20261012-ai-graphisoft-archicad-2026-portfolio",
+        "title": "Graphisoft, Archicad 2026과 설계 AI·MCP 연결 로드맵 공개",
+        "category": "건설AI",
+        "importance": 4,
+        "featured": false,
+        "summary": "Graphisoft는 10월 7일 Archicad 중심의 2026 제품군을 공개했다. 이번 버전에는 문서화·프로젝트 정보·협업 기능 개선이 포함됐고, AI Assistant의 문서 기반 개인화와 Model Context Protocol(MCP) 연결은 향후 확장 계획으로 제시됐다. Nemetschek Creator 및 Open Collaboration Platform의 조기 접근 기회도 10월 중 제공할 예정이라고 밝혔다. 기능별 출시 시점과 지역별 제공 범위는 달라질 수 있다.",
+        "insight": "설계 AI가 모델 작성 기능 하나보다 사내 문서, 초기 사업성 검토, BIM 모델 및 협업 공간을 연결하는 방향으로 진행 중이다. 현재 제공 기능과 계획된 AI·MCP 기능을 분리해 평가해야 한다.",
+        "whyItMatters": "설계 지식과 프로젝트 맥락이 BIM 객체·도면에 연결될수록 AI 지원의 품질을 검증하기 쉬워진다. 다만 출시 계획을 즉시 사용 가능한 자동 설계·검토 성능으로 받아들이면 도입 일정과 기대 성과가 어긋난다.",
+        "recommendedAction": "사내 Archicad 사용 업무에서 현재 버전으로 가능한 문서화·협업 개선을 먼저 검증하고, AI Assistant·MCP 기능은 실제 출시 후 데이터 접근권한, 근거 표시, 변경 기록과 검토 정확도를 파일럿으로 확인한다.",
+        "source": "Graphisoft",
+        "sourceType": "공식 발표",
+        "published": "2026-10-07 16:25",
+        "region": "헝가리·글로벌",
+        "url": "https://www.graphisoft.com/en-aq/newsroom/graphisoft-unveils-2026-product-portfolio-led-by-archicad-and-ai-enabled-design-intelligence/?id=f8c09677-cef5-425f-b0c5-e212739aa70e",
+        "linkStatus": "verified",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "id": "20261012-ax-build-paperless-construction-agents",
+        "title": "호주 Build Paperless, 공사기록·하자 업무에 AI 에이전트 접근 개방",
+        "category": "건설AX",
+        "importance": 4,
+        "featured": false,
+        "summary": "호주 IT Brief는 10월 9일 Build Paperless가 건설 공사관리 시스템을 AI 에이전트에 연결했다고 보도했다. 회사 설명에 따르면 MCP 연결을 통해 현장 일지 조회·작성, 하자 등록 등 37개 도구에 접근할 수 있다. 접근권한은 기존 로그인 권한과 연동되고, 계약 변경과 같은 민감한 조치는 에이전트가 제안한 뒤 사람이 승인하는 구조다. 도구 수와 접근통제 동작은 공급사 설명이며 독립 보안 감사 결과는 제시되지 않았다.",
+        "insight": "건설 AI가 질문 답변에서 공사관리 시스템의 실제 기록을 읽고 작성하는 단계로 확장되고 있다. 기록 작성과 계약·금액 변경은 위험도가 다르므로 권한을 세분화하고 승인 과정을 업무 안에 넣는 설계가 중요하다.",
+        "whyItMatters": "AI 에이전트가 현장 일지·결함·일정에 접근하면 행정업무를 줄일 수 있지만, 잘못된 기록이나 무단 변경은 계약·품질 분쟁으로 이어질 수 있다. 기존 공사관리 시스템을 신뢰 가능한 원장으로 유지하는 것이 관건이다.",
+        "recommendedAction": "파일럿에서는 읽기, 일지 초안, 하자 등록, 계약변경 제안 권한을 별도 계정으로 나누고 승인 전후 기록과 되돌리기 경로를 점검한다. 실제 작성시간 절감과 오기록·오승인 비율을 함께 측정한다.",
+        "source": "IT Brief Australia",
+        "sourceType": "언론 보도",
+        "published": "2026-10-09",
+        "region": "호주",
+        "url": "https://itbrief.com.au/story/build-paperless-opens-construction-platform-to-ai-agents",
+        "linkStatus": "verified",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "id": "20261012-dx-bentley-infrastructure-awards-2026",
+        "title": "Bentley 인프라상, 터널 디지털 설계와 운영형 디지털 트윈 사례 선정",
+        "category": "건설DX",
+        "importance": 3,
+        "featured": false,
+        "summary": "Bentley Systems는 10월 7일 2026 Year in Infrastructure 수상작을 발표했다. 53개국 300건 이상 출품작 중 12개 분야의 수상작을 선정했으며, 교량·터널 분야에는 포르투갈 AYESA Engineering의 Porto Metro 3.0 통합 디지털 터널 설계 워크플로, 상하수도 분야에는 네덜란드 Evides의 대규모 운영형 배수망 디지털 트윈이 포함됐다. 발표문은 수상 목록과 분야를 제공하지만 이 두 사업의 상세 성과 수치를 제시하지 않는다.",
+        "insight": "디지털 모델 활용 범위가 설계 단계의 터널 워크플로에서 운영 단계의 자산 네트워크까지 이어지고 있음을 보여준다. 벤더가 주관한 상의 수상 사실과 프로젝트별 생산성·안전 성과는 구별해서 해석해야 한다.",
+        "whyItMatters": "인프라 사업의 DX는 BIM 모델 작성만으로 끝나지 않고 설계·시공·운영 데이터를 계속 연결하는 역량을 요구한다. 터널 설계와 물망 운영 사례를 함께 보면 인수인계 데이터 구조와 장기 운영 목적을 처음부터 정의할 필요가 있다.",
+        "recommendedAction": "두 사례의 공개 기술자료가 나오면 데이터 표준, 검증 책임, 운영 인계 항목, 실제 시간·비용·품질 효과를 확인한다. 국내 터널·수자원 프로젝트의 CDE 요구사항과 비교해 재사용 가능한 항목을 추린다.",
+        "source": "Bentley Systems",
+        "sourceType": "공식 발표",
+        "published": "2026-10-07",
+        "region": "포르투갈·네덜란드·글로벌",
+        "url": "https://www.bentley.com/en/news/bentley-systems-announces-winners-of-the-2026-year-in-infrastructure-awards/",
+        "linkStatus": "verified",
+        "checkedAt": "2026-10-12"
+      }
+    ],
+    "emptyCategories": {
+      "Smart Construction": "별도 신규 이슈 없음 — 해외 소식은 관련 분야에 분류했으며, 검증 가능한 독립 기사를 추가로 확인하지 못했다."
+    },
+    "implications": [
+      {"title": "로봇 도입은 계약 물량과 단위 원가로 검증", "body": "[사실] 미국 타일 시공로봇이 최대 400만달러의 3년 계약을 발표했고 고객사는 설치 면적 기준으로 지불한다. [분석] 성과 판단은 계약 규모보다 현장별 실측 생산량, 품질, 안전, 총원가에 달려 있다."},
+      {"title": "설계 AI의 현재 기능과 출시 계획을 구분", "body": "[사실] Graphisoft는 Archicad 2026 제품군과 향후 AI·MCP 연결 계획을 함께 공개했다. [분석] 도입 의사결정에는 이미 제공되는 기능, 조기 접근 기능, 계획 중인 기능을 각각 다른 일정과 검증 기준으로 다뤄야 한다."},
+      {"title": "에이전트는 기록 권한과 계약 승인 권한을 나눠 운영", "body": "[사실] Build Paperless는 AI 에이전트의 현장기록 접근과 계약변경에 대한 사람 승인 구조를 설명했다. [분석] 공사관리 데이터가 AI에 열릴수록 권한 범위, 변경이력, 승인과 복구가 업무 설계의 필수 항목이 된다."}
+    ],
+    "closing": "<span>이번 주의 판단: 로봇은 시공 실적을, AI는 현재 기능과 승인 기록을 기준으로 도입 범위를 결정해야 한다.</span>"
+  },
+  {
     "date": "2026-10-05",
     "displayDate": "2026년 10월 5일 · 월요일 · 06:00 KST 기준 · 주간 브리핑",
     "headline": "<strong>건설 AX의 경쟁축이 개별 도구에서 표준 데이터·검증 가능한 워크플로·물리자산 제어로 이동</strong>",
