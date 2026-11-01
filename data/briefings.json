@@ -1,5 +1,142 @@
 [
   {
+    "date": "2026-11-02",
+    "displayDate": "2026년 11월 2일 · 월요일 · 05:56 KST 기준 · 주간 브리핑",
+    "headline": "<strong>건설 로봇은 현장 작업 실적을 제시하고, AI는 공정·BIM 데이터의 검증 가능한 접근을 넓힌다</strong>",
+    "executiveSummary": [
+      "최근 7일(10월 26일 05:56~11월 2일 05:56 KST) 원문 발행일과 링크를 확인한 5건을 선별했다. Maximo Robotics는 태양광 현장 로봇 작업 30만 건을 발표했고, Bedrock Robotics는 자율 굴착기 현장 확대를 위한 6억 달러 투자를 발표했다. 작업량과 생산성은 각각 공급사 및 투자사 발표에 근거하므로 독립적인 현장 비교가 필요하다.",
+      "Planera는 최신 공정표를 AI에 연결하는 연동 계획을 공개했고, OGC는 IFC 모델에서 근거를 추적할 수 있는 AI 검색 연구를 소개했다. Snaptrude의 설계 AI 평가 체계는 문답 정확도보다 편집 가능한 BIM 결과물의 품질을 평가하려는 시도다.",
+      "경영진은 자율장비의 안전·작업당 비용과 AI 응답의 데이터 버전·근거·검증 절차를 우선 확인해야 한다. 이번 주 기준을 충족하는 별도의 국내 현장 기술 발표는 확인하지 못했다."
+    ],
+    "signals": [
+      {
+        "label": "WEEKLY FOCUS",
+        "value": "태양광 로봇 작업 30만 건, 공급사 발표 기준",
+        "focus": true
+      },
+      {
+        "label": "AUTONOMY",
+        "value": "자율 굴착기 현장 확대 자금 6억 달러"
+      },
+      {
+        "label": "DATA ACCESS",
+        "value": "공정표 MCP 연동 계획·IFC 근거 탐색 연구"
+      },
+      {
+        "label": "TIME WINDOW",
+        "value": "2026-10-26 05:56~2026-11-02 05:56 KST"
+      }
+    ],
+    "news": [
+      {
+        "id": "20261102-smart-maximo-robotics-300k-solar-tasks",
+        "title": "Maximo Robotics, 태양광 현장 로봇 작업 30만 건 돌파 발표",
+        "category": "스마트건설",
+        "importance": 5,
+        "featured": true,
+        "summary": "Maximo Robotics는 10월 29일 미국 대규모 태양광 발전소 건설현장에서 로봇 시스템이 성과 기반 계약에 따라 30만 건 이상의 설치 작업을 완료했다고 발표했다. 회사는 Max 4.0과 함께 일한 인력의 교대시간당 설치율이 수작업 대비 2.5배였다고 주장했다. 수치는 공급사 발표이며 독립 검증 결과로 제시된 것은 아니다.",
+        "insight": "건설 로봇의 평가 기준이 시연·도입 대수에서 실제 완료 작업량과 계약상 성과로 이동하고 있다. 다만 작업 정의와 비교 조건이 공개되지 않으면 생산성 수치를 일반화하기 어렵다.",
+        "whyItMatters": "태양광 모듈 설치처럼 반복 작업이 많은 현장은 로봇의 작업량, 인력 배치, 품질 및 안전을 함께 비교할 수 있는 적용 영역이다.",
+        "recommendedAction": "동일한 설치 구간에서 로봇·수작업 팀의 완료 모듈 수, 재작업률, 안전사고 및 작업당 총비용을 동일 조건으로 비교하고 공급사 수치의 재현성을 확인한다.",
+        "source": "Maximo Robotics",
+        "sourceType": "공식 발표",
+        "published": "2026-10-29",
+        "region": "미국",
+        "url": "https://www.prnewswire.com/news-releases/maximo-robotics-surpasses-300-000-construction-tasks-with-physical-ai-in-utility-scale-solar-302922781.html",
+        "linkStatus": "verified",
+        "checkedAt": "2026-11-02"
+      },
+      {
+        "id": "20261102-global-bedrock-robotics-series-c-deployment",
+        "title": "Bedrock Robotics, 자율 굴착기 현장 확대 위해 6억 달러 투자 유치",
+        "category": "Smart Construction",
+        "importance": 4,
+        "featured": false,
+        "summary": "Bedrock Robotics의 투자사 Bessemer Venture Partners는 10월 26일 Bedrock의 6억 달러 시리즈 C 투자 참여와 미국 상업 건설현장 자율장비 배치 확대 계획을 발표했다. 투자사는 운전석에 작업자 없이 굴착기가 토사를 적재하는 현장 시연을 관찰했다고 설명했다. 자금 조달은 발표됐지만 향후 배치 규모나 생산성 성과는 아직 검증 대상이다.",
+        "insight": "자율 토공장비 기업이 실증 이후 여러 현장에 공급하기 위한 운영·안전 체계 구축 단계로 이동하고 있다. 투자 규모만으로 상용화 성과를 판단할 수 없다.",
+        "whyItMatters": "자율장비는 인력 부족과 장비 가동률에 영향을 줄 수 있지만 혼재 작업구역의 안전 분리, 원격 감독, 사고 책임이 배치 확대의 핵심 조건이다.",
+        "recommendedAction": "현장 적용 검토 시 무인 운행 가능 구역, 작업자·덤프트럭과의 상호작용, 비상정지 절차, 회당 생산량과 감독인력 필요량을 먼저 측정한다.",
+        "source": "Bessemer Venture Partners",
+        "sourceType": "공식 발표",
+        "published": "2026-10-26",
+        "region": "미국",
+        "url": "https://www.bvp.com/news/bedrock-robotics-deploying-autonomous-equipment-for-the-built-world",
+        "linkStatus": "verified",
+        "checkedAt": "2026-11-02"
+      },
+      {
+        "id": "20261102-ax-planera-mcp-cpm-schedule",
+        "title": "Planera, 공정표를 AI 도구에 연결하는 MCP 연동 계획 발표",
+        "category": "건설AX",
+        "importance": 4,
+        "featured": false,
+        "summary": "Planera는 10월 28일 공정표의 CPM 데이터를 Claude·ChatGPT 등 AI 도구가 질의할 수 있도록 하는 MCP 연동 계획을 발표했다. 회사는 일정 위험 분석과 원가·운영 데이터 결합을 활용 사례로 제시했다. 공식 글은 이 연동을 '출시 예정'으로 소개하므로 현재 모든 고객이 사용할 수 있는 기능으로 해석해서는 안 된다.",
+        "insight": "건설 AI의 유용성이 모델 성능보다 최신 공정 데이터 접근권, 버전 관리와 다른 시스템 간 연결 방식에 좌우될 수 있음을 보여준다.",
+        "whyItMatters": "AI가 오래된 공정표를 참조하면 주공정·지연 예측이 잘못될 수 있다. 일정 변경 승인과 질의 권한도 함께 설계해야 한다.",
+        "recommendedAction": "연동이 제공되면 동일 프로젝트의 승인 공정표와 AI 응답을 대조해 버전 식별, 주공정 계산, 권한 분리, 변경 이력 추적을 확인한다.",
+        "source": "Planera",
+        "sourceType": "공식 발표",
+        "published": "2026-10-28",
+        "region": "미국",
+        "url": "https://www.planera.io/post/planera-mcp-integration",
+        "linkStatus": "verified",
+        "checkedAt": "2026-11-02"
+      },
+      {
+        "id": "20261102-dx-ogc-agentic-bim-ifc-retrieval",
+        "title": "OGC, IFC 모델의 AI 탐색 연구와 공개 평가자료 소개",
+        "category": "건설DX",
+        "importance": 4,
+        "featured": false,
+        "summary": "OGC가 10월 28일 게재한 연구자 글은 서로 다른 IFC 모델에서 AI가 구조를 단계적으로 탐색해 정보를 찾는 방법을 소개했다. 글에 따르면 연구진은 21개 프로젝트의 IFC 모델 37개와 질문 1천 건 이상으로 구성된 공개 평가자료를 제공한다. 소개된 논문 실험에서 반복 탐색 방식은 단일 질의 방식보다 시험한 설정별 정답률이 29.5~48.5%포인트 높았다.",
+        "insight": "BIM 정보 검색에서 자연어 질문 자체보다 모델마다 다른 속성 구조를 탐색하고 답의 근거 객체를 보여주는 방식이 중요하다. 실험 결과는 해당 평가자료와 설정의 범위에 한정된다.",
+        "whyItMatters": "설계·시공·운영 간 모델 작성 관행이 다르면 같은 정보도 다른 속성에 저장된다. 근거를 추적할 수 있는 검색은 물량 확인과 운영 인계의 신뢰를 높인다.",
+        "recommendedAction": "자사 IFC 모델 여러 개에서 대표 질문을 만들고 정답률, 속성 누락, 3D 객체 근거 표시, 계산 과정 재현성을 비교한다.",
+        "source": "Open Geospatial Consortium",
+        "sourceType": "연구기관",
+        "published": "2026-10-28",
+        "region": "국제",
+        "url": "https://www.ogc.org/blog-article/ai-powered-bim-information-retrieval/",
+        "linkStatus": "verified",
+        "checkedAt": "2026-11-02"
+      },
+      {
+        "id": "20261102-ai-snaptrude-aecbench-architecture",
+        "title": "Snaptrude, BIM 설계 업무를 평가하는 AECBench 공개",
+        "category": "건설AI",
+        "importance": 3,
+        "featured": false,
+        "summary": "Snaptrude는 10월 29일 설계 요구서를 입력받은 AI 에이전트가 실제 BIM 도구에서 만든 결과를 공간계획, BIM 상세, 도면, 설비, 가치공학 등 단계별로 평가하는 AECBench 방법을 공개했다. 회사의 내부 평가 체계에서 발전한 자료이며 외부 독립 인증이나 업계 공통 표준으로 확정된 것은 아니다.",
+        "insight": "건설 AI 평가가 일반 언어모델 문답에서 편집 가능한 모델 산출물과 설계 조건 충족 여부로 이동하고 있다.",
+        "whyItMatters": "AI 설계안은 보기 좋은 이미지보다 면적·동선·구성요소·도면의 일관성이 실제 업무 활용을 결정한다.",
+        "recommendedAction": "자사 표준 설계 요구서 3건으로 AI 생성 모델을 시험하고 면적, 공간 인접성, BIM 객체 편집 가능성, 도면 일치도를 설계자가 채점한다.",
+        "source": "Snaptrude",
+        "sourceType": "공식 발표",
+        "published": "2026-10-29",
+        "region": "미국·글로벌",
+        "url": "https://www.snaptrude.com/blog/aecbench-measuring-ai-on-real-architectural-work",
+        "linkStatus": "verified",
+        "checkedAt": "2026-11-02"
+      }
+    ],
+    "emptyCategories": {},
+    "implications": [
+      {
+        "title": "로봇 성과는 같은 작업 단위로 비교",
+        "body": "설치 건수나 투자액만으로 생산성을 판단하지 않는다. 작업 정의, 인력 투입, 안전, 품질, 재작업과 총비용을 동일 조건에서 기록해야 한다."
+      },
+      {
+        "title": "AI 연결에는 승인된 데이터 버전이 우선",
+        "body": "공정표·BIM을 AI에 연결할 때 최신 승인본, 접근 권한, 변경 이력과 응답 근거를 함께 관리해야 현장 의사결정에 사용할 수 있다."
+      },
+      {
+        "title": "설계 AI는 산출물 품질로 검증",
+        "body": "자연어 답변의 유창함보다 모델 객체의 편집 가능성, 면적·동선·도면 일치도와 설계자 검토 시간을 기준으로 평가한다."
+      }
+    ],
+    "closing": "<span>이번 주 실행 포인트:</span> 로봇은 작업 단위 성과를, AI는 데이터 근거와 산출물 품질을 검증한다."
+  },
+  {
     "date": "2026-10-26",
     "displayDate": "2026년 10월 26일 · 월요일 · 05:56 KST 기준 · 주간 브리핑",
     "headline": "<strong>건설 AI가 현장 데이터 조회를 넘어 지연 분석·도면 위험 검토로 확장</strong>",
