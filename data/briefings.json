@@ -1,5 +1,142 @@
 [
   {
+    "date": "2026-11-09",
+    "displayDate": "2026년 11월 9일 · 월요일 · 주간 브리핑 (11월 10일 보완 게시)",
+    "headline": "<strong>현장 품질 데이터는 전 과정으로 연결되고, AI는 BIM·원가 기록에 직접 작용하기 시작했다</strong>",
+    "executiveSummary": [
+      "11월 2일 06:00~9일 06:00(KST)에 처음 공개된 관련 발표와 보도 5건을 원문으로 확인했다. 현대건설은 콘크리트 타설부터 양생·결함·강도 시험까지 연결하는 큐포켓·큐콘 v3를 발표했고, Mach9은 항공 LiDAR 자료를 토목 설계용 CAD 산출물로 만드는 기능을 넓혔다.",
+      "Qonic은 AI가 BIM 객체의 속성과 형상을 수정하는 기능을 출시했고, CMiC는 ERP의 예산·송장 작성에 AI를 연결하는 계획을 밝혔다. 두 사례 모두 사용 권한, 변경 이력과 사람의 확인 단계가 실제 업무 적용의 전제다.",
+      "LightYX의 레이저 시공 위치 표시·사후 검증 통합은 12월 제공 예정이므로 현장 성과와 구분해야 한다. 이번 브리핑은 11월 9일 자동 갱신 실패를 복구해 10일에 게시했다."
+    ],
+    "signals": [
+      {
+        "label": "WEEKLY FOCUS",
+        "value": "현대건설, 콘크리트 품질관리 전 과정 연결",
+        "focus": true
+      },
+      {
+        "label": "MODEL ACTION",
+        "value": "Qonic AI, BIM 객체 속성·형상 수정"
+      },
+      {
+        "label": "FIELD LOOP",
+        "value": "레이저 위치 표시와 시공 후 스캔 검증 연결"
+      },
+      {
+        "label": "TIME WINDOW",
+        "value": "2026-11-02 06:00~2026-11-09 06:00 KST"
+      }
+    ],
+    "news": [
+      {
+        "id": "20261109-smart-hyundai-q-pocket-qcon-v3",
+        "title": "현대건설, 큐포켓·큐콘 v3로 콘크리트 품질관리 전 과정 연결",
+        "category": "스마트건설",
+        "importance": 5,
+        "featured": true,
+        "summary": "현대건설은 11월 5일 스마트 통합 검측 시스템 큐포켓의 범위를 확대하고 큐콘 v3, 결함 관리, OSC 제품 관리 기능을 추가했다고 발표했다. 새 체계는 타설 계획, 레미콘 생산·출하, 양생, 결함, 압축강도 시험과 균열 기록을 연결하고 발주처·감리단·시공사·협력사가 품질 데이터를 공유하도록 설계됐다. 회사는 전 현장 적용을 목표로 제시했으며 완료 실적은 발표하지 않았다.",
+        "insight": "개별 검측 앱을 넘어 콘크리트 품질 기록의 생성부터 조치까지 연결하는 현장 데이터 체계가 구체화됐다. AI 문자 인식과 강도 예측은 기록의 보조 수단이며 최종 품질 판정에는 현장 검증이 필요하다.",
+        "whyItMatters": "레미콘 출하·타설·양생·시험 결과가 분리돼 있으면 결함 원인 추적과 책임 확인이 늦어진다. 같은 품질 이력을 여러 주체가 확인할 수 있어야 재작업과 분쟁을 줄일 수 있다.",
+        "recommendedAction": "실제 적용 현장 2곳에서 레미콘 차량별 출하 기록과 타설 위치, 양생·강도 시험, 결함 조치의 연결률을 점검한다. 누락 기록, 승인 시간, 재작업 건수를 도입 전 기준선과 비교한다.",
+        "source": "현대건설",
+        "sourceType": "공식 발표",
+        "published": "2026-11-05",
+        "region": "국내",
+        "url": "https://www2.hdec.kr/kr/company/press_view.aspx?CompanyPressSeq=757",
+        "linkStatus": "verified",
+        "checkedAt": "2026-11-10"
+      },
+      {
+        "id": "20261109-ai-qonic-model-agents",
+        "title": "Qonic, BIM 객체를 찾아 수정하는 모델 내 AI 에이전트 공개",
+        "category": "건설AI",
+        "importance": 4,
+        "featured": false,
+        "summary": "Qonic은 11월 4일 자사 BIM 플랫폼에 Qonic AI를 출시했다. 자연어 요청으로 IFC 기반 모델의 객체를 찾고, 누락 속성을 확인·채우며, 보고서를 만들고 형상을 편집할 수 있다고 설명했다. 자체 MCP 서버를 통한 외부 AI 도구 연결도 제공하며 변경은 사용자의 권한 범위 안에서 개인 변경사항으로 유지하다가 게시하도록 설계했다.",
+        "insight": "건설 AI가 모델을 설명하는 단계에서 승인 가능한 BIM 데이터 수정 단계로 이동하고 있다. 공급사 기능 설명이며 정확도나 대규모 프로젝트 성능은 별도 검증이 필요하다.",
+        "whyItMatters": "방화등급·자재·수량 같은 속성 오류는 설계 검토와 시공 인계에 영향을 준다. AI 수정 기능에는 권한, 변경 이력, 검토자의 승인 경로가 필수다.",
+        "recommendedAction": "기존 IFC 모델에서 누락 속성 20건과 형상 변경 5건을 시험해 AI 제안의 정확도, 수정 전후 비교, 되돌리기, 사용자 권한과 게시 승인 절차를 확인한다.",
+        "source": "Qonic",
+        "sourceType": "공식 발표",
+        "published": "2026-11-04",
+        "region": "해외",
+        "url": "https://community.qonic.com/t/qonic-november-release-notes-2026/403",
+        "linkStatus": "verified",
+        "checkedAt": "2026-11-10"
+      },
+      {
+        "id": "20261109-ax-cmic-nexusai-erp-permissions",
+        "title": "CMiC, 공사비·청구 업무에 권한 연계형 NexusAI 발표",
+        "category": "건설AX",
+        "importance": 4,
+        "featured": false,
+        "summary": "건설 전문매체 Construction Industry AI는 CMiC가 11월 2일 발표한 NexusAI를 3일 보도했다. 회사 발표에 따르면 사용자는 자연어로 ERP 정보를 조회하고 일감, 예산, 송장 작성 작업을 요청·검토·확인할 수 있다. CMiC MCP 서버는 기존 사용자 권한 설정 안에서 작동한다고 설명했다. 정식 제공일과 실제 승인 화면의 세부 방식은 공개되지 않았다.",
+        "insight": "건설 AX의 대상이 문서 검색을 넘어 원가·회계 기록 생성으로 넓어지고 있다. 권한 상속과 사람의 확인 단계가 실제 거래 오류를 막는 핵심 설계다.",
+        "whyItMatters": "예산과 청구서는 자금 집행·원가 분석의 원장 데이터다. AI가 잘못 작성하거나 권한을 넘어서면 프로젝트 재무 정보에 직접 영향을 준다.",
+        "recommendedAction": "시범 도입 전 직무별 조회·작성·승인 권한을 점검하고, 과거 송장·예산 자료로 금액·코드·거래처 오류와 승인 전후 감사 로그를 시험한다.",
+        "source": "Construction Industry AI",
+        "sourceType": "언론 보도",
+        "published": "2026-11-03",
+        "region": "캐나다·미국",
+        "url": "https://www.constructionindustry.ai/product/cmic-nexusai-launchpad-mcp-server-user-permissions/",
+        "linkStatus": "verified",
+        "checkedAt": "2026-11-10"
+      },
+      {
+        "id": "20261109-dx-mach9-aerial-lidar-ai-cad",
+        "title": "Mach9, 항공·드론 LiDAR를 토목 설계용 CAD 산출물로 변환",
+        "category": "건설DX",
+        "importance": 4,
+        "featured": false,
+        "summary": "Mach9은 11월 4일 자사 AI CAD 도구의 입력 범위를 지상·차량 스캔에서 항공 LiDAR와 사진측량 자료로 넓혔다고 발표했다. 도로 경계, 건물 외곽, 전주·전선 등을 추출하고 포인트 분류·지형면 편집 후 CAD·GIS 형식으로 내보낼 수 있다. 회사는 설계사들이 항공 자료에 기능을 사용 중이라고 밝혔으나 시간 절감 수치는 개별 고객 사례에 근거한다.",
+        "insight": "현장 데이터 수집 속도보다 설계 가능한 도면·지형면으로 바꾸는 후처리가 디지털 전환의 병목임을 보여준다. 자동 추출의 완성도는 측량 담당자의 검토에 달려 있다.",
+        "whyItMatters": "대규모 토목·전력 인프라 사업은 광역 측량 결과를 설계와 유지관리 데이터로 빠르게 전환해야 한다. 좌표계·정확도·누락 객체가 잘못되면 후속 설계가 영향을 받는다.",
+        "recommendedAction": "기준 측량 구간에서 자동 추출 CAD와 수작업 결과를 비교해 위치 오차, 객체 누락, 편집 시간, 좌표계와 LandXML·DWG 내보내기 품질을 확인한다.",
+        "source": "Mach9",
+        "sourceType": "공식 발표",
+        "published": "2026-11-04",
+        "region": "미국",
+        "url": "https://mach9.ai/news/aerial-lidar-support",
+        "linkStatus": "verified",
+        "checkedAt": "2026-11-10"
+      },
+      {
+        "id": "20261109-global-lightyx-v3-layout-verification",
+        "title": "LightYX V3, 레이저 시공 위치 표시와 설치 후 검증을 한 흐름으로 연결",
+        "category": "Smart Construction",
+        "importance": 3,
+        "featured": false,
+        "summary": "AEC Magazine은 11월 5일 LightYX V3가 BIM·CAD 도면을 바닥·천장·벽에 실물 크기로 레이저 투사하고 설치 후 스캔 결과를 설계와 비교하는 작업을 하나의 흐름으로 묶는다고 보도했다. 제조사는 적용 범위·거리·스캔 성능 개선을 주장했으나 정량 비교값은 제시되지 않았다. 제품 제공 예정 시점은 2026년 12월이다.",
+        "insight": "설계 위치 표시와 실제 설치 상태 검증을 이어 주면 오차를 다음 공정 전에 확인할 수 있다. 현재는 출시 전 발표이므로 현장 성과로 해석해서는 안 된다.",
+        "whyItMatters": "내장·MEP 공종의 위치 오차는 후속 작업의 재시공으로 이어질 수 있다. 시공 지시와 검측 기록을 같은 좌표·도면 버전에 묶는 것이 중요하다.",
+        "recommendedAction": "출시 후 한 실내 구역에서 기존 먹매김·검측 방식과 비교해 설치 위치 오차, 재작업률, 작업시간, 도면 버전 불일치와 스캔 기록 추적성을 측정한다.",
+        "source": "AEC Magazine",
+        "sourceType": "언론 보도",
+        "published": "2026-11-05",
+        "region": "해외",
+        "url": "https://aecmag.com/construction/lightyx-connects-layout-and-verification/",
+        "linkStatus": "verified",
+        "checkedAt": "2026-11-10"
+      }
+    ],
+    "emptyCategories": {},
+    "implications": [
+      {
+        "title": "품질 기록은 공정·자재·위치로 이어야 한다",
+        "body": "레미콘 출하, 타설 위치, 양생과 시험 결과를 연결하면 결함 원인을 추적할 수 있다. 전 현장 확대에 앞서 기록 누락률과 조치 시간을 측정해야 한다."
+      },
+      {
+        "title": "AI의 쓰기 권한과 승인 절차를 먼저 점검한다",
+        "body": "BIM 형상 수정과 ERP 예산·송장 생성은 원본 데이터에 영향을 준다. 직무별 권한, 변경 비교, 사람의 승인과 되돌리기 절차가 필요하다."
+      },
+      {
+        "title": "현장·측량 자동화는 실제 산출물로 평가한다",
+        "body": "레이저 위치 표시와 항공 LiDAR 변환은 시공·설계 작업을 줄일 가능성이 있다. 정량 성능은 동일 구간의 오차, 수정 시간, 재작업률과 납품 파일 품질로 검증한다."
+      }
+    ],
+    "closing": "<span>이번 주의 판단:</span> 연결된 현장 데이터 위에서 AI 수정과 자동화를 적용하되, 원본 근거·권한·실측 성과를 함께 관리한다."
+  },
+  {
     "date": "2026-11-02",
     "displayDate": "2026년 11월 2일 · 월요일 · 05:56 KST 기준 · 주간 브리핑",
     "headline": "<strong>건설 로봇은 현장 작업 실적을 제시하고, AI는 공정·BIM 데이터의 검증 가능한 접근을 넓힌다</strong>",
